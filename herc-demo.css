@@ -1,0 +1,402 @@
+
+
+.member:has(.herc-demo) .main-member-profile-container .profile-info {
+  border-right: 1px solid #ffcc00 !important;
+}
+
+.member:has(.herc-demo)
+  .admin-upcoming-anniv-container.small-container
+  .icon-img
+  > img {
+  overflow: hidden;
+  height: 0;
+}
+
+.member:has(.herc-demo)
+  .admin-upcoming-anniv-container.small-container
+  .icon-img {
+  content: "";
+  display: inline-flex !important;
+  opacity: 1;
+  background: url(https://halosalesandrecognition.werecognize.com/asset/28026)
+    no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+/* .profile-link .icon {
+  filter: invert(74%) sepia(98%) saturate(1100%) hue-rotate(360deg)
+    brightness(104%) contrast(101%) !important;
+} */
+.member:has(.herc-demo) .admin-upcoming-anniv-container.small-container {
+  min-height: 475px !important;
+}
+.member:has(.herc-demo) .approvals-card .award-data svg path {
+  fill: #000 !important;
+}
+.member:has(.herc-demo) * {
+  letter-spacing: normal !important;
+}
+
+.member:has(.herc-demo) .progress-bar-secondary {
+  background: #ffcc00 !important;
+  color: #000 !important;
+}
+
+.member:has(.herc-demo) .btn-primary.disabled {
+  border-radius: 100px;
+  background: #ffcc00 !important;
+  color: #000 !important;
+  opacity: 0.5 !important;
+}
+
+.member:has(.herc-demo) .btn-primary,
+.member:has(.herc-demo) .btn-secondary,
+.member:has(.herc-demo) .btn-default {
+  border-radius: 100px !important;
+}
+
+/* dark mode top header bar */
+.member:has(.herc-demo) .background-wrapper {
+  background-color: #000;
+}
+
+.member:has(.herc-demo) .customSelect .styledSelect {
+  color: #fff !important;
+}
+
+.member:has(.herc-demo) svg path {
+  fill: #ffcc00 !important;
+}
+
+.member:has(.herc-demo) .customSelect.lang-nav-item .styledSelect:before {
+  color: #ffcc00;
+}
+
+.member:has(.herc-demo) button#ddlLanguages {
+  color: #ffcc00 !important;
+}
+
+.member:has(.herc-demo) #header-wrap .hamburger-menu svg path {
+  fill: #fff !important;
+}
+/* end dark mode top header bar */
+.member:has(.herc-demo) a.navbar-brand img,
+.member:has(.herc-demo) a.img-responsive img {
+  visibility: hidden;
+}
+
+.member:has(.herc-demo) a.navbar-brand::before,
+.member:has(.herc-demo) a.img-responsive::before {
+  content: "";
+  background: url("https://www.hercrentals.com/content/dam/hercrentals/us/commerce/static/images/header/herc_logo.svg")
+    no-repeat;
+  width: 236px;
+  height: 45px;
+  background-size: 75% 75%;
+  background-position: left center;
+}
+
+/* CTA buttons */
+.member:has(.herc-demo) a.hero-cta {
+  background-image: url(https://d3arciv63ist18.cloudfront.net/public/b2c165/525/28025-ef2990ab-3dcb-dbd5-3c2c-69308bab.png) !important;
+  background-size: 25px 20px !important;
+}
+
+/* Feed widget image wrappers */
+.member:has(.herc-demo) .feed-widget .create-a-post-container .img-wrapper,
+.member:has(.herc-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .img-wrapper,
+.member:has(.herc-demo) .feed-widget .feed-widget-item .img-wrapper,
+.member:has(.herc-demo) .feed-widget-fs-modal .feed-widget-item .img-wrapper {
+  background: #ffcc00;
+}
+
+/* Storefront */
+.member:has(.herc-demo)
+  #main
+  .storefront-callout-bg
+  .post-container
+  .post-content {
+  background: #f6f6f6;
+}
+.member:has(.herc-demo) #main .post-container .post-content .title {
+  padding: 0 0 16px !important;
+}
+.member:has(.herc-demo) #main .storefront-callout-bg {
+  background-color: #000;
+}
+
+.member:has(.herc-demo) #main .storefront-callout-bg .callout-title {
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.member:has(.herc-demo) #main .storefront-callout-bg .callout-text {
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.member:has(.herc-demo) #main .storefront-callout-bg {
+  border-top: 7px solid #ffcc00;
+}
+/* Budget widget */
+.member:has(.herc-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+}
+
+.member:has(.herc-demo) #main .main-gifting-admin-v1-budget-container p {
+  padding: 0 24px;
+}
+
+.member:has(.herc-demo) div[data-widget-type="budget"] .panel-body {
+  padding: 0 !important;
+}
+
+.member:has(.herc-demo) #main [data-widget-type="budget"] {
+  padding-top: 3px !important;
+}
+
+.member:has(.herc-demo) #main [data-widget-type="budget"] div:first-child {
+  margin-bottom: 0 !important;
+}
+
+.member:has(.herc-demo) #main [data-widget-type="budget"] .progress {
+  border: 0.5px solid #333 !important;
+}
+
+.member:has(.herc-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm {
+  background: none;
+  color: #000 !important;
+  font-weight: 800 !important;
+}
+
+.member:has(.herc-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm:after {
+  color: #000;
+  font-weight: 800 !important;
+}
+
+/* Typography */
+.member:has(.herc-demo) h1,
+.member:has(.herc-demo) h2,
+.member:has(.herc-demo) h3,
+.member:has(.herc-demo) h4,
+.member:has(.herc-demo) h5,
+.member:has(.herc-demo) h6,
+.member:has(.herc-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.herc-demo) .hero-2-balance span,
+.member:has(.herc-demo) .post-container .post-content .title,
+.member:has(.herc-demo) [data-widget-type*="serialcard"] label,
+.member:has(.herc-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+}
+
+.member:has(.herc-demo) h1,
+.member:has(.herc-demo) h2,
+.member:has(.herc-demo) h3,
+.member:has(.herc-demo) h4,
+.member:has(.herc-demo) h5,
+.member:has(.herc-demo) h6 {
+  font-weight: 400;
+}
+
+.member:has(.herc-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+  font-weight: 600;
+  color: #fff !important;
+}
+.member:has(.herc-demo) .post-container .post-content .title,
+.member:has(.herc-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  font-weight: 700;
+  color: #000;
+}
+
+.member:has(.herc-demo) p,
+.member:has(.herc-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.herc-demo) .post-container .post-content .description,
+.member:has(.herc-demo) .user-information span,
+.member:has(.herc-demo) .feed-widget .comments-container .content-editable-div,
+.member:has(.herc-demo)
+  .feed-widget-fs-modal
+  .comments-container
+  .content-editable-div,
+.member:has(.herc-demo)
+  .feed-widget
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.herc-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.herc-demo) [data-widget-type*="serialcard"] input,
+.member:has(.herc-demo) button.btn.btn-secondary,
+.member:has(.herc-demo) button.btn.btn-default,
+.member:has(.herc-demo) button.btn.btn-primary,
+.member:has(.herc-demo) .my-approvals-container .footer-select-all-text,
+.member:has(.herc-demo) .my-approvals-container .btn-default,
+.member:has(.herc-demo) .approvals-header .text-light.text-sm,
+.member:has(.herc-demo) .approvals-card *,
+.member:has(.herc-demo) .filter-posts-container * {
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+}
+
+.member:has(.herc-demo) p {
+  font-weight: 500;
+}
+
+.member:has(.herc-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.herc-demo) .user-information span,
+.member:has(.herc-demo) [data-widget-type*="serialcard"] input {
+  font-weight: 600;
+}
+
+.member:has(.herc-demo) .post-container .post-content .description {
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.member:has(.herc-demo) .post-container .post-content .description {
+  color: #231f20;
+}
+.member:has(.herc-demo) [data-widget-type*="serialcard"] label {
+  padding-bottom: 16px;
+}
+.member:has(.herc-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm,
+.member:has(.herc-demo) #main [data-widget-type="budget"] div:first-child,
+.member:has(.herc-demo) [data-widget-type*="serialcard"],
+.member:has(.herc-demo) .post-container .post-content,
+.member:has(.herc-demo) .card-well,
+.member:has(.herc-demo),
+.member:has(.herc-demo) #main .main-gifting-admin-v1-budget-container,
+.member:has(.herc-demo) #main [data-widget-type="budget"],
+.member:has(.herc-demo) .approvals-header,
+.member:has(.herc-demo) .approvals-content.flex-col.flex-nowrap,
+.member:has(.herc-demo) .approvals-footer,
+.member:has(.herc-demo) .admin-upcoming-anniv-container,
+.member:has(.herc-demo) .my-approvals-container .approvals-card {
+  background: #f6f6f6 !important;
+}
+.member:has(.herc-demo) .my-approvals-container .approvals-card {
+  border: 0 !important;
+}
+.member:has(.herc-demo) .feed-widget-body.card-well {
+  background: #fff !important;
+}
+.feed-widget-item .feed-widget-body.bday-bg {
+  background: #fff !important;
+}
+.member:has(.herc-demo) .user-avatar-thumb-container span {
+  color: #000 !important;
+}
+.member:has(.herc-demo) [data-widget-type*="serialcard"] label {
+  font-weight: 800;
+  color: #000;
+}
+.member:has(.herc-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-weight: 400;
+}
+
+.member:has(.herc-demo) .approvals-header .text-light.text-sm {
+  padding-top: 8px;
+}
+
+/* Feed widget height override */
+@media screen and (min-width: 1200px) {
+  #member-dashboard > div:nth-child(2) > div:first-child,
+  .member:has(.herc-demo) [data-widget-type*="feed"] {
+    max-height: 1282.98px !important;
+  }
+}
+
+.member:has(.herc-demo) .hero-recognition-container.layout-2 {
+  background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.6) 100%),
+    url(https://halosalesandrecognition.werecognize.com/asset/28024) no-repeat !important;
+  background-size: cover !important;
+}
+
+.member:has(.herc-demo) .main-member-profile-container {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.member:has(.herc-demo) .btn-primary.disabled,
+.member:has(.herc-demo) .btn-primary[disabled],
+.member:has(.herc-demo) fieldset[disabled] .btn-primary,
+.member:has(.herc-demo) .btn-primary.disabled:hover,
+.member:has(.herc-demo) .btn-primary[disabled]:hover,
+.member:has(.herc-demo) fieldset[disabled] .btn-primary:hover,
+.member:has(.herc-demo) .btn-primary.disabled:focus,
+.member:has(.herc-demo) .btn-primary[disabled]:focus,
+.member:has(.herc-demo) fieldset[disabled] .btn-primary:focus,
+.member:has(.herc-demo) .btn-primary.disabled.focus,
+.member:has(.herc-demo) .btn-primary[disabled].focus,
+.member:has(.herc-demo) fieldset[disabled] .btn-primary.focus,
+.member:has(.herc-demo) .btn-primary.disabled:active,
+.member:has(.herc-demo) .btn-primary[disabled]:active,
+.member:has(.herc-demo) fieldset[disabled] .btn-primary:active,
+.member:has(.herc-demo) .btn-primary.disabled.active,
+.member:has(.herc-demo) .btn-primary[disabled].active,
+.member:has(.herc-demo) fieldset[disabled] .btn-primary.active {
+  background-color: #af272f;
+}
+
+@media only screen and (max-width: 600px) {
+  .member:has(.herc-demo)
+    .hero-recognition-container.layout-2
+    .container::before {
+    background: url("https://halosalesandrecognition.werecognize.com/asset/27411")
+      no-repeat center center / cover;
+    background-size: cover !important;
+    height: 40vh;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin: 0 -50vw;
+  }
+}
+
+.member:has(.herc-demo) #main .post-container .thumbnails .icon-bottom {
+  color: #000 !important;
+}
+.member:has(.herc-demo) button.btn.btn-secondary,
+.member:has(.herc-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta {
+  background-color: #ffcc00 !important;
+  color: #000 !important;
+  letter-spacing: normal !important;
+  border-radius: 100px !important;
+}
+
+.member:has(.herc-demo) .approvals-card svg path {
+  fill: #ffcc00;
+}
+
+.member:has(.herc-demo) #main {
+  background-color: #fff !important;
+}
