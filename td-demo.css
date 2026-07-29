@@ -1,0 +1,289 @@
+/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.member:has(.td-demo) a.navbar-brand img,
+.member:has(.td-demo) a.img-responsive img {
+  visibility: hidden;
+}
+
+.member:has(.td-demo) a.navbar-brand::before,
+.member:has(.td-demo) a.img-responsive::before {
+  content: "";
+  background: url("https://www.tdindustries.com/hubfs/Web%20Assets%202023/Logos/logo-white.svg")
+    no-repeat;
+  width: 236px;
+  height: 45px;
+  background-size: contain !important;
+  background-position: left center;
+}
+
+/* CTA buttons */
+.member:has(.td-demo) a.hero-cta {
+  background-color: #333f48 !important;
+}
+
+/* Image wrappers in feed widgets */
+.member:has(.td-demo) .feed-widget .create-a-post-container .img-wrapper,
+.member:has(.td-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .img-wrapper,
+.member:has(.td-demo) .feed-widget .feed-widget-item .img-wrapper,
+.member:has(.td-demo) .feed-widget-fs-modal .feed-widget-item .img-wrapper {
+  background: #0093d0;
+}
+
+/* Storefront background */
+.member:has(.td-demo) #main .storefront-callout-bg {
+  background-color: #005baa;
+}
+
+/* Budget widget styles */
+.member:has(.td-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.member:has(.td-demo) #main .main-gifting-admin-v1-budget-container p {
+  padding: 0 24px;
+}
+
+.member:has(.td-demo) div[data-widget-type="budget"] .panel-body {
+  padding: 0 !important;
+}
+
+.member:has(.td-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm {
+  background: none;
+  color: #f86700 !important;
+}
+
+.member:has(.td-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm:after {
+  color: #0093d0;
+}
+
+/* Global budget progress style */
+.member:has(.td-demo) #main [data-widget-type="budget"] .progress {
+  border: 1px solid #333f48;
+}
+
+.member:has(.td-demo) h1,
+.member:has(.td-demo) h2,
+.member:has(.td-demo) h3,
+.member:has(.td-demo) h4,
+.member:has(.td-demo) h5,
+.member:has(.td-demo) h6,
+.member:has(.td-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.td-demo) .hero-2-balance span,
+.member:has(.td-demo) .post-container .post-content .title {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.member:has(.td-demo) .post-container .post-content .title {
+  font-weight: 800;
+  color: #333f48;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.member:has(.td-demo) p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.member:has(.td-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.member:has(.td-demo) .post-container .post-content .description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+.member:has(.td-demo) #main .storefront-callout-bg .callout-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+}
+
+.member:has(.td-demo) #main .storefront-callout-bg .callout-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.member:has(.td-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.member:has(.td-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+  font-weight: 600;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  margin-top: 54px !important;
+}
+
+.member:has(.td-demo) .user-information span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.member:has(.td-demo) .feed-widget .comments-container .content-editable-div,
+.member:has(.td-demo)
+  .feed-widget-fs-modal
+  .comments-container
+  .content-editable-div,
+.member:has(.td-demo)
+  .feed-widget
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.td-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .content-editable-div {
+  font-family: "Roboto", sans-serif;
+}
+
+.member:has(.td-demo) [data-widget-type*="serialcard"] label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+.member:has(.td-demo) [data-widget-type*="serialcard"] input {
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+.member:has(.td-demo) [data-widget-id="7196"] .btn {
+  /* font-family: 'Roboto'; */
+}
+
+.member:has(.td-demo) button.btn.btn-secondary,
+.member:has(.td-demo) button.btn.btn-default,
+.member:has(.td-demo) button.btn.btn-primary {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  border-radius: 0 !important;
+}
+
+.member:has(.td-demo) .my-approvals-container .footer-select-all-text {
+  font-family: "Roboto";
+}
+
+.member:has(.td-demo) .my-approvals-container .btn-default {
+  font-family: "Roboto";
+}
+
+.member:has(.td-demo) .approvals-header .text-light.text-sm {
+  font-family: "Roboto", sans-serif;
+  padding-top: 8px;
+}
+
+.member:has(.td-demo) .approvals-card *,
+.filter-posts-container * {
+  font-family: "Roboto", sans-serif;
+}
+
+.member:has(.td-demo) h1,
+.member:has(.td-demo) h2,
+.member:has(.td-demo) h3,
+.member:has(.td-demo) h4,
+.member:has(.td-demo) h5,
+.member:has(.td-demo) h6 {
+  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.member:has(.td-demo) [data-widget-type*="feed"] {
+  max-height: 1238px !important;
+}
+
+.member:has(.td-demo) #main [data-widget-type="budget"] {
+  padding-top: 3px !important;
+}
+.member:has(.td-demo) #main [data-widget-type="budget"] div:first-child {
+  margin-bottom: 0 !important;
+}
+
+.member:has(.td-demo) div#mega-menu-wrap,
+.member:has(.td-demo) .background-wrapper {
+  background: none !important;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.member:has(.td-demo) div#app {
+  padding-top: 0;
+}
+
+.member:has(.td-demo) div#mega-menu-wrap path {
+  fill: #fff !important;
+}
+
+.member:has(.td-demo) div#mega-menu-wrap button {
+  color: #fff !important;
+}
+
+.member:has(.td-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm {
+  background: none;
+  color: #0093d0 !important;
+}
+
+.member:has(.td-demo) .main-member-profile-container {
+  background: #005baa !important;
+}
+
+.member:has(.td-demo) .progress-bar-secondary {
+  background: #dfeff3 !important;
+  color: #005baa;
+  font-weight: 600;
+}
+
+.member:has(.td-demo) .post-container .thumbnails .icon-bottom {
+  background: #dfeff3 !important;
+}
+
+.member:has(.td-demo) .post-container .thumbnails .icon-bottom > span::before {
+  color: #005baa !important;
+}
+
+.member:has(.td-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta {
+  background-color: #0093d0 !important;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
