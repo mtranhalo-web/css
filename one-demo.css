@@ -1,0 +1,2270 @@
+
+.member:has(.one-demo) .main-member-profile-container .profile-info {
+  border-right: 3px solid #ffcc00 !important;
+}
+
+.member:has(.one-demo)
+  .admin-upcoming-anniv-container.small-container
+  .icon-img
+  > img {
+  overflow: hidden;
+  height: 0;
+}
+
+.member:has(.one-demo)
+  .admin-upcoming-anniv-container.small-container
+  .icon-img {
+  content: "";
+  display: inline-flex !important;
+  opacity: 1;
+  background: url(https://halosalesandrecognition.werecognize.com/asset/28459)
+    no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-top: 4px;
+}
+
+/* .profile-link .icon {
+  filter: invert(74%) sepia(98%) saturate(1100%) hue-rotate(360deg)
+    brightness(104%) contrast(101%) !important;
+} */
+.member:has(.one-demo) .admin-upcoming-anniv-container.small-container {
+  min-height: unset !important;
+  height: 100%;
+}
+.member:has(.one-demo) .approvals-card .award-data svg path {
+  fill: #000 !important;
+}
+.member:has(.one-demo) * {
+  letter-spacing: normal !important;
+}
+
+.member:has(.one-demo) .progress-bar-secondary {
+  background: #ffcc00 !important;
+  color: #000 !important;
+}
+
+.member:has(.one-demo) .btn-primary.disabled {
+  border-radius: 100px;
+  background: #ffcc00 !important;
+  color: #000 !important;
+  opacity: 0.5 !important;
+}
+
+.member:has(.one-demo) .btn-primary,
+.member:has(.one-demo) .btn-secondary,
+.member:has(.one-demo) .btn-default {
+  border-radius: 100px !important;
+}
+
+/* dark mode top header bar */
+.member:has(.one-demo) .background-wrapper {
+  background-color: #000;
+}
+
+.member:has(.one-demo) .customSelect .styledSelect {
+  color: #fff !important;
+}
+
+.member:has(.one-demo) svg path {
+  fill: #ffcc00 !important;
+}
+
+.member:has(.one-demo) .customSelect.lang-nav-item .styledSelect:before {
+  color: #ffcc00;
+}
+
+.member:has(.one-demo) button#ddlLanguages {
+  color: #ffcc00 !important;
+}
+
+.member:has(.one-demo) #header-wrap .hamburger-menu svg path {
+  fill: #fff !important;
+}
+/* end dark mode top header bar */
+.member:has(.one-demo) a.navbar-brand img,
+.member:has(.one-demo) a.img-responsive img {
+  visibility: hidden;
+}
+
+/* Feed widget image wrappers */
+.member:has(.one-demo) .feed-widget .create-a-post-container .img-wrapper,
+.member:has(.one-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .img-wrapper,
+.member:has(.one-demo) .feed-widget .feed-widget-item .img-wrapper,
+.member:has(.one-demo) .feed-widget-fs-modal .feed-widget-item .img-wrapper {
+  background: #ffcc00;
+}
+
+/* Storefront */
+.member:has(.one-demo)
+  #main
+  .storefront-callout-bg
+  .post-container
+  .post-content {
+  background: #f6f6f6;
+}
+.member:has(.one-demo) #main .post-container .post-content .title {
+  padding: 0 0 16px !important;
+}
+.member:has(.one-demo) #main .storefront-callout-bg {
+  background-color: #000;
+}
+
+.member:has(.one-demo) #main .storefront-callout-bg .callout-title {
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.member:has(.one-demo) #main .storefront-callout-bg .callout-text {
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.member:has(.one-demo) #main .storefront-callout-bg {
+  border-top: 7px solid #ffcc00;
+}
+/* Budget widget */
+.member:has(.one-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  text-align: left;
+}
+
+.member:has(.one-demo) #main .main-gifting-admin-v1-budget-container p {
+  padding: 0 24px;
+}
+
+.member:has(.one-demo) div[data-widget-type="budget"] .panel-body {
+  padding: 0 !important;
+}
+
+.member:has(.one-demo) #main [data-widget-type="budget"] {
+  padding-top: 0;
+  margin: 0 !important;
+}
+
+.member:has(.one-demo) #main [data-widget-type="budget"] div:first-child {
+  margin-bottom: 0 !important;
+}
+
+.member:has(.one-demo) #main [data-widget-type="budget"] .progress {
+  border: 0.5px solid #333 !important;
+}
+
+.member:has(.one-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm {
+  background: none;
+  color: #000 !important;
+  font-weight: 800 !important;
+}
+
+.member:has(.one-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm:after {
+  color: #000;
+  font-weight: 800 !important;
+}
+
+/* Typography */
+.member:has(.one-demo) h1,
+.member:has(.one-demo) h2,
+.member:has(.one-demo) h3,
+.member:has(.one-demo) h4,
+.member:has(.one-demo) h5,
+.member:has(.one-demo) h6,
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.one-demo) .hero-2-balance span,
+.member:has(.one-demo) .post-container .post-content .title,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label,
+.member:has(.one-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+.member:has(.one-demo) h1,
+.member:has(.one-demo) h2,
+.member:has(.one-demo) h3,
+.member:has(.one-demo) h4,
+.member:has(.one-demo) h5,
+.member:has(.one-demo) h6 {
+  font-weight: 400;
+}
+
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+  font-weight: 600;
+  color: #fff !important;
+}
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1 + p {
+  text-align: left !important;
+}
+.member:has(.one-demo) .post-container .post-content .title,
+.member:has(.one-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  font-weight: 700;
+  color: #000;
+}
+
+.member:has(.one-demo) p,
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.one-demo) .post-container .post-content .description,
+.member:has(.one-demo) .user-information span,
+.member:has(.one-demo) .feed-widget .comments-container .content-editable-div,
+.member:has(.one-demo)
+  .feed-widget-fs-modal
+  .comments-container
+  .content-editable-div,
+.member:has(.one-demo)
+  .feed-widget
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.one-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.one-demo) [data-widget-type*="serialcard"] input,
+.member:has(.one-demo) button.btn.btn-secondary,
+.member:has(.one-demo) button.btn.btn-default,
+.member:has(.one-demo) button.btn.btn-primary,
+.member:has(.one-demo) .my-approvals-container .footer-select-all-text,
+.member:has(.one-demo) .my-approvals-container .btn-default,
+.member:has(.one-demo) .approvals-header .text-light.text-sm,
+.member:has(.one-demo) .approvals-card *,
+.member:has(.one-demo) .filter-posts-container *,
+.member:has(.one-demo) .store-callout-bg .post-content > h2.description {
+  font-family: "Open Sans", sans-serif;
+}
+
+.member:has(.one-demo) p {
+  font-weight: 500;
+}
+
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.one-demo) .user-information span,
+.member:has(.one-demo) [data-widget-type*="serialcard"] input {
+  font-weight: 600;
+}
+
+.member:has(.one-demo) .post-container .post-content .description {
+  font-weight: 500 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  line-height: 1.5em !important;
+}
+
+.member:has(.one-demo) .post-container .post-content .description {
+  color: #231f20;
+}
+.member:has(.one-demo) [data-widget-type*="serialcard"] label {
+  padding-bottom: 16px;
+}
+.member:has(.one-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm,
+.member:has(.one-demo) #main [data-widget-type="budget"] div:first-child,
+.member:has(.one-demo) [data-widget-type*="serialcard"],
+.member:has(.one-demo) .card-well,
+.member:has(.one-demo),
+.member:has(.one-demo) #main .main-gifting-admin-v1-budget-container,
+.member:has(.one-demo) .approvals-header,
+.member:has(.one-demo) .approvals-content.flex-col.flex-nowrap,
+.member:has(.one-demo) .approvals-footer,
+.member:has(.one-demo) .admin-upcoming-anniv-container,
+.member:has(.one-demo) .my-approvals-container .approvals-card,
+.member:has(.one-demo) .my-approvals-container.pos-relative.small-container,
+.member:has(.one-demo) .dashboards-widget:has(#ouhealth-gallery) {
+}
+.member:has(.one-demo) #main [data-widget-type="budget"] {
+  background: #fff !important;
+}
+.member:has(.one-demo) .my-approvals-container .approvals-card {
+  border: 0 !important;
+}
+.member:has(.one-demo) .my-approvals-container,
+.member:has(.one-demo) .post-container {
+  box-shadow: none !important;
+}
+
+.member:has(.one-demo) .user-avatar-thumb-container span {
+  color: #000 !important;
+}
+.member:has(.one-demo) [data-widget-type*="serialcard"] label {
+  font-weight: 800;
+  color: #000;
+}
+.member:has(.one-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-weight: 400;
+}
+
+.member:has(.one-demo) .approvals-header .text-light.text-sm {
+  padding-top: 8px;
+}
+
+/* Feed widget height override */
+@media screen and (min-width: 1200px) {
+  #member-dashboard > div:nth-child(2) > div:first-child,
+  .member:has(.one-demo) [data-widget-type*="feed"] {
+    max-height: 1385px !important;
+  }
+}
+
+.member:has(.one-demo) .btn-primary.disabled,
+.member:has(.one-demo) .btn-primary[disabled],
+.member:has(.one-demo) fieldset[disabled] .btn-primary,
+.member:has(.one-demo) .btn-primary.disabled:hover,
+.member:has(.one-demo) .btn-primary[disabled]:hover,
+.member:has(.one-demo) fieldset[disabled] .btn-primary:hover,
+.member:has(.one-demo) .btn-primary.disabled:focus,
+.member:has(.one-demo) .btn-primary[disabled]:focus,
+.member:has(.one-demo) fieldset[disabled] .btn-primary:focus,
+.member:has(.one-demo) .btn-primary.disabled.focus,
+.member:has(.one-demo) .btn-primary[disabled].focus,
+.member:has(.one-demo) fieldset[disabled] .btn-primary.focus,
+.member:has(.one-demo) .btn-primary.disabled:active,
+.member:has(.one-demo) .btn-primary[disabled]:active,
+.member:has(.one-demo) fieldset[disabled] .btn-primary:active,
+.member:has(.one-demo) .btn-primary.disabled.active,
+.member:has(.one-demo) .btn-primary[disabled].active,
+.member:has(.one-demo) fieldset[disabled] .btn-primary.active {
+  background-color: #000;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .member:has(.one-demo) .hero-copy::before {
+    content: "";
+    position: relative;
+    display: block;
+    background: url(https://halosalesandrecognition.venta.werecognize.com/asset/29479) no-repeat;
+    background-size: cover;
+    width: 350px !important;
+    height: 108px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px !important;
+    margin-bottom: 48px;
+  }
+}
+
+.member:has(.one-demo) #main .post-container .thumbnails .icon-bottom {
+  color: #000 !important;
+}
+.member:has(.one-demo) button.btn.btn-secondary,
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta {
+  background-color: #ffcc00 !important;
+  color: #000 !important;
+  letter-spacing: normal !important;
+  border-radius: 100px !important;
+}
+
+.member:has(.one-demo) .approvals-card svg path {
+  fill: #ffcc00;
+}
+
+.member:has(.one-demo) #main {
+  background-color: #f7f7f7 !important;
+}
+
+.admin-my-team-logins-container {
+  min-height: 280px !important;
+  margin-bottom: 20px;
+}
+
+.social-activity-metrics-container {
+  min-height: 280px !important;
+}
+
+.social-activity-metrics-container {
+  min-height: 280px !important;
+}
+
+h2 a,
+.empty-approval-container a {
+  color: #000 !important;
+}
+
+#member-dashboard > div.row.flex-row:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#member-dashboard > div.row.flex-row:nth-child(2) > div,
+div[data-widget-id="9381"] > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#member-dashboard > div.row.flex-row:nth-child(2) > div > div {
+  flex: 1 1 0;
+margin-bottom: 0 !important;
+}
+
+.storefront-callout-bg .thumbnails img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.storefront-callout-bg
+  .flex-row:last-child
+  .one-qtr:last-of-type
+  .thumbnails
+  img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  object-position: center center;
+  padding: 3em;
+}
+#member-dashboard > .row.flex-row:has(.col-md-3) {
+  margin-top: 24px;
+}
+#member-dashboard .col-xs-12.col-md-6 > div {
+  gap: 0;
+}
+@media screen and (max-width: 767px) {
+  .hero-2-profile-links a {
+    /* padding: 0 !important; */
+  }
+
+  .hero-2-profile-links a.profile-link {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+  }
+
+  .hero-2-profile-links a.profile-link img {
+    width: 24px !important;
+  }
+
+  .hero-2-profile-links {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+  }
+
+  .hero-2-profile-links a.profile-link p {
+    margin: 0 !important;
+    font-size: 12px !important;
+  }
+
+  .hero-2-profile-links {
+    gap: 6px !important;
+  }
+
+  .member:has(.one-demo) .main-member-profile-container .profile-info {
+    border: 0 !important;
+  }
+  .member:has(.one-demo) .main-member-profile-container {
+    border: 0px solid #ffcc00 !important;
+    background: none !important;
+    margin: -24px auto 24px;
+  }
+}
+
+.member:has(.one-demo) .my-approvals-container.pos-relative.small-container {
+  margin: 0;
+}
+
+.member:has(.one-demo) #mega-menu-wrap {
+  border-top: 5px solid #ffcc00;
+}
+
+.member:has(.one-demo)
+  .topNavIcons
+  a.psr[data-badge]:not([data-badge="0"])::after,
+.topNavIcons button.psr[data-badge]:not([data-badge="0"])::after {
+  background: #f7f7f7 !important;
+}
+
+.cutcorner {
+  background: linear-gradient(125deg, transparent 20px, #fff 20px) !important;
+}
+
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy p {
+  font-size: 16px !important;
+  line-height: 1.5em !important;
+}
+
+.member:has(.one-demo) div[data-widget-id="9380"] {
+  position: relative;
+  /* z-index: 1; */
+}
+
+.member:has(.one-demo) div[data-widget-id="9380"]::before {
+  content: "";
+  background: #fff;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  height: 209px;
+  display: block;
+}
+
+.member:has(.one-demo) [data-widget-type*="serialcard"] label:before {
+  text-align: left;
+  display: block;
+}
+
+.member:has(.one-demo) h1,
+.member:has(.one-demo) h2:not(.description),
+.member:has(.one-demo) h5,
+.member:has(.one-demo) h6,
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.one-demo) .post-container .post-content .title,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label,
+.member:has(.one-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.member:has(.one-demo) h1::after,
+.member:has(.one-demo) h2:not(.description)::after,
+.member:has(.one-demo) h5::after,
+.member:has(.one-demo) h6::after,
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  h1::after,
+.member:has(.one-demo) .post-container .post-content .title::after,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label::after {
+  content: "";
+  width: 24%;
+  height: 5px;
+  background: #ffcc00;
+  display: block;
+  position: relative;
+  top: 5px;
+}
+
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+  margin: 0 0 36px 0 !important;
+}
+
+.member:has(.one-demo) .upcoming-anniv-header-container .header .header-left {
+  align-items: flex-start;
+}
+
+.member:has(.one-demo) h1,
+.member:has(.one-demo) h2:not(.description),
+.member:has(.one-demo) h5,
+.member:has(.one-demo) h6,
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.one-demo) .post-container .post-content .title,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label,
+.member:has(.one-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.member:has(.one-demo) h1::after,
+.member:has(.one-demo) h2:not(.description)::after,
+.member:has(.one-demo) h5::after,
+.member:has(.one-demo) h6::after,
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  h1::after,
+.member:has(.one-demo) .post-container .post-content .title::after,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label::after {
+  content: "";
+  width: 24%;
+  height: 5px;
+  background: #ffcc00;
+  display: block;
+  position: relative;
+  top: 5px;
+}
+
+.member:has(.one-demo)
+  .approvals-header
+  .flex-row.justify-flex-start.align-center.gap-sm {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.member:has(.one-demo)
+  .approvals-header
+  .flex-row.justify-flex-start.align-center.gap-sm
+  > svg {
+  width: 24px;
+  height: 24px;
+  margin-top: 6px;
+  margin-right: 1px;
+}
+
+.feed-widget-body .award-receiving-member .award-member-name {
+  display: block;
+  left: unset !important;
+  transform: unset !important;
+  top: 10px !important;
+  position: relative !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .member:has(.one-demo) #main .post-container {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #member-dashboard > div.row.flex-row:nth-child(2) > div > div {
+    flex: unset !important;
+    margin-bottom: 24px !important;
+  }
+}
+
+div[data-widget-id="9388"] {
+  background: #fff;
+  margin-top: 16px;
+  padding: 36px 24px;
+}
+
+div[data-widget-id="9388"] .wrap {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+}
+
+div[data-widget-id="9388"] .wrap img {
+  max-width: 680px;
+}
+
+div[data-widget-id="9388"] .wrap h3::after {
+  content: "";
+  width: 24%;
+  height: 5px;
+  background: #ffcc00;
+  display: block;
+  position: relative;
+  top: 5px;
+}
+
+div[data-widget-id="9388"] .wrap p {
+  font-weight: 500 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  line-height: 1.5em !important;
+  font-size: 13px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+div[data-widget-id="9388"] a.btn-secondary {
+  background-color: #ffcc00 !important;
+  color: #000 !important;
+  letter-spacing: normal !important;
+  font-size: 16px !important;
+  padding: 10px 24px !important;
+  font-weight: 500;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  div[data-widget-id="9388"] {
+    margin-top: 0;
+  }
+  div[data-widget-id="9388"] .wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #member-dashboard:has(.one-demo) .row.flex-row:has(> .col-md-4) {
+    margin-top: 16px;
+  }
+}
+
+#member-dashboard:has(.one-demo) .row.flex-row:has(> .col-md-4) > div {
+  background-color: #f5f4f7;
+  background-clip: content-box;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(245, 244, 247, 0) 0px,
+    rgba(245, 244, 247, 0) 54px,
+    #f5f4f7 54px,
+    #fff 54px
+  );
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.member:has(.one-demo) .main-member-profile-container .profile-info {
+  border-right: 3px solid #ffcc00 !important;
+}
+
+.member:has(.one-demo)
+  .admin-upcoming-anniv-container.small-container
+  .icon-img
+  > img {
+  overflow: hidden;
+  height: 0;
+}
+
+.member:has(.one-demo)
+  .admin-upcoming-anniv-container.small-container
+  .icon-img {
+  content: "";
+  display: inline-flex !important;
+  opacity: 1;
+  background: url(https://halosalesandrecognition.werecognize.com/asset/28459)
+    no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-top: 4px;
+}
+
+/* .profile-link .icon {
+  filter: invert(74%) sepia(98%) saturate(1100%) hue-rotate(360deg)
+    brightness(104%) contrast(101%) !important;
+} */
+.member:has(.one-demo) .admin-upcoming-anniv-container.small-container {
+  min-height: unset !important;
+  height: 100%;
+}
+.member:has(.one-demo) .approvals-card .award-data svg path {
+  fill: #000 !important;
+}
+.member:has(.one-demo) * {
+  letter-spacing: normal !important;
+}
+
+.member:has(.one-demo) .progress-bar-secondary {
+  background: #ffcc00 !important;
+  color: #000 !important;
+}
+
+.member:has(.one-demo) .btn-primary.disabled {
+  border-radius: 100px;
+  background: #ffcc00 !important;
+  color: #000 !important;
+  opacity: 0.5 !important;
+}
+
+.member:has(.one-demo) .btn-primary,
+.member:has(.one-demo) .btn-secondary,
+.member:has(.one-demo) .btn-default {
+  border-radius: 100px !important;
+}
+
+/* dark mode top header bar */
+.member:has(.one-demo) .background-wrapper {
+  background-color: #000;
+}
+
+.member:has(.one-demo) .customSelect .styledSelect {
+  color: #fff !important;
+}
+
+.member:has(.one-demo) svg path {
+  fill: #ffcc00 !important;
+}
+
+.member:has(.one-demo) .customSelect.lang-nav-item .styledSelect:before {
+  color: #ffcc00;
+}
+
+.member:has(.one-demo) button#ddlLanguages {
+  color: #ffcc00 !important;
+}
+
+.member:has(.one-demo) #header-wrap .hamburger-menu svg path {
+  fill: #fff !important;
+}
+/* end dark mode top header bar */
+.member:has(.one-demo) a.navbar-brand img,
+.member:has(.one-demo) a.img-responsive img {
+  visibility: hidden;
+}
+
+.member:has(.one-demo) a.navbar-brand::before,
+.member:has(.one-demo) a.img-responsive::before {
+  content: "";
+  background: none !important;
+  width: 250px;
+  height: 35px;
+  background-size: contain;
+  background-position: left center;
+}
+
+/* CTA buttons */
+.member:has(.one-demo) a.hero-cta {
+  background-image: url(https://d3arciv63ist18.cloudfront.net/public/b2c165/525/28025-ef2990ab-3dcb-dbd5-3c2c-69308bab.png) !important;
+  background-size: 25px 20px !important;
+}
+
+/* Feed widget image wrappers */
+.member:has(.one-demo) .feed-widget .create-a-post-container .img-wrapper,
+.member:has(.one-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .img-wrapper,
+.member:has(.one-demo) .feed-widget .feed-widget-item .img-wrapper,
+.member:has(.one-demo) .feed-widget-fs-modal .feed-widget-item .img-wrapper {
+  background: #ffcc00;
+}
+
+/* Storefront */
+.member:has(.one-demo)
+  #main
+  .storefront-callout-bg
+  .post-container
+  .post-content {
+  background: #f6f6f6;
+}
+.member:has(.one-demo) #main .post-container .post-content .title {
+  padding: 0 0 16px !important;
+}
+.member:has(.one-demo) #main .storefront-callout-bg {
+  background-color: #000;
+}
+
+.member:has(.one-demo) #main .storefront-callout-bg .callout-title {
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.member:has(.one-demo) #main .storefront-callout-bg .callout-text {
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.member:has(.one-demo) #main .storefront-callout-bg {
+  border-top: 7px solid #ffcc00;
+}
+/* Budget widget */
+.member:has(.one-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  text-align: left;
+}
+
+.member:has(.one-demo) #main .main-gifting-admin-v1-budget-container p {
+  padding: 0 24px;
+}
+
+.member:has(.one-demo) div[data-widget-type="budget"] .panel-body {
+  padding: 0 !important;
+}
+
+.member:has(.one-demo) #main [data-widget-type="budget"] {
+  padding-top: 0;
+  margin: 0 !important;
+}
+
+.member:has(.one-demo) #main [data-widget-type="budget"] div:first-child {
+  margin-bottom: 0 !important;
+}
+
+.member:has(.one-demo) #main [data-widget-type="budget"] .progress {
+  border: 0.5px solid #333 !important;
+}
+
+.member:has(.one-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm {
+  background: none;
+  color: #000 !important;
+  font-weight: 800 !important;
+}
+
+.member:has(.one-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm:after {
+  color: #000;
+  font-weight: 800 !important;
+}
+
+/* Typography */
+.member:has(.one-demo) h1,
+.member:has(.one-demo) h2,
+.member:has(.one-demo) h3,
+.member:has(.one-demo) h4,
+.member:has(.one-demo) h5,
+.member:has(.one-demo) h6,
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.one-demo) .hero-2-balance span,
+.member:has(.one-demo) .post-container .post-content .title,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label,
+.member:has(.one-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+.member:has(.one-demo) h1,
+.member:has(.one-demo) h2,
+.member:has(.one-demo) h3,
+.member:has(.one-demo) h4,
+.member:has(.one-demo) h5,
+.member:has(.one-demo) h6 {
+  font-weight: 400;
+}
+
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+  font-weight: 600;
+  color: #fff !important;
+}
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1 + p {
+  text-align: left !important;
+}
+.member:has(.one-demo) .post-container .post-content .title,
+.member:has(.one-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  font-weight: 700;
+  color: #000;
+}
+
+.member:has(.one-demo) p,
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.one-demo) .post-container .post-content .description,
+.member:has(.one-demo) .user-information span,
+.member:has(.one-demo) .feed-widget .comments-container .content-editable-div,
+.member:has(.one-demo)
+  .feed-widget-fs-modal
+  .comments-container
+  .content-editable-div,
+.member:has(.one-demo)
+  .feed-widget
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.one-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.one-demo) [data-widget-type*="serialcard"] input,
+.member:has(.one-demo) button.btn.btn-secondary,
+.member:has(.one-demo) button.btn.btn-default,
+.member:has(.one-demo) button.btn.btn-primary,
+.member:has(.one-demo) .my-approvals-container .footer-select-all-text,
+.member:has(.one-demo) .my-approvals-container .btn-default,
+.member:has(.one-demo) .approvals-header .text-light.text-sm,
+.member:has(.one-demo) .approvals-card *,
+.member:has(.one-demo) .filter-posts-container *,
+.member:has(.one-demo) .store-callout-bg .post-content > h2.description {
+  font-family: "Open Sans", sans-serif;
+}
+
+.member:has(.one-demo) p {
+  font-weight: 500;
+}
+
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.one-demo) .user-information span,
+.member:has(.one-demo) [data-widget-type*="serialcard"] input {
+  font-weight: 600;
+}
+
+.member:has(.one-demo) .post-container .post-content .description {
+  font-weight: 500 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  line-height: 1.5em !important;
+}
+
+.member:has(.one-demo) .post-container .post-content .description {
+  color: #231f20;
+}
+.member:has(.one-demo) [data-widget-type*="serialcard"] label {
+  padding-bottom: 16px;
+}
+.member:has(.one-demo) #main [data-widget-type="budget"] {
+  background: #fff !important;
+}
+.member:has(.one-demo) .my-approvals-container .approvals-card {
+  border: 0 !important;
+}
+.member:has(.one-demo) .my-approvals-container,
+.member:has(.one-demo) .post-container {
+  box-shadow: none !important;
+}
+
+.member:has(.one-demo) .user-avatar-thumb-container span {
+  color: #000 !important;
+}
+.member:has(.one-demo) [data-widget-type*="serialcard"] label {
+  font-weight: 800;
+  color: #000;
+}
+.member:has(.one-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-weight: 400;
+}
+
+.member:has(.one-demo) .approvals-header .text-light.text-sm {
+  padding-top: 8px;
+}
+
+/* Feed widget height override */
+@media screen and (min-width: 1200px) {
+  #member-dashboard > div:nth-child(2) > div:first-child,
+  .member:has(.one-demo) [data-widget-type*="feed"] {
+    max-height: 1385px !important;
+  }
+}
+
+.member:has(.one-demo) .btn-primary.disabled,
+.member:has(.one-demo) .btn-primary[disabled],
+.member:has(.one-demo) fieldset[disabled] .btn-primary,
+.member:has(.one-demo) .btn-primary.disabled:hover,
+.member:has(.one-demo) .btn-primary[disabled]:hover,
+.member:has(.one-demo) fieldset[disabled] .btn-primary:hover,
+.member:has(.one-demo) .btn-primary.disabled:focus,
+.member:has(.one-demo) .btn-primary[disabled]:focus,
+.member:has(.one-demo) fieldset[disabled] .btn-primary:focus,
+.member:has(.one-demo) .btn-primary.disabled.focus,
+.member:has(.one-demo) .btn-primary[disabled].focus,
+.member:has(.one-demo) fieldset[disabled] .btn-primary.focus,
+.member:has(.one-demo) .btn-primary.disabled:active,
+.member:has(.one-demo) .btn-primary[disabled]:active,
+.member:has(.one-demo) fieldset[disabled] .btn-primary:active,
+.member:has(.one-demo) .btn-primary.disabled.active,
+.member:has(.one-demo) .btn-primary[disabled].active,
+.member:has(.one-demo) fieldset[disabled] .btn-primary.active {
+  background-color: #000;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .member:has(.one-demo)
+    .hero-recognition-container.layout-2
+    .container::before {
+   display: none !important;
+  }
+}
+
+.member:has(.one-demo) #main .post-container .thumbnails .icon-bottom {
+  color: #000 !important;
+}
+.member:has(.one-demo) button.btn.btn-secondary,
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta {
+  background-color: #ffcc00 !important;
+  color: #000 !important;
+  letter-spacing: normal !important;
+  border-radius: 100px !important;
+}
+
+.member:has(.one-demo) .approvals-card svg path {
+  fill: #ffcc00;
+}
+
+.member:has(.one-demo) #main {
+  background-color: #f7f7f7 !important;
+}
+
+.admin-my-team-logins-container {
+  min-height: 280px !important;
+  margin-bottom: 20px;
+}
+
+.social-activity-metrics-container {
+  min-height: 280px !important;
+}
+
+.social-activity-metrics-container {
+  min-height: 280px !important;
+}
+
+h2 a,
+.empty-approval-container a {
+  color: #000 !important;
+}
+
+#member-dashboard > div.row.flex-row:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#member-dashboard > div.row.flex-row:nth-child(2) > div,
+div[data-widget-id="9381"] > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.storefront-callout-bg .thumbnails img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.storefront-callout-bg
+  .flex-row:last-child
+  .one-qtr:last-of-type
+  .thumbnails
+  img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  object-position: center center;
+  padding: 3em;
+}
+#member-dashboard > .row.flex-row:has(.col-md-3) {
+  margin-top: 24px;
+}
+#member-dashboard .col-xs-12.col-md-6 > div {
+  gap: 0;
+}
+@media screen and (max-width: 767px) {
+  .hero-2-profile-links a {
+    /* padding: 0 !important; */
+  }
+
+  .hero-2-profile-links a.profile-link {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+  }
+
+  .hero-2-profile-links a.profile-link img {
+    width: 24px !important;
+  }
+
+  .hero-2-profile-links {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+  }
+
+  .hero-2-profile-links a.profile-link p {
+    margin: 0 !important;
+    font-size: 12px !important;
+  }
+
+  .hero-2-profile-links {
+    gap: 6px !important;
+  }
+
+  .member:has(.one-demo) .main-member-profile-container .profile-info {
+    border: 0 !important;
+  }
+  .member:has(.one-demo) .main-member-profile-container {
+    border: 0px solid #ffcc00 !important;
+    background: none !important;
+    margin: -24px auto 24px;
+  }
+}
+
+.member:has(.one-demo) .my-approvals-container.pos-relative.small-container {
+  margin: 0;
+}
+
+.member:has(.one-demo) #mega-menu-wrap {
+  border-top: 5px solid #fbca5e;
+  border-top: 5px solid;
+  border-image: linear-gradient(90deg, #fbca5e 0%, #f4bd45 100%) 1;
+}
+
+.member:has(.one-demo)
+  .topNavIcons
+  a.psr[data-badge]:not([data-badge="0"])::after,
+.topNavIcons button.psr[data-badge]:not([data-badge="0"])::after {
+  background: #f7f7f7 !important;
+}
+
+.cutcorner {
+  background: linear-gradient(125deg, transparent 20px, #fff 20px) !important;
+}
+
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy p {
+  font-size: 16px !important;
+  line-height: 1.5em !important;
+}
+
+.member:has(.one-demo) #main .storefront-callout-bg .post-container {
+  border-radius: 8px !important;
+}
+
+.member:has(.one-demo) div[data-widget-id="9380"] {
+  position: relative;
+  /* z-index: 1; */
+}
+
+.member:has(.one-demo) div[data-widget-id="9380"]::before {
+  content: "";
+  background: #fff;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  height: 209px;
+  display: block;
+}
+
+.member:has(.one-demo) [data-widget-type*="serialcard"] label:before {
+  text-align: left;
+  display: block;
+}
+
+.member:has(.one-demo) h1,
+.member:has(.one-demo) h2:not(.description),
+.member:has(.one-demo) h5,
+.member:has(.one-demo) h6,
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.one-demo) .post-container .post-content .title,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label,
+.member:has(.one-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.member:has(.one-demo) h1::after,
+.member:has(.one-demo) h2:not(.description)::after,
+.member:has(.one-demo) h5::after,
+.member:has(.one-demo) h6::after,
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  h1::after,
+.member:has(.one-demo) .post-container .post-content .title::after,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label::after {
+  content: "";
+  width: 24%;
+  height: 5px;
+  background: #ffcc00;
+  display: block;
+  position: relative;
+  top: 5px;
+}
+
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+  margin: 0 0 36px 0 !important;
+}
+
+.member:has(.one-demo) .upcoming-anniv-header-container .header .header-left {
+  align-items: flex-start;
+}
+
+.member:has(.one-demo) h1,
+.member:has(.one-demo) h2:not(.description),
+.member:has(.one-demo) h5,
+.member:has(.one-demo) h6,
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.one-demo) .post-container .post-content .title,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label,
+.member:has(.one-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.member:has(.one-demo) h1::after,
+.member:has(.one-demo) h2:not(.description)::after,
+.member:has(.one-demo) h5::after,
+.member:has(.one-demo) h6::after,
+.member:has(.one-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  h1::after,
+.member:has(.one-demo) .post-container .post-content .title::after,
+.member:has(.one-demo) [data-widget-type*="serialcard"] label::after {
+  content: "";
+  width: 24%;
+  height: 5px;
+  background: #ffcc00;
+  display: block;
+  position: relative;
+  top: 5px;
+}
+
+.member:has(.one-demo)
+  .approvals-header
+  .flex-row.justify-flex-start.align-center.gap-sm {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.member:has(.one-demo)
+  .approvals-header
+  .flex-row.justify-flex-start.align-center.gap-sm
+  > svg {
+  width: 24px;
+  height: 24px;
+  margin-top: 6px;
+  margin-right: 1px;
+}
+
+.feed-widget-body .award-receiving-member .award-member-name {
+  display: block;
+  left: unset !important;
+  transform: unset !important;
+  top: 10px !important;
+  position: relative !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .member:has(.one-demo) #main .post-container {
+    margin-bottom: 0;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  #member-dashboard:has(.one-demo) .row.flex-row:has(> .col-md-4) {
+    margin-top: 16px;
+  }
+}
+
+#member-dashboard:has(.one-demo) .row.flex-row:has(> .col-md-4) > div {
+  background-color: #f5f4f7;
+  background-clip: content-box;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(245, 244, 247, 0) 0px,
+    rgba(245, 244, 247, 0) 54px,
+    #f5f4f7 54px,
+    #fff 54px
+  );
+}
+
+
+.member:has(.one-demo) .hero-recognition-container.layout-2 {
+  background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.6) 100%),
+    linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.6) 100%),
+    url(https://halosalesandrecognition.venta.werecognize.com/asset/29478)
+      no-repeat !important;
+  background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29478") !important;
+  background-size: cover !important;
+}
+
+.member:has(.one-demo) .hero-copy h1,
+.member:has(.one-demo) .hero-copy p,
+.member:has(.one-demo) .hero-copy a {
+  display: none !important;
+}
+
+.member:has(.one-demo) .hero-copy::before {
+  content: "";
+  position: relative;
+  display: block;
+  background: url("https://halosalesandrecognition.venta.werecognize.com/asset/29479")
+    no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 154px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -12px;
+  margin-bottom: 48px;
+}
+
+.member:has(.one-demo) .hero-copy {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
+}
+
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy {
+  margin: 0 auto 24px !important;
+}
+
+.member:has(.one-demo) .hero-recognition-container.layout-2 .hero-copy {
+  max-width: unset !important;
+  width: unset !important;
+}
+
+.member:has(.one-demo) .main-member-profile-container {
+
+  box-shadow: var(--shadow), var(--panel-glow);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 26px;
+  position: relative;
+  gap: 22px;
+
+  background: linear-gradient(rgba(25, 25, 25, 0.9), rgba(25, 25, 25, 0.9)),
+    radial-gradient(circle at 50% 0%, #2c2c2c 0%, #121212 70%) !important;
+
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.48) !important;
+}
+
+.member:has(.one-demo) .main-member-profile-container {
+  content: "";
+  position: relative;
+  inset: 0;
+
+
+
+
+
+
+
+}
+
+.member:has(.one-demo) a.hero-2-balance span {
+  font-family: "Barlow Condensed", sans-serif !important;
+  font-size: 64px;
+  line-height: 0.86;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.55);
+  white-space: nowrap;
+}
+
+.member:has(.one-demo) a.hero-2-balance {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.member:has(.one-demo) a.hero-2-balance p {
+  margin: 0 !important;
+}
+
+.member:has(.one-demo) .main-member-profile-container .profile-info {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 212, 122, 0) 0%,
+    rgba(236, 187, 78, 0.25) 10%,
+    rgba(242, 191, 81, 0.7) 26%,
+    rgba(251, 202, 94, 1) 47%,
+    rgba(239, 184, 73, 0.7) 72%,
+    rgba(224, 170, 61, 0.25) 88%,
+    rgba(255, 212, 122, 0) 100%
+  );
+}
+
+.member:has(.one-demo) .avatar p {
+  /* font-family: "Barlow Condensed", sans-serif !important; */
+  /* text-transform: uppercase; */
+  /* letter-spacing: normal; */
+  /* font-size: 18px !important; */
+  font-weight: 600 !important;
+  padding-top: 8px;
+}
+
+.member:has(.one-demo) a.hero-2-balance p {
+  text-transform: uppercase;
+  color: #f0c84b;
+  letter-spacing: 0.2em !important;
+  font-weight: 650;
+}
+
+.member:has(.one-demo) .hero-2-profile-links.flex-row.justify-space-evenly > a {
+  border-radius: 8px !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.025)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -8px 12px rgba(0, 0, 0, 0.35), 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+.member:has(.one-demo)
+  .hero-2-profile-links.flex-row.justify-space-evenly
+  > a:hover {
+  transform: translateY(-1px);
+}
+.member:has(.one-demo)
+  .hero-2-profile-links.flex-row.justify-space-evenly
+  > a:hover::before {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.03)
+  );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -10px 14px rgba(0, 0, 0, 0.4), 0 6px 28px rgba(0, 0, 0, 0.6),
+    0 0 14px rgba(255, 200, 90, 0.25);
+}
+
+.member:has(.one-demo)
+  .hero-2-profile-links.flex-row.justify-space-evenly
+  > a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(255, 215, 120, 0.25),
+    rgba(255, 215, 120, 0.08) 40%,
+    transparent 70%
+  );
+}
+
+.member:has(.one-demo)
+  .hero-2-profile-links.flex-row.justify-space-evenly
+  > a:hover::after {
+  opacity: 1;
+}
+
+.member:has(.one-demo) #main {
+  background: radial-gradient(circle at 50% 0%, #2c2c2c 0%, #121212 70%);
+}
+
+/* Leaderboard Override Stylesheet 
+ Scoped to: .member:has(.one-demo)
+*/
+
+/* 1. Container & Panel Glass Effect */
+
+.member:has(.one-demo) .panel.panel-tertiary {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+
+  background: linear-gradient(rgba(25, 25, 25, 0.9), rgba(25, 25, 25, 0.9)),
+    radial-gradient(circle at 50% 0%, #2c2c2c 0%, #121212 70%) !important;
+
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.48) !important;
+  border-radius: 8px !important;
+}
+
+.member:has(.one-demo) .panel-body {
+  background: transparent !important;
+  color: #ffffff !important;
+  padding: 20px !important;
+}
+
+/* 2. Header & Typography (Oswald Look) */
+.member:has(.one-demo) .board-name.font-size-h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 500 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase;
+  margin: 0 0 0 0 !important;
+  border-bottom: 1px solid #333;
+  padding-bottom: 24px;
+  display: block;
+  width: 100%;
+}
+
+/* 3. Table Styling */
+.member:has(.one-demo) .table-responsive {
+  border: none !important;
+}
+
+.member:has(.one-demo) .table.table-striped {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+}
+
+/* Table Header */
+.member:has(.one-demo) .table thead tr th {
+  background: transparent !important;
+  color: #555 !important; /* var(--text-muted) equivalent */
+  font-size: 11px !important;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333 !important;
+  border-top: none !important;
+  padding-bottom: 10px !important;
+  text-align: left;
+  border: 0 !important;
+}
+
+/* Table Body Rows */
+.member:has(.one-demo) .table tbody tr {
+  background-color: transparent !important;
+}
+
+.member:has(.one-demo) .table td,
+.member:has(.one-demo) .table th[scope="row"] {
+  border-top: none !important;
+  border-bottom: 1px solid #222 !important;
+  padding: 12px 8px !important;
+  color: #fff;
+  text-align: left;
+  font-size: 12px;
+}
+
+/* Rank column and specific Points columns - Gold Accent */
+.member:has(.one-demo) .table th[scope="row"],
+.member:has(.one-demo) .table td:nth-child(3),
+.member:has(.one-demo) .table td:nth-child(4) {
+  color: #c5a059 !important; /* var(--accent-gold) */
+  font-weight: 600 !important;
+}
+
+/* Highlighted Current User Row */
+.member:has(.one-demo)
+  .table
+  tbody
+  tr[style*="background-color: rgb(0, 19, 114)"] {
+  background-color: rgba(197, 160, 89, 0.15) !important;
+  border: 1px solid #c5a059 !important;
+}
+
+.member:has(.one-demo)
+  .table
+  tbody
+  tr[style*="background-color: rgb(0, 19, 114)"]
+  td,
+.member:has(.one-demo)
+  .table
+  tbody
+  tr[style*="background-color: rgb(0, 19, 114)"]
+  th {
+  color: #ffffff !important;
+}
+
+/* 4. Button Styling (View All) */
+.member:has(.one-demo) .btn-primary.open-leaderboard {
+  background: #222 !important;
+  border: 1px solid #444 !important;
+  color: #888 !important;
+  border-radius: 8px !important;
+  font-size: 12px !important;
+  text-transform: none;
+  padding: 8px 16px !important;
+  margin-top: 15px;
+  transition: all 0.2s ease;
+}
+
+.member:has(.one-demo) .btn-primary.open-leaderboard:hover {
+  background: #333 !important;
+  color: #c5a059 !important;
+  border-color: #c5a059 !important;
+}
+
+/* 5. Footer / Updated Timestamp */
+.member:has(.one-demo) .pull-right em {
+  color: #555 !important;
+  font-size: 10px !important;
+  font-style: normal;
+  letter-spacing: 1px !important;
+  text-transform: uppercase;
+  margin-top: 16px !important;
+  display: block;
+}
+
+/* Remove source inline border styles */
+.member:has(.one-demo) div[style*="border-width: 0px 0px 4px"] {
+  border: none !important;
+}
+
+.member:has(.one-demo) .layout-cpnt.dashboards-widget {
+  background-color: unset !important;
+  padding: unset;
+}
+.member:has(.one-demo) .panel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 54px;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(135deg, #ffe36b, #b88a17);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  filter: drop-shadow(0 0 6px rgba(255, 214, 88, 0.35));
+}
+
+.member:has(.one-demo) .panel-body > div.clearfix {
+  margin: 0 !important;
+}
+
+.member:has(.one-demo)
+  .hero-2-profile-links.flex-row.justify-space-evenly
+  > a
+  p {
+  font-size: 12px;
+  margin: 12px auto;
+}
+
+.row.flex-row {
+}
+
+/* Widget Row Override - Industrial Styling */
+
+/* 1. Main Widget Container Styling */
+.member:has(.one-demo) .post-container {
+  background: linear-gradient(rgba(25, 25, 25, 0.9), rgba(25, 25, 25, 0.9)),
+    radial-gradient(circle at 50% 0%, #2c2c2c 0%, #121212 70%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.48) !important;
+  margin-bottom: 20px !important;
+  overflow: hidden;
+  position: relative;
+  /* padding: 18px 22px 20px !important; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: flex-end; */
+  flex: 1 1 0 !important; /* Matching the mockup info-card height */
+}
+
+/* Industrial Accent Tab (The Yellow Triangle) */
+.member:has(.one-demo) .post-container::before {
+  /* content: ""; */
+  /* position: absolute; */
+  /* left: 0; */
+  /* top: 54px; */
+  /* width: 10px; */
+  /* height: 10px; */
+  /* background: linear-gradient(135deg, #f0c84b, #9b7421) !important; */
+  /* clip-path: polygon(0 0, 100% 50%, 0 100%); */
+  /* z-index: 10; */
+}
+
+/* 2. Title Styling - Max 18px */
+.member:has(.one-demo) .post-container div.post-content h2.title,
+.member:has(.one-demo) .post-content .title a {
+  font-family: "Barlow Condensed", sans-serif !important;
+  color: #fff !important; /* var(--text) */
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin: 0 0 8px !important;
+  text-decoration: none !important;
+  font-size: 18px;
+  font-weight: 500 !important;
+}
+
+/* 3. Description Copy Styling */
+.member:has(.one-demo) .post-content .description {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  color: rgba(255, 255, 255, 0.82) !important;
+  margin-bottom: 18px !important;
+  max-width: 90%;
+}
+
+/* 4. Thumbnail / Image Container */
+.member:has(.one-demo) .thumbnails {
+  /* position: absolute; */
+  /* left: 22px; */
+  /* top: 16px; */
+  /* width: 58px; */
+  /* height: 58px; */
+  /* border-radius: 14px; */
+  /* border: 1px solid rgba(240, 200, 75, 0.55); */
+  /* display: grid; */
+  /* place-items: center; */
+  /* background: linear-gradient(180deg, rgba(240, 200, 75, 0.08), rgba(240, 200, 75, 0.03)) !important; */
+  /* overflow: hidden; */
+  /* box-shadow: 0 0 18px rgba(240, 200, 75, 0.07); */
+}
+
+.member:has(.one-demo) .thumbnails img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  opacity: 0.9;
+}
+
+/* 5. Button-like Interaction for Links */
+.member:has(.one-demo) .post-container a:not(.title a) {
+  /* display: inline-flex; */
+  /* align-items: center; */
+  /* padding: 10px 16px; */
+  /* border-radius: 8px; */
+  /* border: 1px solid rgba(255, 255, 255, 0.22); */
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgba(255, 255, 255, 0.03)) !important; */
+  /* color: #ffffff !important; */
+  /* text-decoration: none !important; */
+  /* font-size: 14px !important; */
+  /* font-weight: 500 !important; */
+  /* margin-top: auto; */
+  /* width: fit-content; */
+}
+
+.member:has(.one-demo) .post-container a:hover {
+  border-color: #f0c84b !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Reset existing layout styles to allow the new card look */
+.member:has(.one-demo) .post-module {
+  background: transparent !important;
+  border: none !important;
+}
+
+.member:has(.one-demo) .post-container .post-content {
+  background: none;
+}
+
+div[data-widget-id="9904"] .col-xs-12 {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 16px;
+}
+
+.col-xs-12 {
+}
+
+.member:has(.one-demo) .post-container .post-content .title::after {
+  /* background: red; */
+  /* content: ""; */
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+
+  /* Dimensions of the line */
+  /* width: 80%; */
+  /* height: 1px; */
+
+  /* Your feathered gold gradient applied horizontally */
+  content: "";
+  /* position: absolute; */
+  bottom: 0;
+  left: 0; /* Aligns the start of the pseudo-element to the left */
+  width: 60%; /* Adjust width as needed */
+  margin-top: 8px;
+  height: 3px;
+
+  /* Gradient adjusted to start visible and fade out at the end */
+  background: linear-gradient(
+    90deg,
+    rgba(251, 202, 94, 1) 0%,
+    /* Solid gold at the start */ rgba(242, 191, 81, 0.7) 30%,
+    rgba(236, 187, 78, 0.25) 70%,
+    rgba(255, 212, 122, 0) 100% /* Fades to transparent */
+  );
+}
+
+/* --- Enhanced Post Container Hover with Gold Glow --- */
+
+.member:has(.one-demo) .post-container {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* The Soft Gold Glow Overlay */
+.member:has(.one-demo) .post-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px; /* Match the container radius */
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(255, 215, 120, 0.25),
+    rgba(255, 215, 120, 0.08) 40%,
+    transparent 70%
+  );
+  z-index: 2;
+}
+
+.member:has(.one-demo) .post-container:hover {
+  transform: translateY(-1px);
+  /* Matching the hero-link hover background and border */
+  border-color: rgba(255, 255, 255, 0.18) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.03)
+  ) !important;
+
+  /* Combined box shadows for depth and the gold outer bloom */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -10px 14px rgba(0, 0, 0, 0.4), 0 6px 28px rgba(0, 0, 0, 0.6),
+    0 0 14px rgba(255, 200, 90, 0.25) !important;
+}
+
+/* Trigger the glow on hover */
+.member:has(.one-demo) .post-container:hover::after {
+  opacity: 1;
+}
+
+/* Ensure content stays above the glow layer */
+.member:has(.one-demo) .post-container .post-module,
+.member:has(.one-demo) .post-container .post-content {
+  position: relative;
+  z-index: 3;
+}
+
+.member:has(.one-demo) .post-container {
+  clip-path: unset;
+}
+
+button.btn.btn-primary.open-leaderboard {
+}
+
+.filter-posts-container.flex-row.flex-nowrap.align-center.justify-space-between.card-well.well-shadow.mb-md.radius-10 {
+}
+
+.create-a-post-container.card-well.radius-10.mb-md.well-shadow {
+}
+
+/* Newsfeed Input & Filter Areas - Industrial Override */
+
+/* 1. Main Container Glassification (Filters and Post Input) */
+.member:has(.one-demo) .filter-posts-container.card-well,
+.member:has(.one-demo) .create-a-post-container,
+.member:has(.one-demo) .create-a-post-container .card-well {
+  background: linear-gradient(rgba(25, 25, 25, 0.9), rgba(25, 25, 25, 0.9)),
+    radial-gradient(circle at 50% 0%, #2c2c2c 0%, #121212 70%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+  color: #f2f4f8 !important;
+}
+
+/* 2. Textareas and Inputs */
+.member:has(.one-demo) .create-a-post-container textarea,
+.member:has(.one-demo) .create-a-post-container .form-control,
+.member:has(.one-demo) #newsfeed-search {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 8px !important;
+  color: #f2f4f8 !important;
+  font-size: 14px !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.member:has(.one-demo) .create-a-post-container textarea::placeholder,
+.member:has(.one-demo) #newsfeed-search::placeholder {
+  color: #8b93a1 !important; /* var(--dim) */
+}
+
+/* 3. Post Creation Header/Labels */
+.member:has(.one-demo) .create-a-post-container .card-title,
+.member:has(.one-demo) .create-a-post-container label {
+  font-family: "Barlow Condensed", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: #f0c84b !important; /* var(--gold) */
+}
+
+/* 4. Action Icons and Toolbars (Camera, Emoji, etc.) */
+.member:has(.one-demo) .create-a-post-container .post-actions-toolbar,
+.member:has(.one-demo) .create-a-post-container .icon-btn {
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #b5bcc8 !important;
+}
+
+.member:has(.one-demo) .create-a-post-container .icon-btn:hover {
+  color: #f0c84b !important;
+}
+
+/* 5. Dropdown Menus within Newsfeed */
+.member:has(.one-demo) .filter-posts-container .dropdown-menu,
+.member:has(.one-demo) .create-a-post-container .dropdown-menu {
+  background: #1a1d23 !important;
+  border: 1px solid #f0c84b !important;
+  border-radius: 8px !important;
+}
+
+.member:has(.one-demo) .filter-posts-container .dropdown-menu li a {
+  color: #f2f4f8 !important;
+  font-family: "Barlow Condensed", sans-serif !important;
+  font-size: 14px !important;
+}
+
+.member:has(.one-demo) .filter-posts-container .dropdown-menu li a:hover {
+  background: rgba(240, 200, 75, 0.1) !important;
+}
+
+/* 6. Post Button Styling */
+.member:has(.one-demo) .create-a-post-container .btn-post {
+  background: #f0c84b !important;
+  color: #07080c !important;
+  font-family: "Barlow Condensed", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  border: none !important;
+  padding: 8px 20px !important;
+  border-radius: 4px !important;
+}
+
+/* 7. Specific fix for the 'Search' magnifying glass if it exists */
+.member:has(.one-demo) .feed-widget-search-filter i {
+  color: #f0c84b !important;
+}
+
+/* Clean up any lingering shadows or white backgrounds */
+.member:has(.one-demo) .well-shadow,
+.member:has(.one-demo) .bg-white {
+  /* background: transparent !important; */
+  /* box-shadow: none !important; */
+}
+
+.member:has(.one-demo) [data-widget-id="7109"] .feed-widget-item,
+.member:has(.one-demo) [data-widget-id="7109"] .comments-container.pb-md {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: linear-gradient(rgba(25, 25, 25, 0.9), rgba(25, 25, 25, 0.9)),
+    radial-gradient(circle at 50% 0%, #2c2c2c 0%, #121212 70%) !important;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.48) !important;
+}
+
+.member:has(.one-demo) .content-editable-div.text-14.grow-container,
+.member:has(.one-demo) .content-editable-div.font-size-h4.grow-container {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.member:has(.one-demo)
+  [data-widget-id="7109"]
+  h3.mb-0.pl-sm.mt-0.text-semi-bold.text-14,
+.member:has(.one-demo) [data-widget-id="7109"] .user-information span {
+  font-family: "Barlow Condensed", sans-serif !important;
+  color: #eee !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  text-decoration: none !important;
+  font-size: 18px;
+  font-weight: 500 !important;
+  padding-bottom: 8px !important;
+}
+
+.member:has(.one-demo) [data-widget-id="7109"] .feed-widget-desc-container h4 {
+  /* font-family: "Barlow Condensed", sans-serif !important; */
+  color: #eee !important;
+  text-transform: none !important;
+  /* letter-spacing: 1px !important; */
+  margin: 0 0 8px !important;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-weight: 500 !important;
+}
+.member:has(.one-demo) [data-widget-id="7109"] button > span {
+  color: #f0c84b;
+}
+.member:has(.one-demo) [data-widget-id="7109"] button + span,
+.member:has(.one-demo) [data-widget-id="7109"] .members-tooltip span {
+  color: #eee;
+  font-weight: 500 !important;
+}
+
+.member:has(.one-demo) [data-widget-id="7109"] .feed-widget-time.pl-sm,
+.feed-widget-time.pl-sm *,
+.member:has(.one-demo) [data-widget-id="7109"] .body-char-img-circle span,
+.member:has(.one-demo)
+  [data-widget-id="7109"]
+  p.message.text-14.mb-0.text-center,
+.member:has(.one-demo) [data-widget-id="7109"] div,
+.member:has(.one-demo) [data-widget-id="7109"] span {
+  color: #eee;
+}
+.member:has(.one-demo)
+  [data-widget-id="7109"]
+  .body-char-img-circle
+  span.mb-0.mt-sm.xtra-sm-text {
+  margin-top: 24px !important;
+}
+
+.member:has(.one-demo) [data-widget-id="7109"] .feed-widget-interactions hr {
+  display: none !important;
+}
+
+.member:has(.one-demo)
+  [data-widget-id="7109"]
+  .filter-posts-container.flex-row.flex-nowrap.align-center.justify-space-between.card-well.well-shadow.mb-md.radius-10
+  * {
+  background: transparent;
+  color: #eee;
+  font-size: 12px !important;
+}
+
+.member:has(.one-demo)
+  [data-widget-id="7109"]
+  .newsfeed-dropdown-search.dropdown.feed-modal-sort,
+button#filter-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+button.btn.btn-primary.text-semi-bold.text-14 {
+  background: #333 !important;
+  color: #c5a059 !important;
+  border-color: #c5a059 !important;
+}
+.member:has(.one-demo) [data-widget-id="7109"] .card-well {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: linear-gradient(rgba(25, 25, 25, 0.9), rgba(25, 25, 25, 0.9)),
+    radial-gradient(circle at 50% 0%, #2c2c2c 0%, #121212 70%) !important;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.48) !important;
+}
+
+.member:has(.one-demo) [data-widget-id="7193"] {
+  margin-top: 0 !important;
+}
+
+.member:has(.one-demo) .feed-widget .fa-chevron-down::before {
+  content: "";
+  background: url("https://hercrentals.werecognize.com/asset/28915") no-repeat;
+  background-size: 10px 6px;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.member:has(.one-demo)
+  .feed-widget
+  button:has(> span.fa-chevron-down)[aria-expanded="true"]
+  span.fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.member:has(.one-demo)
+  .feed-widget
+  button:has(> span.fa-chevron-down)[aria-expanded="false"]
+  span.fa-chevron-down {
+  transform: rotate(0deg);
+  transition: all 0.2s;
+}
+
+.member:has(.one-demo) .fa-external-link::before {
+  content: "";
+  background: url("https://hercrentals.werecognize.com/asset/28988") no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: 80%;
+  background-position: center center;
+  display: block;
+  margin-right: -4px;
+  margin-bottom: -2px;
+
+  /* optional: make white */
+  filter: brightness(0) invert(1);
+}
+
+.member:has(.one-demo) .fa-check.check-mark::before {
+  content: "";
+  background: url("https://hercrentals.werecognize.com/asset/28989") no-repeat;
+  background-size: 60%;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: -4px;
+
+  /* optional: make white */
+  filter: brightness(0) invert(1);
+}
+
+.member:has(.one-demo) .profile-link .icon {
+  filter: invert(1) !important;
+}
+
+.member:has(.one-demo)
+  div[data-widget-id="9902"]
+  h3.pull-left.board-name.font-size-h4,
+.member:has(.one-demo)
+  div[data-widget-id="9906"]
+  h3.pull-left.board-name.font-size-h4 {
+  font-size: 0 !important;
+}
+
+.member:has(.one-demo)
+  div[data-widget-id="9902"]
+  h3.pull-left.board-name.font-size-h4::before {
+  content: "Top FSR";
+  font-size: 18px !important;
+}
+
+.member:has(.one-demo)
+  div[data-widget-id="9906"]
+  h3.pull-left.board-name.font-size-h4::before {
+  content: "Top CSR";
+  font-size: 18px !important;
+}
+
+.member:has(.one-demo)
+  div[data-widget-id="9902"]
+  table
+  thead
+  tr:first-child
+  th.text-center:nth-child(2),
+.member:has(.one-demo)
+  div[data-widget-id="9906"]
+  table
+  thead
+  tr:first-child
+  th.text-center:nth-child(2) {
+  font-size: 0 !important;
+}
+
+.member:has(.one-demo)
+  div[data-widget-id="9902"]
+  table
+  thead
+  tr:first-child
+  th.text-center:nth-child(2)::before {
+  content: "FSR Name";
+  font-size: 12px !important;
+}
+
+.member:has(.one-demo)
+  div[data-widget-id="9906"]
+  table
+  thead
+  tr:first-child
+  th.text-center:nth-child(2)::before {
+  content: "CSR Name";
+  font-size: 12px !important;
+}
