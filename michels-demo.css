@@ -1,0 +1,277 @@
+
+/* Brand override */
+.member:has(.michels-demo) a.navbar-brand img,
+.member:has(.michels-demo) a.img-responsive img {
+  visibility: hidden;
+}
+
+.member:has(.michels-demo) a.navbar-brand::before,
+.member:has(.michels-demo) a.img-responsive::before {
+  content: "";
+  background: url("https://www.michels.us/wp-content/uploads/2022/06/michels-logo.svg")
+    no-repeat;
+  width: 236px;
+  height: 45px;
+  background-size: 75% 75%;
+  background-position: left center;
+}
+
+/* CTA buttons */
+.member:has(.michels-demo) a.hero-cta {
+  background-color: #333f48 !important;
+}
+
+/* Feed widget image wrappers */
+.member:has(.michels-demo) .feed-widget .create-a-post-container .img-wrapper,
+.member:has(.michels-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .img-wrapper,
+.member:has(.michels-demo) .feed-widget .feed-widget-item .img-wrapper,
+.member:has(.michels-demo)
+  .feed-widget-fs-modal
+  .feed-widget-item
+  .img-wrapper {
+  background: #df1f36;
+}
+
+/* Storefront */
+.member:has(.michels-demo) #main .storefront-callout-bg {
+  background-color: #231f20;
+}
+
+.member:has(.michels-demo) #main .storefront-callout-bg .callout-title {
+  font-family: "jaf-bernina-sans", "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.member:has(.michels-demo) #main .storefront-callout-bg .callout-text {
+  font-family: "jaf-bernina-sans", "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+/* Budget widget */
+.member:has(.michels-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "jaf-bernina-sans", "Open Sans", sans-serif;
+}
+
+.member:has(.michels-demo) #main .main-gifting-admin-v1-budget-container p {
+  padding: 0 24px;
+}
+
+.member:has(.michels-demo) div[data-widget-type="budget"] .panel-body {
+  padding: 0 !important;
+}
+
+.member:has(.michels-demo) #main [data-widget-type="budget"] {
+  padding-top: 3px !important;
+}
+
+.member:has(.michels-demo) #main [data-widget-type="budget"] div:first-child {
+  margin-bottom: 0 !important;
+}
+
+.member:has(.michels-demo) #main [data-widget-type="budget"] .progress {
+  border: 1px solid #231f20;
+}
+
+.member:has(.michels-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm {
+  background: none;
+  color: #af272f !important;
+}
+
+.member:has(.michels-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm:after {
+  color: #af272f;
+}
+
+/* Typography */
+.member:has(.michels-demo) h1,
+.member:has(.michels-demo) h2,
+.member:has(.michels-demo) h3,
+.member:has(.michels-demo) h4,
+.member:has(.michels-demo) h5,
+.member:has(.michels-demo) h6,
+.member:has(.michels-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.michels-demo) .hero-2-balance span,
+.member:has(.michels-demo) .post-container .post-content .title,
+.member:has(.michels-demo) [data-widget-type*="serialcard"] label,
+.member:has(.michels-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-family: "jaf-bernina-sans", "Open Sans", sans-serif;
+}
+
+.member:has(.michels-demo) h1,
+.member:has(.michels-demo) h2,
+.member:has(.michels-demo) h3,
+.member:has(.michels-demo) h4,
+.member:has(.michels-demo) h5,
+.member:has(.michels-demo) h6 {
+  font-weight: 400;
+}
+
+.member:has(.michels-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+  font-weight: 600;
+  color: #fff !important;
+}
+
+.member:has(.michels-demo) .post-container .post-content .title,
+.member:has(.michels-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  font-weight: 700;
+  color: #af272f;
+}
+
+.member:has(.michels-demo) p,
+.member:has(.michels-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.michels-demo) .post-container .post-content .description,
+.member:has(.michels-demo) .user-information span,
+.member:has(.michels-demo)
+  .feed-widget
+  .comments-container
+  .content-editable-div,
+.member:has(.michels-demo)
+  .feed-widget-fs-modal
+  .comments-container
+  .content-editable-div,
+.member:has(.michels-demo)
+  .feed-widget
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.michels-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.michels-demo) [data-widget-type*="serialcard"] input,
+.member:has(.michels-demo) button.btn.btn-secondary,
+.member:has(.michels-demo) button.btn.btn-default,
+.member:has(.michels-demo) button.btn.btn-primary,
+.member:has(.michels-demo) .my-approvals-container .footer-select-all-text,
+.member:has(.michels-demo) .my-approvals-container .btn-default,
+.member:has(.michels-demo) .approvals-header .text-light.text-sm,
+.member:has(.michels-demo) .approvals-card *,
+.member:has(.michels-demo) .filter-posts-container * {
+  font-family: "jaf-bernina-sans", "Open Sans", sans-serif;
+}
+
+.member:has(.michels-demo) p {
+  font-weight: 500;
+}
+
+.member:has(.michels-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.michels-demo) .user-information span,
+.member:has(.michels-demo) [data-widget-type*="serialcard"] input {
+  font-weight: 600;
+}
+
+.member:has(.michels-demo) .post-container .post-content .description {
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.member:has(.michels-demo) .post-container .post-content .description {
+  color: #231f20;
+}
+.member:has(.michels-demo) [data-widget-type*="serialcard"] label {
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+.member:has(.michels-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-weight: 400;
+}
+
+.member:has(.michels-demo) .approvals-header .text-light.text-sm {
+  padding-top: 8px;
+}
+
+/* Feed widget height override */
+.member:has(.michels-demo) [data-widget-type*="feed"] {
+  max-height: 1238px !important;
+}
+
+.member:has(.michels-demo) .hero-recognition-container.layout-2 {
+  background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.6) 100%),
+    url(https://d3arciv63ist18.cloudfront.net/public/b2c165/525/27410-98a8011b-c57a-b6b4-dc20-e22c11fd.jpg)
+      no-repeat !important;
+  background-size: cover !important;
+}
+
+.member:has(.michels-demo) .main-member-profile-container {
+  background: #231f20 !important;
+}
+
+.member:has(.michels-demo) .btn-primary.disabled,
+.member:has(.michels-demo) .btn-primary[disabled],
+.member:has(.michels-demo) fieldset[disabled] .btn-primary,
+.member:has(.michels-demo) .btn-primary.disabled:hover,
+.member:has(.michels-demo) .btn-primary[disabled]:hover,
+.member:has(.michels-demo) fieldset[disabled] .btn-primary:hover,
+.member:has(.michels-demo) .btn-primary.disabled:focus,
+.member:has(.michels-demo) .btn-primary[disabled]:focus,
+.member:has(.michels-demo) fieldset[disabled] .btn-primary:focus,
+.member:has(.michels-demo) .btn-primary.disabled.focus,
+.member:has(.michels-demo) .btn-primary[disabled].focus,
+.member:has(.michels-demo) fieldset[disabled] .btn-primary.focus,
+.member:has(.michels-demo) .btn-primary.disabled:active,
+.member:has(.michels-demo) .btn-primary[disabled]:active,
+.member:has(.michels-demo) fieldset[disabled] .btn-primary:active,
+.member:has(.michels-demo) .btn-primary.disabled.active,
+.member:has(.michels-demo) .btn-primary[disabled].active,
+.member:has(.michels-demo) fieldset[disabled] .btn-primary.active {
+  background-color: #af272f;
+}
+
+@media only screen and (max-width: 600px) {
+  .member:has(.michels-demo)
+    .hero-recognition-container.layout-2
+    .container::before {
+    background: url("https://halosalesandrecognition.werecognize.com/asset/27411")
+      no-repeat center center / cover;
+    background-size: cover !important;
+    height: 40vh;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin: 0 -50vw;
+  }
+}
+
+.member:has(.michels-demo) button.btn.btn-secondary,
+.member:has(.michels-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta {
+  background: url("https://www.michels.us/wp-content/themes/michels/img/submit-bg.png") !important;
+  background-size: cover !important;
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+}
+
+.member:has(.michels-demo) .approvals-card svg path {
+  fill: #df1f36;
+}
+
+.member:has(.michels-demo) #main {
+  background-color: #f9f9f9 !important;
+}
+
+/* Brand override *
