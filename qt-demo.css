@@ -1,0 +1,254 @@
+
+
+.member:has(.qt-demo) h1 {font-family:"Raleway",sans-serif!important}
+.member:has(.qt-demo) h2 {font-family:"Raleway",sans-serif!important}
+.member:has(.qt-demo) h3 {font-family:"Raleway",sans-serif!important}
+.member:has(.qt-demo) h4 {font-family:"Raleway",sans-serif!important}
+.member:has(.qt-demo) span {font-family:"Raleway",sans-serif!important}
+.member:has(.qt-demo) p {font-family:"Raleway",sans-serif!important}
+.member:has(.qt-demo) label {font-family:"Raleway",sans-serif!important}
+.member:has(.qt-demo) .main-member-profile-container .profile-link .icon {filter:invert(68%) sepia(20%) saturate(520%) hue-rotate(130deg) brightness(95%) contrast(90%)}
+.member:has(.qt-demo) .main-member-profile-container a.hero-2-balance span {color:#5cb8b1!important}
+.member:has(.qt-demo) #main .post-container .thumbnails .icon-bottom {background:#be531c}
+.member:has(.qt-demo) a.navbar-brand img {visibility:hidden}
+.member:has(.qt-demo) a.img-responsive img {visibility:hidden}
+.member:has(.qt-demo) a.hero-cta {background-color:#333f48!important}
+.member:has(.qt-demo) .feed-widget .create-a-post-container .img-wrapper {background:#be531c}
+.member:has(.qt-demo) .feed-widget .feed-widget-item .img-wrapper {background:#be531c}
+.member:has(.qt-demo) .progress-bar-secondary {background:#be531c}
+.member:has(.qt-demo) #main .storefront-callout-bg .callout-title {font-family:"jaf-bernina-sans","Open Sans",sans-serif;font-weight:600}
+.member:has(.qt-demo) #main .storefront-callout-bg .callout-text {font-family:"jaf-bernina-sans","Open Sans",sans-serif;font-weight:400;letter-spacing:normal}
+.member:has(.qt-demo) #main .main-gifting-admin-v1-budget-container h2 {font-size:18px;line-height:24px}
+.member:has(.qt-demo) #main .approvals-header h2 {font-size:18px;line-height:24px}
+.member:has(.qt-demo) #main .approvals-header h2 {font-size:18px;line-height:24px}
+.member:has(.qt-demo) #main .main-gifting-admin-v1-budget-container p {padding:0 24px}
+.member:has(.qt-demo) div[data-widget-type="budget"] .panel-body {padding:0!important}
+.member:has(.qt-demo) #main [data-widget-type="budget"] {padding-top:3px!important}
+.member:has(.qt-demo) #main [data-widget-type="budget"] div:first-child {margin-bottom:0!important}
+.member:has(.qt-demo) #main [data-widget-type="budget"] .progress {border:1px solid #003e51}
+.member:has(.qt-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm {background:none;color:#003e51!important}
+.member:has(.qt-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm:after {color:#003e51}
+.member:has(.qt-demo) h1 {font-weight:400}
+.member:has(.qt-demo) h2 {font-weight:400}
+.member:has(.qt-demo) h3 {font-weight:400}
+.member:has(.qt-demo) h4 {font-weight:400}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy h1 {font-weight:600}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy h1 {color:#434245!important}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy p {color:#434245!important}
+.member:has(.qt-demo) .post-container .post-content .title {font-weight:700;color:#086784}
+.member:has(.qt-demo) #main .main-gifting-admin-v1-budget-container h2 {font-weight:700;color:#086784}
+.member:has(.qt-demo) #main .approvals-header h2 {font-weight:700;color:#086784}
+.member:has(.qt-demo) #main .upcoming-anniv-header-container h2 {font-weight:700;color:#086784}
+.member:has(.qt-demo) [data-widget-type*="serialcard"] label::before {font-weight:700;color:#086784}
+.member:has(.qt-demo) p {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) .post-container .post-content .description {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) .user-information span {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) .feed-widget .create-a-post-container .content-editable-div {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) [data-widget-type*="serialcard"] input {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) button.btn.btn-secondary {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) .my-approvals-container .btn-default {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) .approvals-header .text-light.text-sm {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) .filter-posts-container * {font-family:"jaf-bernina-sans","Open Sans",sans-serif}
+.member:has(.qt-demo) p {font-weight:500}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {font-weight:600}
+.member:has(.qt-demo) .user-information span {font-weight:600}
+.member:has(.qt-demo) [data-widget-type*="serialcard"] input {font-weight:600}
+.member:has(.qt-demo) .post-container .post-content .description {font-weight:400;letter-spacing:normal}
+.member:has(.qt-demo) .post-container .post-content .description {color:#003e51}
+.member:has(.qt-demo) [data-widget-type*="serialcard"] label {font-weight:400;padding-bottom:16px}
+.member:has(.qt-demo) .approvals-header span.text-md-heading.text-gray-500.lh-32 {font-weight:400}
+.member:has(.qt-demo) .approvals-header .text-light.text-sm {padding-top:8px}
+
+
+.member:has(.qt-demo) .main-member-profile-container {background:#001f2a!important}
+.member:has(.qt-demo) .btn-primary.disabled:hover {background-color:#003e51}
+.member:has(.qt-demo) .btn-primary[disabled]:hover {background-color:#003e51}
+.member:has(.qt-demo) fieldset[disabled] .btn-primary:hover {background-color:#003e51}
+.member:has(.qt-demo) .btn-primary.disabled:focus {background-color:#003e51}
+.member:has(.qt-demo) .btn-primary[disabled]:focus {background-color:#003e51}
+.member:has(.qt-demo) fieldset[disabled] .btn-primary:focus {background-color:#003e51}
+.member:has(.qt-demo) .btn-primary.disabled:active {background-color:#003e51}
+.member:has(.qt-demo) .btn-primary[disabled]:active {background-color:#003e51}
+.member:has(.qt-demo) fieldset[disabled] .btn-primary:active {background-color:#003e51}
+@media only screen and (max-width:600px) {
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .container::before {background:var(--sf-img-131) no-repeat center center/cover;background-size:cover!important;height:40vh;width:100vw;position:relative;left:50%;right:50%;margin:0-50vw}
+}
+.member:has(.qt-demo) .empty-approval-background {background-color:rgba(205,216,223,0.5);text-align:center}
+.member:has(.qt-demo) button.btn.btn-secondary {background:#be531c!important;border-radius:0!important;text-transform:uppercase!important;font-weight:600!important}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {background:#be531c!important;border-radius:0!important;text-transform:uppercase!important;font-weight:600!important}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {background-image:var(--sf-img-139)!important;background-repeat:no-repeat!important;background-size:25px 25px!important;background-position:90% 50%!important;transition:all 0.13s ease-in-out!important}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta:hover {background-position:94% 50%!important}
+.member:has(.qt-demo) .approvals-header svg path {stroke:#fff !important}
+.member:has(.qt-demo) .upcoming-anniv-header-container .header .header-left .icon-img img {filter:invert(28%) sepia(54%) saturate(720%) hue-rotate(155deg) brightness(85%) contrast(95%)}
+.member:has(.qt-demo) .background-wrapper {background:#003e51}
+.member:has(.qt-demo) .background-wrapper *:not(.dashboard-dropdown *) {color:#ffff}
+.member:has(.qt-demo) #header-wrap .customSelect .styledSelect {color:#ffff}
+.member:has(.qt-demo) div#mega-menu-wrap svg path {fill:#fff!important}
+.member:has(.qt-demo) .fa {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+.member:has(.qt-demo) .fas {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+.member:has(.qt-demo) .far {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+.member:has(.qt-demo) .fal {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+.member:has(.qt-demo) .fab {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+.member:has(.qt-demo){--qt-red:#cf102d;--qt-black:#000000;--qt-gray:#bcbec0;--qt-white:#ffffff;color:#000000!important;background-color:#ffffff!important}
+.member:has(.qt-demo),.member:has(.qt-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]){font-family:"Roboto",Arial,sans-serif!important}
+.member:has(.qt-demo) h1,.member:has(.qt-demo) h2,.member:has(.qt-demo) h3,.member:has(.qt-demo) h4,.member:has(.qt-demo) h5,.member:has(.qt-demo) h6,.member:has(.qt-demo) .title,.member:has(.qt-demo) .callout-title,.member:has(.qt-demo) .text-md-heading,.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy h1,.member:has(.qt-demo) #main .main-gifting-admin-v1-budget-container h2,.member:has(.qt-demo) #main .approvals-header h2,.member:has(.qt-demo) #main .upcoming-anniv-header-container h2{font-family:"Montserrat","Roboto",Arial,sans-serif!important;font-weight:700!important;color:#000000!important;letter-spacing:.01em!important}
+.member:has(.qt-demo) p,.member:has(.qt-demo) label,.member:has(.qt-demo) span,.member:has(.qt-demo) .description,.member:has(.qt-demo) .callout-text,.member:has(.qt-demo) .content-editable-div,.member:has(.qt-demo) input,.member:has(.qt-demo) textarea,.member:has(.qt-demo) select{font-family:"Roboto",Arial,sans-serif!important;color:#000000!important}
+.member:has(.qt-demo) #main{background-color:#ffffff!important;color:#000000!important}
+.member:has(.qt-demo) .background-wrapper,.member:has(.qt-demo) .main-member-profile-container,.member:has(.qt-demo) #header-wrap,.member:has(.qt-demo) .navbar,.member:has(.qt-demo) .navbar-default{background:#000000!important;background-color:#000000!important}
+.member:has(.qt-demo) .background-wrapper *:not(.dashboard-dropdown *),.member:has(.qt-demo) #header-wrap .customSelect .styledSelect,.member:has(.qt-demo) .navbar a,.member:has(.qt-demo) div#mega-menu-wrap svg path{color:#ffffff!important;fill:#ffffff!important}
+.member:has(.qt-demo) a.navbar-brand img,.member:has(.qt-demo) a.img-responsive img{visibility:hidden!important}
+.member:has(.qt-demo) a.hero-cta,.member:has(.qt-demo) button.btn.btn-secondary,.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta,.member:has(.qt-demo) .btn-primary:not(.disabled):not([disabled]),.member:has(.qt-demo) .my-approvals-container .btn-default{background:#cf102d!important;background-color:#cf102d!important;border-color:#cf102d!important;color:#ffffff!important;border-radius:0!important;text-transform:uppercase!important;font-family:"Montserrat","Roboto",Arial,sans-serif!important;font-weight:700!important}
+.member:has(.qt-demo) .feed-widget .create-a-post-container .img-wrapper,.member:has(.qt-demo) .feed-widget .feed-widget-item .img-wrapper,.member:has(.qt-demo) #main .post-container .thumbnails .icon-bottom,.member:has(.qt-demo) .progress-bar-secondary{background:#cf102d!important;background-color:#cf102d!important}
+.member:has(.qt-demo) .post-container,.member:has(.qt-demo) .feed-widget-item,.member:has(.qt-demo) .panel,.member:has(.qt-demo) [data-widget-type="budget"],.member:has(.qt-demo) .main-gifting-admin-v1-budget-container,.member:has(.qt-demo) .my-approvals-container,.member:has(.qt-demo) .upcoming-anniv-header-container{background:#ffffff!important;border-color:#bcbec0!important;color:#000000!important}
+.member:has(.qt-demo) .post-container .post-content .title,.member:has(.qt-demo) #main .main-gifting-admin-v1-budget-container h2,.member:has(.qt-demo) #main .approvals-header h2,.member:has(.qt-demo) #main .upcoming-anniv-header-container h2,.member:has(.qt-demo) [data-widget-type*="serialcard"] label::before{color:#cf102d!important}
+.member:has(.qt-demo) .post-container .post-content .description,.member:has(.qt-demo) .approvals-header .text-light.text-sm,.member:has(.qt-demo) .filter-posts-container *,.member:has(.qt-demo) .user-information span{color:#000000!important}
+.member:has(.qt-demo) #main [data-widget-type="budget"] .progress{    border: 1px solid #bcbec0 !important;
+  background-color: #e6ebed !important;}
+.member:has(.qt-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm,.member:has(.qt-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm:after{background:none!important;color:#cf102d!important;font-family:"Montserrat","Roboto",Arial,sans-serif!important;font-weight:800!important}
+.member:has(.qt-demo) .main-member-profile-container .profile-link .icon,.member:has(.qt-demo) .upcoming-anniv-header-container .header .header-left .icon-img img{filter:none!important}
+.member:has(.qt-demo) .main-member-profile-container a.hero-2-balance span{color:#cf102d!important}
+.member:has(.qt-demo) .empty-approval-background{background-color:#e6ebed!important;text-align:center!important;color:#000000!important}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy h1,.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy p{color:#000000!important}
+.member:has(.qt-demo) .hero-recognition-container.layout-2{background-color:#ffffff!important}
+.member:has(.qt-demo) .fa,.member:has(.qt-demo) .fas,.member:has(.qt-demo) .far,.member:has(.qt-demo) .fal,.member:has(.qt-demo) .fab{font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+
+/* QuikTrip v3 overrides scoped only through the existing qt-demo marker. */
+.member:has(.qt-demo) a.navbar-brand img,
+.member:has(.qt-demo) a.img-responsive img {
+  visibility: hidden !important;
+  display: none !important;
+}
+.member:has(.qt-demo) a.navbar-brand,
+.member:has(.qt-demo) a.img-responsive {
+  display: inline-flex !important;
+  align-items: center !important;
+  width: 151px !important;
+  min-width: 151px !important;
+  height: 38px !important;
+  margin: 6px 0 0 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  text-decoration: none !important;
+}
+.member:has(.qt-demo) a.navbar-brand::before,
+.member:has(.qt-demo) a.img-responsive::before {
+  content: "" !important;
+  display: inline-block !important;
+  flex: 0 0 45px !important;
+  min-width: 151px !important;
+  width: 151px !important;
+  height: 38px !important;
+  background-image: url(https://halosalesandrecognition.venta.werecognize.com/asset/29595) !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: 151px 38px !important;
+  background-color: transparent !important;
+  border-left: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.qt-demo) h2,
+.member:has(.qt-demo) .storefront-callout-bg h1 {
+  font-family: "Montserrat", "Roboto", Arial, sans-serif !important;
+}
+.member:has(.qt-demo) .storefront-callout-bg h2 {
+  font-family: "Roboto", Arial, sans-serif !important;
+  font-weight: 500 !important;
+}
+.member:has(.qt-demo) .feed-widget .create-a-post-container .img-wrapper *,
+.member:has(.qt-demo) .feed-widget .feed-widget-item .img-wrapper *,
+.member:has(.qt-demo) #main .post-container .thumbnails .icon-bottom *,
+.member:has(.qt-demo) .storefront-callout-bg [class*="circle"] *,
+.member:has(.qt-demo) .storefront-callout-bg [class*="icon"] *,
+.member:has(.qt-demo) .storefront-callout-bg svg,
+.member:has(.qt-demo) .storefront-callout-bg svg *,
+.member:has(.qt-demo) [style*="background: #cf102d"] *,
+.member:has(.qt-demo) [style*="background-color: #cf102d"] *,
+.member:has(.qt-demo) [style*="background:#cf102d"] *,
+.member:has(.qt-demo) [style*="background-color:#cf102d"] * {
+  color: #fff !important;
+  fill: #fff !important;
+  stroke: #fff !important;
+}
+.member:has(.qt-demo) .main-member-profile-container .profile-link .icon {
+  filter: invert(15%) sepia(87%) saturate(5412%) hue-rotate(348deg) brightness(85%) contrast(98%) !important;
+}
+.member:has(.qt-demo) .main-member-profile-container p {
+  color: #fff !important;
+}
+.member:has(.qt-demo) #main .storefront-callout-bg {
+  background: url(https://hercrentals.werecognize.com/asset/28434) center bottom, #000 !important;
+}
+.member:has(.qt-demo) #main .storefront-callout-bg .callout-title,
+.member:has(.qt-demo) #main .storefront-callout-bg .callout-text {
+  color: #fff !important;
+}
+
+.member:has(.qt-demo) .hero-recognition-container.layout-2 {
+  background-image: url(https://halosalesandrecognition.venta.werecognize.com/asset/29594) !important;
+}
+.member:has(.qt-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.qt-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .post-container h2,
+.member:has(.qt-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .storefront-callout-bg h1,
+.member:has(.qt-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) form.text-center.serial-card-redemption label,
+.member:has(.qt-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .main-member-profile-container a.hero-2-balance span{
+ 
+font-family: "Montserrat", "Roboto", Arial, sans-serif !important;
+}
+
+.member:has(.qt-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .storefront-callout-bg h2 {
+ 
+font-family: "Roboto", Arial, sans-serif !important;
+font-weight: 400 !important;
+}
+
+.member:has(.qt-demo) div[data-widget-type="serialcard"] .panel-body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.member:has(.qt-demo) .progress.progress-2x span.progressbar-front-text {
+  color: #fff !important;
+}
+.member:has(.qt-demo) #main {background-color:#eee!important}
+
+
+.member:has(.qt-demo) .approvals-header .flex-row > svg path:first-child {stroke:#000!important}
+
+.member:has(.qt-demo) .my-approvals-container .btn-default span {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {
+  background-image: url(https://demo.carlton.ca/bravo-dashboard/img/aarow.svg) !important;
+  background-color: #cf102d !important;
+  background-size: 25px 25px !important;
+  background-repeat: no-repeat !important; 
+
+ background-position: 90% 50% !important; 
+
+}
+.member:has(.qt-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-ctaLhover {
+  background-image: url(https://demo.carlton.ca/bravo-dashboard/img/aarow.svg) !important;
+  background-color: #cf102d !important;transition: all 0.13s ease-in-out !important;
+}
+
+
+.member:has(.qt-demo) .post-container:last-of-type:not(.storefront-callout-bg .post-container) {
+  margin-bottom: 0 !important;
+}
+
+
+.member:has(.qt-demo) .feed-widget-body .media-list li {
+  margin-bottom: 24px !important;
+}
+
+
+.member:has(.qt-demo) .topNavIcons a.psr[data-badge]:not([data-badge='0'])::after, .topNavIcons button.psr[data-badge]:not([data-badge='0'])::after {
+  background-color: #cf102d !important;
+  color:#fff !important;
+}
+
