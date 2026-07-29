@@ -1,0 +1,379 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+  .member:has(.laz-demo) h1 {font-family:"Roboto", Arial, Helvetica Neue,sans-serif!important}
+  .member:has(.laz-demo) h2 {font-family:"Roboto", Arial, Helvetica Neue,sans-serif!important}
+  .member:has(.laz-demo) h3 {font-family:"Roboto", Arial, Helvetica Neue,sans-serif!important}
+  .member:has(.laz-demo) h4 {font-family:"Roboto", Arial, Helvetica Neue,sans-serif!important}
+  .member:has(.laz-demo) span {font-family:"Roboto", Arial, Helvetica Neue,sans-serif!important}
+  .member:has(.laz-demo) p {font-family:"Roboto", Arial, Helvetica Neue,sans-serif!important}
+  .member:has(.laz-demo) label {font-family:"Roboto", Arial, Helvetica Neue,sans-serif!important}
+  .member:has(.laz-demo) .main-member-profile-container .profile-link .icon {filter:invert(68%) sepia(20%) saturate(520%) hue-rotate(130deg) brightness(95%) contrast(90%)}
+  .member:has(.laz-demo) .main-member-profile-container a.hero-2-balance span {color:#0080b8!important}
+  .member:has(.laz-demo) #main .post-container .thumbnails .icon-bottom {background:#b10035}
+  .member:has(.laz-demo) a.navbar-brand img {visibility:hidden}
+  .member:has(.laz-demo) a.img-responsive img {visibility:hidden}
+  .member:has(.laz-demo) a.hero-cta {background-color:#005eb8!important}
+  .member:has(.laz-demo) .feed-widget .create-a-post-container .img-wrapper {background:#b10035}
+  .member:has(.laz-demo) .feed-widget .feed-widget-item .img-wrapper {background:#b10035}
+  .member:has(.laz-demo) .progress-bar-secondary {background:#b10035}
+  .member:has(.laz-demo) #main .storefront-callout-bg .callout-title {font-family:"Roboto", Arial, sans-serif;font-weight:600}
+  .member:has(.laz-demo) #main .storefront-callout-bg .callout-text {font-family:"Roboto", Arial, sans-serif;font-weight:400;letter-spacing:normal}
+  .member:has(.laz-demo) #main .main-gifting-admin-v1-budget-container h2 {font-size:18px;line-height:24px}
+  .member:has(.laz-demo) #main .approvals-header h2 {font-size:18px;line-height:24px}
+  .member:has(.laz-demo) #main .approvals-header h2 {font-size:18px;line-height:24px}
+  .member:has(.laz-demo) #main .main-gifting-admin-v1-budget-container p {padding:0 24px}
+  .member:has(.laz-demo) div[data-widget-type="budget"] .panel-body {padding:0!important}
+  .member:has(.laz-demo) #main [data-widget-type="budget"] {padding-top:3px!important}
+  .member:has(.laz-demo) #main [data-widget-type="budget"] div:first-child {margin-bottom:0!important}
+  .member:has(.laz-demo) #main [data-widget-type="budget"] .progress {border:1px solid #004c93}
+  .member:has(.laz-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm {background:none;color:#004c93!important}
+  .member:has(.laz-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm:after {color:#004c93}
+  .member:has(.laz-demo) h1 {font-weight:400}
+  .member:has(.laz-demo) h2 {font-weight:400}
+  .member:has(.laz-demo) h3 {font-weight:400}
+  .member:has(.laz-demo) h4 {font-weight:400}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy h1 {font-weight:600}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy h1 {color:#4d4d4d!important}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy p {color:#4d4d4d!important}
+  .member:has(.laz-demo) .post-container .post-content .title {font-weight:700;color:#004c93}
+  .member:has(.laz-demo) #main .main-gifting-admin-v1-budget-container h2 {font-weight:700;color:#004c93}
+  .member:has(.laz-demo) #main .approvals-header h2 {font-weight:700;color:#004c93}
+  .member:has(.laz-demo) #main .upcoming-anniv-header-container h2 {font-weight:700;color:#004c93}
+  .member:has(.laz-demo) [data-widget-type*="serialcard"] label::before {font-weight:700;color:#004c93}
+  .member:has(.laz-demo) p {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) .post-container .post-content .description {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) .user-information span {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) .feed-widget .create-a-post-container .content-editable-div {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) [data-widget-type*="serialcard"] input {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) button.btn.btn-secondary {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) .my-approvals-container .btn-default {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) .approvals-header .text-light.text-sm {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) .filter-posts-container * {font-family:"Roboto", Arial, sans-serif}
+  .member:has(.laz-demo) p {font-weight:500}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {font-weight:600}
+  .member:has(.laz-demo) .user-information span {font-weight:600}
+  .member:has(.laz-demo) [data-widget-type*="serialcard"] input {font-weight:600}
+  .member:has(.laz-demo) .post-container .post-content .description {font-weight:400;letter-spacing:normal}
+  .member:has(.laz-demo) .post-container .post-content .description {color:#004c93}
+  .member:has(.laz-demo) [data-widget-type*="serialcard"] label {font-weight:400;padding-bottom:16px}
+  .member:has(.laz-demo) .approvals-header span.text-md-heading.text-gray-500.lh-32 {font-weight:400}
+  .member:has(.laz-demo) .approvals-header .text-light.text-sm {padding-top:8px}
+
+
+  .member:has(.laz-demo) .main-member-profile-container {background:#004c93!important}
+  .member:has(.laz-demo) .btn-primary.disabled:hover {background-color:#004c93}
+  .member:has(.laz-demo) .btn-primary[disabled]:hover {background-color:#004c93}
+  .member:has(.laz-demo) fieldset[disabled] .btn-primary:hover {background-color:#004c93}
+  .member:has(.laz-demo) .btn-primary.disabled:focus {background-color:#004c93}
+  .member:has(.laz-demo) .btn-primary[disabled]:focus {background-color:#004c93}
+  .member:has(.laz-demo) fieldset[disabled] .btn-primary:focus {background-color:#004c93}
+  .member:has(.laz-demo) .btn-primary.disabled:active {background-color:#004c93}
+  .member:has(.laz-demo) .btn-primary[disabled]:active {background-color:#004c93}
+  .member:has(.laz-demo) fieldset[disabled] .btn-primary:active {background-color:#004c93}
+  @media only screen and (max-width:600px) {
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .container::before {background:url("laz-parking-hero(1).png") no-repeat center center/cover;background-size:cover!important;height:40vh;width:100vw;position:relative;left:50%;right:50%;margin:0-50vw}
+  }
+  .member:has(.laz-demo) .empty-approval-background {background-color:#f4f9fc;text-align:center}
+  .member:has(.laz-demo) button.btn.btn-secondary {background:#b10035!important;border-radius:0!important;text-transform:uppercase!important;font-weight:600!important}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {background:#b10035!important;border-radius:0!important;text-transform:uppercase!important;font-weight:600!important}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {background-image:none!important;background-repeat:no-repeat!important;background-size:25px 25px!important;background-position:90% 50%!important;transition:all 0.13s ease-in-out!important}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta:hover {background-position:94% 50%!important}
+  .member:has(.laz-demo) .approvals-header svg path {stroke:#f4f9fc !important}
+  .member:has(.laz-demo) .upcoming-anniv-header-container .header .header-left .icon-img img {filter:invert(28%) sepia(54%) saturate(720%) hue-rotate(155deg) brightness(85%) contrast(95%)}
+  .member:has(.laz-demo) .background-wrapper {background:#004c93}
+  .member:has(.laz-demo) .background-wrapper *:not(.dashboard-dropdown *) {color:#f4f9fc}
+  .member:has(.laz-demo) #header-wrap .customSelect .styledSelect {color:#f4f9fc}
+  .member:has(.laz-demo) div#mega-menu-wrap svg path {fill:#f4f9fc!important}
+  .member:has(.laz-demo) .fa {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+  .member:has(.laz-demo) .fas {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+  .member:has(.laz-demo) .far {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+  .member:has(.laz-demo) .fal {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+  .member:has(.laz-demo) .fab {font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+  .member:has(.laz-demo){--laz-primary:#005eb8;--laz-secondary:#0080b8;--laz-text-blue:#004c93;--laz-red:#b10035;--laz-bg:#f4f9fc;--laz-text:#4d4d4d;color:#4d4d4d!important;background-color:#f4f9fc!important}
+  .member:has(.laz-demo),.member:has(.laz-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]){font-family:"Roboto",Arial,sans-serif!important}
+  .member:has(.laz-demo) h1,.member:has(.laz-demo) h2,.member:has(.laz-demo) h3,.member:has(.laz-demo) h4,.member:has(.laz-demo) h5,.member:has(.laz-demo) h6,.member:has(.laz-demo) .title,.member:has(.laz-demo) .callout-title,.member:has(.laz-demo) .text-md-heading,.member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy h1,.member:has(.laz-demo) #main .main-gifting-admin-v1-budget-container h2,.member:has(.laz-demo) #main .approvals-header h2,.member:has(.laz-demo) #main .upcoming-anniv-header-container h2{font-family:"Roboto", Arial, sans-serif!important;font-weight:700!important;color:#4d4d4d!important;letter-spacing:.01em!important}
+  .member:has(.laz-demo) p,.member:has(.laz-demo) label,.member:has(.laz-demo) span,.member:has(.laz-demo) .description,.member:has(.laz-demo) .callout-text,.member:has(.laz-demo) .content-editable-div,.member:has(.laz-demo) input,.member:has(.laz-demo) textarea,.member:has(.laz-demo) select{font-family:"Roboto",Arial,sans-serif!important;color:#4d4d4d!important}
+  .member:has(.laz-demo) #main{background-color:#f4f9fc!important;color:#4d4d4d!important}
+  .member:has(.laz-demo) .background-wrapper,.member:has(.laz-demo) #header-wrap,.member:has(.laz-demo) .navbar,.member:has(.laz-demo) .navbar-default{background:#4d4d4d!important;background-color:#4d4d4d!important}
+  .member:has(.laz-demo) .background-wrapper *:not(.dashboard-dropdown *),.member:has(.laz-demo) #header-wrap .customSelect .styledSelect,.member:has(.laz-demo) .navbar a,.member:has(.laz-demo) div#mega-menu-wrap svg path{color:#f4f9fc!important;fill:#f4f9fc!important}
+  .member:has(.laz-demo) a.navbar-brand img,.member:has(.laz-demo) a.img-responsive img{visibility:hidden!important}
+  .member:has(.laz-demo) a.hero-cta,.member:has(.laz-demo) button.btn.btn-secondary,.member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta,.member:has(.laz-demo) .btn-primary:not(.disabled):not([disabled]),.member:has(.laz-demo) .my-approvals-container .btn-default{background:#b10035!important;background-color:#b10035!important;border-color:#b10035!important;color:#f4f9fc!important;border-radius:0!important;text-transform:uppercase!important;font-family:"Roboto", Arial, sans-serif!important;font-weight:700!important}
+  .member:has(.laz-demo) .feed-widget .create-a-post-container .img-wrapper,.member:has(.laz-demo) .feed-widget .feed-widget-item .img-wrapper,.member:has(.laz-demo) #main .post-container .thumbnails .icon-bottom,.member:has(.laz-demo) .progress-bar-secondary{background:#b10035!important;background-color:#b10035!important}
+  .member:has(.laz-demo) .post-container,.member:has(.laz-demo) .feed-widget-item,.member:has(.laz-demo) .panel,.member:has(.laz-demo) [data-widget-type="budget"],.member:has(.laz-demo) .main-gifting-admin-v1-budget-container,.member:has(.laz-demo) .my-approvals-container,.member:has(.laz-demo) .upcoming-anniv-header-container{background:#fff!important;border-color: #E6E6E6 !important;   }
+  .member:has(.laz-demo) .post-container .post-content .title,.member:has(.laz-demo) #main .main-gifting-admin-v1-budget-container h2,.member:has(.laz-demo) #main .approvals-header h2,.member:has(.laz-demo) #main .upcoming-anniv-header-container h2,.member:has(.laz-demo) [data-widget-type*="serialcard"] label::before{color:#b10035!important}
+  .member:has(.laz-demo) .post-container .post-content .description,.member:has(.laz-demo) .approvals-header .text-light.text-sm,.member:has(.laz-demo) .filter-posts-container *,.member:has(.laz-demo) .user-information span{color:#4d4d4d!important}
+  .member:has(.laz-demo) #main [data-widget-type="budget"] .progress{    border: 1px solid #0080b8 !important;
+    background-color: #f4f9fc !important;}
+  .member:has(.laz-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm,.member:has(.laz-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm:after{background:none!important;color:#b10035!important;font-family:"Roboto", Arial, sans-serif!important;font-weight:800!important}
+  .member:has(.laz-demo) .main-member-profile-container .profile-link .icon,.member:has(.laz-demo) .upcoming-anniv-header-container .header .header-left .icon-img img{filter:none!important}
+  .member:has(.laz-demo) .main-member-profile-container a.hero-2-balance span{color:#b10035!important}
+  .member:has(.laz-demo) .empty-approval-background{background-color:#f4f9fc!important;text-align:center!important;color:#4d4d4d!important}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy h1,.member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy p{color:#4d4d4d!important}
+  .member:has(.laz-demo) .hero-recognition-container.layout-2{background-color:#f4f9fc!important}
+  .member:has(.laz-demo) .fa,.member:has(.laz-demo) .fas,.member:has(.laz-demo) .far,.member:has(.laz-demo) .fal,.member:has(.laz-demo) .fab{font-family:"Font Awesome 5 Brands","Font Awesome 5 Pro"!important}
+
+  /* QuikTrip v3 overrides scoped only through the existing laz-demo marker. */
+  .member:has(.laz-demo) a.navbar-brand img,
+  .member:has(.laz-demo) a.img-responsive img {
+    visibility: hidden !important;
+    display: none !important;
+  }
+  .member:has(.laz-demo) a.navbar-brand,
+  .member:has(.laz-demo) a.img-responsive {
+    display: inline-flex !important;
+    align-items: center !important;
+    width: 151px !important;
+    min-width: 151px !important;
+    height: 38px !important;
+    margin: 6px 0 0 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    text-decoration: none !important;
+  }
+  .member:has(.laz-demo) a.navbar-brand::before,
+  .member:has(.laz-demo) a.img-responsive::before {
+    content: "" !important;
+    display: inline-block !important;
+    flex: 0 0 45px !important;
+    
+    min-width: 82px !important;
+      width: 82px !important;
+      height: 40px !important;
+      background-image: url(https://cdn.prod.website-files.com/63518e2b53fc207fa834abf7/63a0dbd2c696c59d9b61adae_logo.svg) !important;
+      background-size: 82px 40px !important;
+
+
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    background-color: transparent !important;
+    border-left: 0 !important;
+    padding: 0 !important;
+
+    margin-left: 16px !important;
+  }
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+  .member:has(.laz-demo) h2,
+  .member:has(.laz-demo) .storefront-callout-bg h1 {
+    font-family: "Roboto", Arial, sans-serif !important;
+  }
+  .member:has(.laz-demo) .storefront-callout-bg h2 {
+    font-family: "Roboto", Arial, sans-serif !important;
+    font-weight: 500 !important;
+  }
+  .member:has(.laz-demo) .feed-widget .create-a-post-container .img-wrapper *,
+  .member:has(.laz-demo) .feed-widget .feed-widget-item .img-wrapper *,
+  .member:has(.laz-demo) #main .post-container .thumbnails .icon-bottom *,
+  .member:has(.laz-demo) .storefront-callout-bg [class*="circle"] *,
+  .member:has(.laz-demo) .storefront-callout-bg [class*="icon"] *,
+  .member:has(.laz-demo) .storefront-callout-bg svg,
+  .member:has(.laz-demo) .storefront-callout-bg svg *,
+  .member:has(.laz-demo) [style*="background: #b10035"] *,
+  .member:has(.laz-demo) [style*="background-color: #b10035"] *,
+  .member:has(.laz-demo) [style*="background:#b10035"] *,
+  .member:has(.laz-demo) [style*="background-color:#b10035"] * {
+    color: #f4f9fc !important;
+    fill: #f4f9fc !important;
+    stroke: #f4f9fc !important;
+  }
+  .member:has(.laz-demo) .main-member-profile-container .profile-link .icon {
+    filter: invert(96%) sepia(8%) saturate(313%) hue-rotate(184deg) brightness(101%) contrast(97%) !important;
+
+  }
+  .member:has(.laz-demo) .main-member-profile-container p {
+    color: #f4f9fc !important;
+  }
+  .member:has(.laz-demo) #main .storefront-callout-bg {
+    background: url(laz-parking-hero(1).png) center bottom, #004c93 !important;
+  }
+  .member:has(.laz-demo) #main .storefront-callout-bg .callout-title,
+  .member:has(.laz-demo) #main .storefront-callout-bg .callout-text {
+    color: #f4f9fc !important;
+  }
+
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 {
+    background-image: url(laz-parking-hero(1).png) !important;
+  }
+  .member:has(.laz-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .hero-recognition-container.layout-2 .hero-copy h1,
+  .member:has(.laz-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .post-container h2,
+  .member:has(.laz-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .storefront-callout-bg h1,
+  .member:has(.laz-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) form.text-center.serial-card-redemption label,
+  .member:has(.laz-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .main-member-profile-container a.hero-2-balance span{
+  
+  font-family: "Roboto", Arial, sans-serif !important;
+  }
+
+  .member:has(.laz-demo) *:not(.fa):not(.fas):not(.far):not(.fal):not(.fab):not([class*="fa-"]) .storefront-callout-bg h2 {
+  
+  font-family: "Roboto", Arial, sans-serif !important;
+  font-weight: 400 !important;
+  }
+
+  .member:has(.laz-demo) div[data-widget-type="serialcard"] .panel-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .member:has(.laz-demo) .progress.progress-2x span.progressbar-front-text {
+    color: #f4f9fc !important;
+  }
+  .member:has(.laz-demo) #main {background-color:#f4f9fc!important}
+
+
+  .member:has(.laz-demo) .approvals-header .flex-row > svg path:first-child {stroke:#004c93!important}
+
+  .member:has(.laz-demo) .my-approvals-container .btn-default span {
+    color: #f4f9fc !important;
+    font-weight: 500;
+  }
+
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {
+    background-image: none !important;
+    background-color: #b10035 !important;
+    background-size: 25px 25px !important;
+    background-repeat: no-repeat !important; 
+
+  background-position: 90% 50% !important; 
+
+  }
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-ctaLhover {
+    background-image: none !important;
+    background-color: #b10035 !important;transition: all 0.13s ease-in-out !important;
+  }
+
+
+  .member:has(.laz-demo) .post-container:last-of-type:not(.storefront-callout-bg .post-container) {
+    margin-bottom: 0 !important;
+  }
+
+
+  .member:has(.laz-demo) .feed-widget-body .media-list li {
+    margin-bottom: 24px !important;
+  }
+
+
+  .member:has(.laz-demo) .topNavIcons a.psr[data-badge]:not([data-badge='0'])::after, .topNavIcons button.psr[data-badge]:not([data-badge='0'])::after {
+    background-color: #b10035 !important;
+    color:#f4f9fc !important;
+  }
+
+  .member:has(.laz-demo) a.navbar-brand,
+  .member:has(.laz-demo) a.img-responsive {
+    width: 150px !important;
+    min-width: 150px !important;
+    height: 73px !important;
+    margin: 0 !important;
+  }
+  .member:has(.laz-demo) a.navbar-brand::before,
+  .member:has(.laz-demo) a.img-responsive::before {
+  
+    min-width: 88px !important;
+    width: 88px !important;
+    height: 43px !important;
+    background-image: url(https://cdn.prod.website-files.com/63518e2b53fc207fa834abf7/63a0dbd2c696c59d9b61adae_logo.svg) !important;
+    background-size: cover !important;
+  }
+  ,
+  .member:has(.laz-demo) .main-member-profile-container,
+  .member:has(.laz-demo) .navbar,
+  .member:has(.laz-demo) .navbar-default {
+    background:#005eb8!important;
+    background-color:#005eb8!important;
+  }
+
+  .member:has(.laz-demo) .background-wrapper, .member:has(.laz-demo) #header-wrap {
+    background: #007dba !important;
+    background-color: #007dba !important;
+  }
+  .member:has(.laz-demo) #main {
+    background-color:#f4f9fc!important;
+    color:#4d4d4d!important;
+  }
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 {
+    background-image: linear-gradient(90deg, #f4f9fc 0%, #f4f9fc 0%, transparent 50%), url(https://halosalesandrecognition.venta.werecognize.com/asset/29609) !important;
+    background-color: #f4f9fc !important;
+    background-position: center right !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+    color:#004c93!important;
+    font-weight:700!important;
+  }
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy p {
+    color:#4d4d4d!important;
+    max-width: 550px;
+  }
+  .member:has(.laz-demo) a.hero-cta,
+  .member:has(.laz-demo) button.btn.btn-secondary,
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta,
+  .member:has(.laz-demo) .btn-primary:not(.disabled):not([disabled]),
+  .member:has(.laz-demo) .my-approvals-container .btn-default {
+    background:#b10035!important;
+    background-color:#b10035!important;
+    border-color:#b10035!important;
+    color:#f4f9fc!important;
+  }
+  .member:has(.laz-demo) a.hero-cta:hover,
+  .member:has(.laz-demo) button.btn.btn-secondary:hover,
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta:hover,
+  .member:has(.laz-demo) .btn-primary:not(.disabled):not([disabled]):hover,
+  .member:has(.laz-demo) .my-approvals-container .btn-default:hover {
+    background:#0080b8!important;
+    background-color:#0080b8!important;
+    border-color:#0080b8!important;
+    color:#f4f9fc!important;
+  }
+  .member:has(.laz-demo) .post-container,
+  .member:has(.laz-demo) .feed-widget-item,
+  .member:has(.laz-demo) .panel,
+  .member:has(.laz-demo) [data-widget-type="budget"],
+  .member:has(.laz-demo) .main-gifting-admin-v1-budget-container,
+  .member:has(.laz-demo) .my-approvals-container,
+  .member:has(.laz-demo) .upcoming-anniv-header-container {
+    background:#fff!important;
+    /* border-color:#0080b8!important; */
+    /* color:#4d4d4d!important; */
+  }
+  .member:has(.laz-demo) .post-container .post-content .title,
+  .member:has(.laz-demo) #main .main-gifting-admin-v1-budget-container h2,
+  .member:has(.laz-demo) #main .approvals-header h2,
+  .member:has(.laz-demo) #main .upcoming-anniv-header-container h2,
+  .member:has(.laz-demo) [data-widget-type*="serialcard"] label::before {
+    color:#004c93!important;
+  }
+
+  .member:has(.laz-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm,
+  .member:has(.laz-demo) #main [data-widget-type="budget"] p.h1.text-secondary.text-bold.mt-sm:after {
+    color:#b10035!important;
+  }
+  .member:has(.laz-demo) .main-member-profile-container a.hero-2-balance span {
+    color: #f4f9fc !important;
+  }
+
+  .member:has(.laz-demo) #main .storefront-callout-bg {
+    background:#004c93!important;
+  }
+  @media only screen and (max-width:600px) {
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .container::before {
+    background:url("laz-parking-hero(1).png") no-repeat center center/cover!important;
+  }
+  }
+
+
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta {
+    background-image: url(https://demo.carlton.ca/bravo-dashboard/img/aarow.svg) !important;
+    /* background-color: #cf102d !important; */
+    background-size: 25px 25px !important;
+    background-repeat: no-repeat !important;
+    background-position: 90% 50% !important;
+  }
+
+  .member:has(.laz-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta:hover {
+    background-image: url(https://demo.carlton.ca/bravo-dashboard/img/aarow.svg) !important;
+    /* background-color: #cf102d !important; */
+    background-size: 25px 25px !important;
+    background-repeat: no-repeat !important;
+    background-position: 94% 50% !important;
+  }
