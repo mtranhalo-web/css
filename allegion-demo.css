@@ -1,0 +1,221 @@
+
+/* Brand override */
+.member:has(.allegion-demo) a.navbar-brand img,
+.member:has(.allegion-demo) a.img-responsive img {
+  visibility: hidden;
+}
+
+.member:has(.allegion-demo) a.navbar-brand::before,
+.member:has(.allegion-demo) a.img-responsive::before {
+  content: "";
+  background: url("https://www.allegion.com/content/dam/allegion-corp/migration/brands/doc_logo_ALLE-H_000.png")
+    no-repeat;
+  width: 236px;
+  height: 45px;
+  background-size: 75% 75%;
+  background-position: left center;
+}
+
+/* CTA buttons */
+.member:has(.allegion-demo) a.hero-cta {
+  background-color: #333f48 !important;
+}
+
+/* Image wrappers in feed widgets */
+.member:has(.allegion-demo) .feed-widget .create-a-post-container .img-wrapper,
+.member:has(.allegion-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .img-wrapper,
+.member:has(.allegion-demo) .feed-widget .feed-widget-item .img-wrapper,
+.member:has(.allegion-demo)
+  .feed-widget-fs-modal
+  .feed-widget-item
+  .img-wrapper {
+  background: #007baa;
+}
+
+/* Storefront background */
+.member:has(.allegion-demo) #main .storefront-callout-bg {
+  background-color: #333f48;
+}
+
+/* Budget widget styles */
+.member:has(.allegion-demo) #main .main-gifting-admin-v1-budget-container h2 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "cresta", sans-serif;
+}
+
+.member:has(.allegion-demo) #main .main-gifting-admin-v1-budget-container p {
+  padding: 0 24px;
+}
+
+.member:has(.allegion-demo) div[data-widget-type="budget"] .panel-body {
+  padding: 0 !important;
+}
+
+.member:has(.allegion-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm {
+  background: none;
+  color: #f86700 !important;
+}
+
+.member:has(.allegion-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm:after {
+  color: #f86700;
+}
+
+/* Global budget progress style */
+.member:has(.allegion-demo) #main [data-widget-type="budget"] .progress {
+  border: 1px solid #333f48;
+}
+
+.member:has(.allegion-demo) h1,
+.member:has(.allegion-demo) h2,
+.member:has(.allegion-demo) h3,
+.member:has(.allegion-demo) h4,
+.member:has(.allegion-demo) h5,
+.member:has(.allegion-demo) h6,
+.member:has(.allegion-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.allegion-demo) .hero-2-balance span,
+.member:has(.allegion-demo) .post-container .post-content .title {
+  font-family: "cresta", sans-serif;
+}
+
+.member:has(.allegion-demo) .post-container .post-content .title {
+  font-weight: 400;
+  color: #333f48;
+}
+
+.member:has(.allegion-demo) p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.member:has(.allegion-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.member:has(.allegion-demo) .post-container .post-content .description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+.member:has(.allegion-demo) #main .storefront-callout-bg .callout-title {
+  font-family: "cresta", sans-serif;
+  font-weight: 200;
+}
+
+.member:has(.allegion-demo) #main .storefront-callout-bg .callout-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.member:has(.allegion-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-weight: 400;
+  font-family: "cresta", sans-serif;
+}
+
+.member:has(.allegion-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+  font-weight: 200;
+  color: #fff !important;
+}
+
+.member:has(.allegion-demo) .user-information span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.member:has(.allegion-demo)
+  .feed-widget
+  .comments-container
+  .content-editable-div,
+.member:has(.allegion-demo)
+  .feed-widget-fs-modal
+  .comments-container
+  .content-editable-div,
+.member:has(.allegion-demo)
+  .feed-widget
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.allegion-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .content-editable-div {
+  font-family: "Roboto", sans-serif;
+}
+
+.member:has(.allegion-demo) [data-widget-type*="serialcard"] label {
+  font-family: "cresta", sans-serif;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+.member:has(.allegion-demo) [data-widget-type*="serialcard"] input {
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+.member:has(.allegion-demo) [data-widget-id="7196"] .btn {
+  /* font-family: 'Roboto'; */
+}
+
+.member:has(.allegion-demo) button.btn.btn-secondary,
+.member:has(.allegion-demo) button.btn.btn-default,
+.member:has(.allegion-demo) button.btn.btn-primary {
+  font-family: "Roboto", sans-serif;
+}
+
+.member:has(.allegion-demo) .my-approvals-container .footer-select-all-text {
+  font-family: "Roboto";
+}
+
+.member:has(.allegion-demo) .my-approvals-container .btn-default {
+  font-family: "Roboto";
+}
+
+.member:has(.allegion-demo) .approvals-header .text-light.text-sm {
+  font-family: "Roboto", sans-serif;
+  padding-top: 8px;
+}
+
+.member:has(.allegion-demo) .approvals-card *,
+.filter-posts-container * {
+  font-family: "Roboto", sans-serif;
+}
+
+.member:has(.allegion-demo) h1,
+.member:has(.allegion-demo) h2,
+.member:has(.allegion-demo) h3,
+.member:has(.allegion-demo) h4,
+.member:has(.allegion-demo) h5,
+.member:has(.allegion-demo) h6 {
+  font-weight: 400;
+  font-family: "cresta", sans-serif;
+}
+
+.member:has(.allegion-demo) [data-widget-type*="feed"] {
+  max-height: 1238px !important;
+}
+
+.member:has(.allegion-demo) #main [data-widget-type="budget"] {
+  padding-top: 3px !important;
+}
+.member:has(.allegion-demo) #main [data-widget-type="budget"] div:first-child {
+  margin-bottom: 0 !important;
+}
