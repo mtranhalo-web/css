@@ -1,0 +1,359 @@
+
+.member:has(.bunge-demo) h1,
+.member:has(.bunge-demo) h2,
+.member:has(.bunge-demo) h3,
+.member:has(.bunge-demo) h4,
+.member:has(.bunge-demo) h5,
+.member:has(.bunge-demo) h6,
+.member:has(.bunge-demo) span,
+.member:has(.bunge-demo) p,
+.member:has(.bunge-demo) label {
+  font-family: "Raleway", sans-serif !important;
+}
+.member:has(.bunge-demo) .main-member-profile-container .profile-link .icon {
+  filter: invert(68%) sepia(57%) saturate(520%) hue-rotate(33deg) brightness(95%) contrast(90%);
+}
+
+.member:has(.bunge-demo) .main-member-profile-container a.hero-2-balance span {
+  color: #9bc83c !important;
+}
+
+.member:has(.bunge-demo) #main .post-container .thumbnails .icon-bottom {
+  background: #9bc83c;
+}
+.member:has(.bunge-demo) a.navbar-brand img,
+.member:has(.bunge-demo) a.img-responsive img {
+  visibility: hidden;
+}
+
+.member:has(.bunge-demo) a.navbar-brand::before,
+.member:has(.bunge-demo) a.img-responsive::before {
+  content: "";
+  background: url("https://halosalesandrecognition.venta.werecognize.com/asset/29553")
+    no-repeat;
+  width: 301px;
+  height: 35px;
+  background-size: contain;
+  background-position: left center;
+}
+
+/* CTA buttons */
+.member:has(.bunge-demo) a.hero-cta {
+  background-color: #333f48 !important;
+}
+
+/* Feed widget image wrappers */
+.member:has(.bunge-demo) .feed-widget .create-a-post-container .img-wrapper,
+.member:has(.bunge-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .img-wrapper,
+.member:has(.bunge-demo) .feed-widget .feed-widget-item .img-wrapper,
+.member:has(.bunge-demo) .feed-widget-fs-modal .feed-widget-item .img-wrapper {
+  background: #9bc83c;
+}
+
+/* Storefront */
+.member:has(.bunge-demo) #main .storefront-callout-bg {
+  background: url("https://hercrentals.werecognize.com/asset/28434") center
+      bottom,
+    #043c5a !important;
+}
+
+.member:has(.bunge-demo) .progress-bar-secondary {
+  background: #9bc83c;
+}
+
+.member:has(.bunge-demo) #main .storefront-callout-bg .callout-title {
+  font-family: "jaf-bernina-sans", "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.member:has(.bunge-demo) #main .storefront-callout-bg .callout-text {
+  font-family: "jaf-bernina-sans", "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+/* Budget widget */
+.member:has(.bunge-demo) #main .main-gifting-admin-v1-budget-container h2,
+.member:has(.bunge-demo) #main .approvals-header h2,
+.member:has(.bunge-demo) #main .approvals-header h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "jaf-bernina-sans", "Open Sans", sans-serif;
+}
+
+.member:has(.bunge-demo) #main .main-gifting-admin-v1-budget-container p {
+  padding: 0 24px;
+}
+
+.member:has(.bunge-demo) div[data-widget-type="budget"] .panel-body {
+  padding: 0 !important;
+}
+
+.member:has(.bunge-demo) #main [data-widget-type="budget"] {
+  padding-top: 3px !important;
+}
+
+.member:has(.bunge-demo) #main [data-widget-type="budget"] div:first-child {
+  margin-bottom: 0 !important;
+}
+
+.member:has(.bunge-demo) #main [data-widget-type="budget"] .progress {
+  border: 1px solid #043c5a;
+}
+
+.member:has(.bunge-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm {
+  background: none;
+  color: #043c5a !important;
+}
+
+.member:has(.bunge-demo)
+  #main
+  [data-widget-type="budget"]
+  p.h1.text-secondary.text-bold.mt-sm:after {
+  color: #043c5a;
+}
+
+/* Typography */
+.member:has(.bunge-demo) h1,
+.member:has(.bunge-demo) h2,
+.member:has(.bunge-demo) h3,
+.member:has(.bunge-demo) h4,
+.member:has(.bunge-demo) h5,
+.member:has(.bunge-demo) h6,
+.member:has(.bunge-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.bunge-demo) .hero-2-balance span,
+.member:has(.bunge-demo) .post-container .post-content .title,
+.member:has(.bunge-demo) [data-widget-type*="serialcard"] label,
+.member:has(.bunge-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  /* font-family: "jaf-bernina-sans", "Open Sans", sans-serif; */
+}
+
+.member:has(.bunge-demo) h1,
+.member:has(.bunge-demo) h2,
+.member:has(.bunge-demo) h3,
+.member:has(.bunge-demo) h4,
+.member:has(.bunge-demo) h5,
+.member:has(.bunge-demo) h6 {
+  font-weight: 400;
+}
+
+.member:has(.bunge-demo) .hero-recognition-container.layout-2 .hero-copy h1 {
+  font-weight: 600;
+}
+.member:has(.bunge-demo) .hero-recognition-container.layout-2 .hero-copy h1,
+.member:has(.bunge-demo) .hero-recognition-container.layout-2 .hero-copy p {
+  color: #043c5a !important;
+}
+
+.member:has(.bunge-demo) .post-container .post-content .title,
+.member:has(.bunge-demo) #main .main-gifting-admin-v1-budget-container h2,
+.member:has(.bunge-demo) #main .approvals-header h2,
+.member:has(.bunge-demo) #main .upcoming-anniv-header-container h2,
+.member:has(.bunge-demo) [data-widget-type*="serialcard"] label::before {
+  font-weight: 700;
+  color: #212529;
+}
+
+.member:has(.bunge-demo) p,
+.member:has(.bunge-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.bunge-demo) .post-container .post-content .description,
+.member:has(.bunge-demo) .user-information span,
+.member:has(.bunge-demo) .feed-widget .comments-container .content-editable-div,
+.member:has(.bunge-demo)
+  .feed-widget-fs-modal
+  .comments-container
+  .content-editable-div,
+.member:has(.bunge-demo)
+  .feed-widget
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.bunge-demo)
+  .feed-widget-fs-modal
+  .create-a-post-container
+  .content-editable-div,
+.member:has(.bunge-demo) [data-widget-type*="serialcard"] input,
+.member:has(.bunge-demo) button.btn.btn-secondary,
+.member:has(.bunge-demo) button.btn.btn-default,
+.member:has(.bunge-demo) button.btn.btn-primary,
+.member:has(.bunge-demo) .my-approvals-container .footer-select-all-text,
+.member:has(.bunge-demo) .my-approvals-container .btn-default,
+.member:has(.bunge-demo) .approvals-header .text-light.text-sm,
+.member:has(.bunge-demo) .approvals-card *,
+.member:has(.bunge-demo) .filter-posts-container * {
+  font-family: "jaf-bernina-sans", "Open Sans", sans-serif;
+}
+
+.member:has(.bunge-demo) p {
+  font-weight: 500;
+  color: #043c5a !important;
+}
+
+.member:has(.bunge-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta,
+.member:has(.bunge-demo) .user-information span,
+.member:has(.bunge-demo) [data-widget-type*="serialcard"] input {
+  font-weight: 600;
+}
+
+.member:has(.bunge-demo) .post-container .post-content .description {
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.member:has(.bunge-demo) .post-container .post-content .description {
+  color: #043c5a;
+}
+.member:has(.bunge-demo) [data-widget-type*="serialcard"] label {
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+.member:has(.bunge-demo)
+  .approvals-header
+  span.text-md-heading.text-gray-500.lh-32 {
+  font-weight: 400;
+}
+
+.member:has(.bunge-demo) .approvals-header .text-light.text-sm {
+  padding-top: 8px;
+}
+
+/* Feed widget height override */
+
+
+
+
+.member:has(.bunge-demo) .hero-recognition-container.layout-2 {
+  background: url(https://halosalesandrecognition.venta.werecognize.com/asset/29552)
+    no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.member:has(.bunge-demo) .main-member-profile-container {
+  background: #e7e6e2 !important;
+}
+
+.member:has(.bunge-demo) .btn-primary.disabled,
+.member:has(.bunge-demo) .btn-primary[disabled],
+.member:has(.bunge-demo) fieldset[disabled] .btn-primary,
+.member:has(.bunge-demo) .btn-primary.disabled:hover,
+.member:has(.bunge-demo) .btn-primary[disabled]:hover,
+.member:has(.bunge-demo) fieldset[disabled] .btn-primary:hover,
+.member:has(.bunge-demo) .btn-primary.disabled:focus,
+.member:has(.bunge-demo) .btn-primary[disabled]:focus,
+.member:has(.bunge-demo) fieldset[disabled] .btn-primary:focus,
+.member:has(.bunge-demo) .btn-primary.disabled.focus,
+.member:has(.bunge-demo) .btn-primary[disabled].focus,
+.member:has(.bunge-demo) fieldset[disabled] .btn-primary.focus,
+.member:has(.bunge-demo) .btn-primary.disabled:active,
+.member:has(.bunge-demo) .btn-primary[disabled]:active,
+.member:has(.bunge-demo) fieldset[disabled] .btn-primary:active,
+.member:has(.bunge-demo) .btn-primary.disabled.active,
+.member:has(.bunge-demo) .btn-primary[disabled].active,
+.member:has(.bunge-demo) fieldset[disabled] .btn-primary.active {
+  background-color: #043c5a;
+}
+
+@media only screen and (max-width: 600px) {
+  .member:has(.bunge-demo)
+    .hero-recognition-container.layout-2
+    .container::before {
+    background: url("https://halosalesandrecognition.werecognize.com/asset/27411")
+      no-repeat center center / cover;
+    background-size: cover !important;
+    height: 40vh;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin: 0 -50vw;
+  }
+}
+.member:has(.bunge-demo) .empty-approval-background {
+  background-color: rgba(231, 231, 231, 0.5);
+  text-align: center;
+}
+
+.member:has(.bunge-demo) button.btn.btn-secondary,
+.member:has(.bunge-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta {
+  background: #9bc83c !important;
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+}
+.member:has(.bunge-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta {
+  background-image: url(https://demo.carlton.ca/bravo-dashboard/img/aarow.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: 25px 25px !important;
+  background-position: 90% 50% !important;
+  transition: all 0.13s ease-in-out !important;
+}
+.member:has(.bunge-demo)
+  .hero-recognition-container.layout-2
+  .hero-copy
+  a.hero-cta:hover {
+  background-position: 94% 50% !important;
+}
+
+.member:has(.bunge-demo) .approvals-card svg path {
+  fill: #043c5a;
+}
+
+.member:has(.bunge-demo) #main {
+  background-color: #f9f9f9 !important;
+}
+.member:has(.bunge-demo) .approvals-header svg path {
+  stroke: #9bc83c;
+}
+
+.member:has(.bunge-demo)
+  .upcoming-anniv-header-container
+  .header
+  .header-left
+  .icon-img
+  img {
+  filter: invert(68%) sepia(57%) saturate(520%) hue-rotate(33deg) brightness(95%) contrast(90%);
+}
+
+.member:has(.bunge-demo) .background-wrapper {
+  background: #fff;
+}
+
+.member:has(.bunge-demo) .background-wrapper *:not(.dashboard-dropdown *),
+.member:has(.bunge-demo) #header-wrap .customSelect .styledSelect {
+  color: #043c5a;
+}
+
+.member:has(.bunge-demo) div#mega-menu-wrap svg path {
+  fill: #043c5a !important;
+}
+.member:has(.bunge-demo) .fa,
+.member:has(.bunge-demo) .fas,
+.member:has(.bunge-demo) .far,
+.member:has(.bunge-demo) .fal,
+.member:has(.bunge-demo) .fad,
+.member:has(.bunge-demo) .fab {
+  font-family: "Font Awesome 5 Brands", "Font Awesome\ 5 Pro" !important;
+}
+
+/* END TEMPLATE CSS */
