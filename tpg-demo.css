@@ -1,0 +1,1937 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* 01. TPG tokens and font import */
+.member:has(.tpg-demo) {
+  --tpg-ink: #1e1e1e;
+  --tpg-white: #ffffff;
+  --tpg-gray-surface: #f4f4f4;
+  --tpg-navy: #043867;
+  --tpg-hero-navy: #00091a;
+  --tpg-outline-blue: #0055ff;
+  --tpg-pale-blue: #dce5ee;
+  --tpg-teal: #005862;
+  --tpg-olive: #4d5e34;
+  --tpg-gold: #b5954f;
+  --tpg-plum: #452854;
+  --tpg-rust: #80420d;
+  --tpg-ease: cubic-bezier(.4, 0, .2, 1);
+  color: var(--tpg-ink);
+  background: var(--tpg-gray-surface);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/* 02. Page scope and global typography */
+.member:has(.tpg-demo) #main,
+.member:has(.tpg-demo) button,
+.member:has(.tpg-demo) input,
+.member:has(.tpg-demo) select,
+.member:has(.tpg-demo) textarea {
+  font-family: Inter, Arial, Helvetica, sans-serif !important;
+}
+.member:has(.tpg-demo) #main { background: var(--tpg-gray-surface) !important; }
+.member:has(.tpg-demo) h1,
+.member:has(.tpg-demo) h2,
+.member:has(.tpg-demo) h3,
+.member:has(.tpg-demo) h4,
+.member:has(.tpg-demo) h5,
+.member:has(.tpg-demo) h6,
+.member:has(.tpg-demo) .text-bold,
+.member:has(.tpg-demo) .text-semi-bold { font-weight: 400 !important; }
+.member:has(.tpg-demo) .balance,
+.member:has(.tpg-demo) [data-widget-type="budget"] .stat,
+.member:has(.tpg-demo) [data-widget-type="budget"] .percentage { font-variant-numeric: tabular-nums; }
+
+/* 03. Header and transparent navigation */
+.member:has(.tpg-demo) .background-wrapper {
+  background-color: transparent !important;
+  border: 0;
+}
+.member:has(.tpg-demo) div#app { padding-top: 0; }
+.member:has(.tpg-demo) #header-wrap,
+.member:has(.tpg-demo) .header-container,
+.member:has(.tpg-demo) .top-nav-row {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) #header-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,.24);
+  animation: tpg-sticky-header 1ms linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 120px;
+}
+.member:has(.tpg-demo) #header-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--tpg-white);
+  opacity: 0;
+  animation: tpg-sticky-surface 1ms linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 120px;
+}
+.member:has(.tpg-demo) #header-wrap a,
+.member:has(.tpg-demo) #header-wrap button,
+.member:has(.tpg-demo) #header-wrap i { color: var(--tpg-white) !important; }
+.member:has(.tpg-demo) div#header-wrap svg path { fill: var(--tpg-white) !important; }
+.member:has(.tpg-demo) #header-wrap .navbar-brand {
+  width: 126px;
+  height: 48px;
+  background: url("TPG_Capital_logo.svg") no-repeat left center / contain;
+  animation: tpg-sticky-logo 1ms linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 120px;
+}
+.member:has(.tpg-demo) #header-wrap .navbar-brand img { opacity: 0; }
+.member:has(.tpg-demo) #header-wrap .top-nav-icons-list a,
+.member:has(.tpg-demo) #header-wrap .top-nav-icons-list button,
+.member:has(.tpg-demo) #header-wrap .hamburger-menu {
+  display: flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+.member:has(.tpg-demo) .topNavIcons a.psr[data-badge]:not([data-badge="0"])::after,
+.member:has(.tpg-demo) .topNavIcons button.psr[data-badge]:not([data-badge="0"])::after {
+  color: var(--tpg-white) !important;
+  background-color: var(--tpg-navy) !important;
+}
+@keyframes tpg-sticky-header {
+  from {
+    color: var(--tpg-white);
+    background-color: transparent;
+    border-bottom-color: rgba(255,255,255,.24);
+    box-shadow: none;
+  }
+  to {
+    color: var(--tpg-navy);
+    background-color: var(--tpg-white);
+    border-bottom-color: rgba(4,56,103,.16);
+    box-shadow: 0 2px 10px rgba(0,9,26,.08);
+  }
+}
+@keyframes tpg-sticky-logo {
+  from { filter: none; }
+  to { filter: brightness(0) saturate(100%) invert(18%) sepia(31%) saturate(2259%) hue-rotate(174deg) brightness(88%) contrast(100%); }
+}
+@keyframes tpg-sticky-surface {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@supports (animation-timeline: scroll()) {
+  .member:has(.tpg-demo) #header-wrap a,
+  .member:has(.tpg-demo) #header-wrap button,
+  .member:has(.tpg-demo) #header-wrap i,
+  .member:has(.tpg-demo) #header-wrap svg {
+    animation: tpg-sticky-icon 1ms linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 120px;
+  }
+}
+@keyframes tpg-sticky-icon {
+  from { filter: none; }
+  to { filter: brightness(0) saturate(100%) invert(18%) sepia(31%) saturate(2259%) hue-rotate(174deg) brightness(88%) contrast(100%); }
+}
+
+/* 04. Hero */
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 {
+  position: relative;
+  min-height: 620px;
+  color: var(--tpg-white);
+  background: var(--tpg-hero-navy) url("https://halosalesandrecognition.venta.werecognize.com/asset/29752") no-repeat bottom center / cover !important;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,9,26,.92) 0%, rgba(0,9,26,.74) 42%, rgba(0,9,26,.28) 72%, rgba(0,9,26,.35) 100%);
+  pointer-events: none;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 > * { position: relative; z-index: 1; }
+.member:has(.tpg-demo) .hero-recognition-container h1,
+.member:has(.tpg-demo) .hero-recognition-container .hero-title {
+  max-width: 720px;
+  color: var(--tpg-white) !important;
+  font-size: 58px !important;
+  line-height: 1.05 !important;
+  font-weight: 300 !important;
+  letter-spacing: -.8px;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta,
+.member:has(.tpg-demo) .hero-recognition-container .dashboard-button a {
+  position: relative;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  min-width: 190px;
+  padding: 12px 48px 12px 18px !important;
+  color: var(--tpg-white) !important;
+  background: transparent !important;
+  border: 1px solid rgba(255,255,255,.8) !important;
+  border-radius: 6px !important;
+  font-size: 13px !important;
+  line-height: 18px;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  text-transform: none;
+  box-shadow: none;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta::after {
+  content: "→";
+  position: absolute;
+  right: 17px;
+  font-size: 20px;
+  font-weight: 300;
+  transition: transform 300ms var(--tpg-ease);
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta:hover {
+  color: var(--tpg-hero-navy) !important;
+  background: var(--tpg-white) !important;
+  border-color: var(--tpg-white) !important;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta:hover::after {
+  transform: translateX(4px);
+}
+
+/* 05. Member stat/action bar */
+.member:has(.tpg-demo) .main-member-profile-container {
+  position: relative;
+  padding: 0 !important;
+  color: var(--tpg-white);
+  background: rgba(0,30,61,.95) url("https://halosalesandrecognition.venta.werecognize.com/asset/29752") no-repeat center 60% / cover !important;
+  background-blend-mode: multiply;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .profile-info {
+  width: 43% !important;
+  padding: 8px 22px !important;
+  color: var(--tpg-white);
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .avatar { padding: 12px 22px !important; }
+.member:has(.tpg-demo) .main-member-profile-container .avatar p {
+  margin-top: 7px;
+  color: var(--tpg-white) !important;
+  font-size: 13px !important;
+  line-height: 18px;
+  font-weight: 500 !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .profile-img-wrapper { width: 52px; height: 52px; }
+.member:has(.tpg-demo) .main-member-profile-container .hero-2-balance { padding: 13px 22px; border-radius: 0; }
+.member:has(.tpg-demo) .main-member-profile-container .hero-2-balance p {
+  margin-bottom: 4px;
+  color: var(--tpg-white) !important;
+  font-size: 12px !important;
+  line-height: 17px;
+  font-weight: 400 !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .hero-2-balance span {
+  color: var(--tpg-white) !important;
+  font-size: 42px !important;
+  line-height: 48px;
+  font-weight: 300 !important;
+  letter-spacing: -.6px;
+}
+.member:has(.tpg-demo) .main-member-profile-container .hero-2-profile-links { width: 57%; gap: 0; }
+.member:has(.tpg-demo) .main-member-profile-container .profile-link {
+  min-height: 104px;
+  padding: 19px 8px !important;
+  color: var(--tpg-white) !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  line-height: 17px;
+  font-weight: 500 !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .profile-link .icon { width: 30px !important; height: 30px !important; margin-bottom: 8px; }
+
+/* 06. Existing dashboard layout safeguards */
+.member:has(.tpg-demo) #member-dashboard > .row:nth-child(2) { align-items: flex-start; }
+.member:has(.tpg-demo) #member-dashboard .layout-cpnt { min-width: 0; }
+.member:has(.tpg-demo) #main [data-widget-type*="feed"] { flex: initial !important; }
+
+/* 07. Left-column feature cards */
+.member:has(.tpg-demo) .nom-dashboard .post-container {
+  margin-bottom: 24px;
+  overflow: hidden;
+  background: var(--tpg-white);
+  border: 1px solid rgba(30,30,30,.15);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  transition: border-color 300ms var(--tpg-ease);
+}
+.member:has(.tpg-demo) .nom-dashboard .post-container .thumbnails { height: 176px; overflow: hidden; background-position: center; background-size: cover; }
+.member:has(.tpg-demo) .nom-dashboard .post-container:nth-child(1) .thumbnails { background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29754"); }
+.member:has(.tpg-demo) .nom-dashboard .post-container:nth-child(2) .thumbnails { background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29755"); }
+.member:has(.tpg-demo) .nom-dashboard .post-container:nth-child(3) .thumbnails { background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29757"); }
+.member:has(.tpg-demo) .nom-dashboard .post-container .thumbnails img { width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+.member:has(.tpg-demo) .nom-dashboard .post-content { padding: 20px 18px 18px !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-content .title { color: var(--tpg-navy); font-size: 20px !important; line-height: 26px; font-weight: 400 !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-content .description { color: #4f5863; font-size: 13px !important; line-height: 19px; font-weight: 400 !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-content::after {
+  content: "Learn more";
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 16px 38px 0 22px;
+  color: var(--tpg-navy);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: .1px;
+  text-align: right;
+  background-image:
+    radial-gradient(circle at 5px 25px, var(--tpg-outline-blue) 0 4px, transparent 5px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23043867' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 3 5 5-5 5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right 4px bottom 7px;
+  background-size: 12px 44px, 16px 16px;
+  transition: background-position 300ms var(--tpg-ease), color 300ms var(--tpg-ease);
+}
+
+/* 08. Social feed */
+.member:has(.tpg-demo) .feed-widget .card-well,
+.member:has(.tpg-demo) .filter-posts-container,
+.member:has(.tpg-demo) .create-a-post-container,
+.member:has(.tpg-demo) .feed-widget-item {
+  background-color: var(--tpg-white) !important;
+  border: 1px solid rgba(30,30,30,.14) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) .feed-widget-item { transition: border-color 300ms var(--tpg-ease); }
+.member:has(.tpg-demo) .feed-widget .feed-widget-body { border-color: rgba(4,56,103,.16) !important; }
+.member:has(.tpg-demo) .feed-widget button,
+.member:has(.tpg-demo) .feed-widget a { color: var(--tpg-navy); }
+.member:has(.tpg-demo) .feed-widget .post-option-icon { color: var(--tpg-outline-blue) !important; }
+
+/* 09. Budget Tracker */
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel.panel-tertiary {
+  color: var(--tpg-white);
+  background: var(--tpg-hero-navy) url("https://halosalesandrecognition.venta.werecognize.com/asset/29752") no-repeat center / cover !important;
+  background-blend-mode: multiply;
+  border: 1px solid rgba(255,255,255,.35) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  padding: 24px 22px 28px;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel.panel-tertiary::before {
+  padding-top: 0 !important;
+  color: var(--tpg-white) !important;
+  font-size: 20px !important;
+  line-height: 28px;
+  font-weight: 500 !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body,
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body::before,
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body * { color: var(--tpg-white) !important; }
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body { padding: 6px 0 0 !important; }
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body::before {
+  margin: 22px 0 16px !important;
+  font-size: 13px !important;
+  line-height: 20px;
+  font-weight: 400;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body .h1 {
+  margin: 0 !important;
+  font-size: 48px !important;
+  line-height: 58px !important;
+  font-weight: 300 !important;
+  letter-spacing: -1px;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body .h4 {
+  font-size: 13px !important;
+  line-height: 19px !important;
+  font-weight: 400 !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body .h1 + .h4 {
+  margin-top: 2px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .progress {
+  position: relative;
+  height: 12px !important;
+  margin: 102px 0 34px !important;
+  overflow: visible !important;
+  background: rgba(220,229,238,.24) !important;
+  border: 1px solid rgba(220,229,238,.25) !important;
+  border-radius: 6px !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .progress::before {
+  content: "86%";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -82px;
+  color: var(--tpg-white);
+  font-size: 68px;
+  line-height: 72px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .progressbar-back-text,
+.member:has(.tpg-demo) [data-widget-type="budget"] .progressbar-front-text {
+  display: none !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .progress-bar {
+  width: 86% !important;
+  background: var(--tpg-outline-blue) !important;
+  border-radius: 6px !important;
+  transform-origin: left center;
+  animation: tpg-budget-fill 900ms var(--tpg-ease) both;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] hr {
+  margin: 0 0 24px !important;
+  border-color: rgba(255,255,255,.22) !important;
+}
+@keyframes tpg-budget-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* 10. Pending Approvals */
+.member:has(.tpg-demo) .my-approvals-container {
+  margin-bottom: 0 !important;
+  padding: 24px !important;
+  background: #eef1f3 !important;
+  border: 1px solid rgba(30,30,30,.12);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) .approvals-header { padding: 0 !important; }
+.member:has(.tpg-demo) .empty-approval-background { background: none !important; }
+.member:has(.tpg-demo) .empty-approval-container { padding: 16px 0 !important; }
+.member:has(.tpg-demo) .my-approvals-container h2 { color: var(--tpg-navy) !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) .my-approvals-container .btn { min-height: 44px; color: var(--tpg-navy) !important; background: transparent !important; border: 1px solid var(--tpg-outline-blue) !important; border-radius: 6px !important; }
+.member:has(.tpg-demo) .my-approvals-container .text-link { display: inline-block; min-height: 44px; padding-top: 13px; color: var(--tpg-navy) !important; font-weight: 500; }
+
+/* 11. Service Anniversaries */
+.member:has(.tpg-demo) [data-widget-id="8144"] .admin-upcoming-anniv-container {
+  background: #eef1f3 !important;
+  border: 1px solid rgba(30,30,30,.12);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) [data-widget-id="8144"] h2 { color: var(--tpg-navy); font-size: 18px !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) [data-widget-id="8144"] .header-left::before { display: none !important; }
+.member:has(.tpg-demo) [data-widget-id="8144"] .select-range-btn { min-height: 44px; background: transparent; border: 1px solid rgba(4,56,103,.35) !important; border-radius: 6px !important; }
+
+/* 12. Submit Recognition Card */
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] {
+  position: relative;
+  padding: 24px 18px 20px !important;
+  background: #eef1f3 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"]::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 18px;
+  width: 25px;
+  height: 25px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 7h18v4a2 2 0 0 0 0 4v4H3v-4a2 2 0 0 0 0-4V7Z'/%3E%3Cpath d='M9 7v12M15 7v12' stroke-dasharray='2 2'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] label {
+  display: block;
+  padding-top: 45px;
+  color: #98a1aa;
+  font-size: 12px !important;
+  line-height: 17px;
+  font-weight: 400;
+  text-align: left;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] label::before {
+  position: absolute;
+  top: 24px;
+  left: 54px;
+  color: var(--tpg-navy);
+  font-size: 18px !important;
+  line-height: 25px;
+  font-weight: 400;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] label::after { content: none; }
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .form-control {
+  min-height: 44px;
+  margin: 8px 0 4px !important;
+  padding: 12px 13px;
+  color: #98a1aa !important;
+  background: var(--tpg-white) !important;
+  border: 1px solid rgba(4,56,103,.42) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .form-control::placeholder { color: #a0a8b0; opacity: 1; }
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .btn {
+  display: block;
+  width: 100% !important;
+  min-height: 44px;
+  padding: 12px 38px 12px 22px !important;
+  color: var(--tpg-navy) !important;
+  background: transparent !important;
+  background-image:
+    radial-gradient(circle at 5px 22px, var(--tpg-outline-blue) 0 4px, transparent 5px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23043867' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 3 5 5-5 5'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat, no-repeat !important;
+  background-position: left center, right 4px center !important;
+  background-size: 12px 44px, 16px 16px !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  font-size: 13px !important;
+  line-height: 20px;
+  font-weight: 500 !important;
+  letter-spacing: .1px;
+  text-align: right;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .btn::before,
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .btn::after { content: none; }
+
+/* 13. Rewards storefront */
+.member:has(.tpg-demo) .storefront-callout-bg {
+  position: relative;
+  padding: 64px 0 56px;
+  color: var(--tpg-white);
+  background: var(--tpg-hero-navy) url("https://halosalesandrecognition.venta.werecognize.com/asset/29752") no-repeat center / cover !important;
+  background-blend-mode: multiply;
+}
+.member:has(.tpg-demo) .storefront-callout-bg .callout-top { width: 100%; margin-bottom: 36px; text-align: center; }
+.member:has(.tpg-demo) .storefront-callout-bg .callout-title { color: var(--tpg-white) !important; font-size: 40px !important; line-height: 48px !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .callout-text { color: var(--tpg-white) !important; font-size: 18px !important; line-height: 28px !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .post-container {
+  overflow: hidden;
+  background: #eef1f3 !important;
+  border: 1px solid rgba(255,255,255,.52);
+  border-bottom: 4px solid var(--tpg-gold);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  transition: border-color 300ms var(--tpg-ease), background-color 300ms var(--tpg-ease);
+}
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(2) .post-container { border-bottom-color: var(--tpg-olive); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(3) .post-container { border-bottom-color: var(--tpg-plum); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(4) .post-container { border-bottom-color: var(--tpg-rust); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(1) .post-container { border-bottom-color: var(--tpg-gold); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(2) .post-container { border-bottom-color: var(--tpg-olive); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(3) .post-container { border-bottom-color: var(--tpg-plum); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(4) .post-container { border-bottom-color: var(--tpg-rust); }
+.member:has(.tpg-demo) .storefront-callout-bg .post-container .thumbnails { overflow: hidden; }
+.member:has(.tpg-demo) .storefront-callout-bg .post-container .thumbnails img { width: 100%; transition: transform 300ms var(--tpg-ease), filter 300ms var(--tpg-ease); }
+.member:has(.tpg-demo) .storefront-callout-bg .post-content { min-height: 205px !important; padding: 20px !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .title { color: var(--tpg-navy) !important; font-size: 18px !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .description { color: #354454 !important; font-size: 13px !important; line-height: 19px; font-weight: 400 !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .icon-bottom { width: 58px; height: 58px; padding: 0; background: rgba(0,9,26,.84); border: 2px solid var(--tpg-outline-blue); border-radius: 50%; }
+.member:has(.tpg-demo) .storefront-callout-bg .icon-bottom span { display: none; }
+.member:has(.tpg-demo) .storefront-callout-bg .icon-bottom::before {
+  content: "";
+  position: absolute;
+  inset: 13px;
+  background: no-repeat center / contain;
+  filter: brightness(0) invert(1);
+}
+.member:has(.tpg-demo) .storefront-callout-bg .one-qtr:nth-child(1) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Cpath d='M6 8h12l-1 13H7L6 8Z M9 9V6a3 3 0 0 1 6 0v3'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .one-qtr:nth-child(2) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Crect x='4' y='3' width='16' height='18' rx='1'/%3E%3Cpath d='M9 6h6M10 18h4'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .one-qtr:nth-child(3) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Cpath d='M3 8h18v8H3V8Z M8 8v8M16 8v8M11 11h2'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .one-qtr:nth-child(4) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Cpath d='M4 19l6-14 4 7 6-2-3 9H4Z M12 14l2-2'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(1) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Crect x='3' y='6' width='18' height='14'/%3E%3Cpath d='M12 6v14M3 11h18M8 6c-3-3 1-5 4 0 3-5 7-3 4 0'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(2) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Crect x='6' y='2' width='12' height='20' rx='1'/%3E%3Cpath d='M9 6h6M9 10h2M13 10h2M9 14h6'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(3) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Cpath d='M3 14c4-1 5 0 7 3h4c3 0 5-2 7-5M7 12c-3-3 1-7 5-2 4-5 8-1 5 2l-5 5-5-5Z'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(4) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Crect x='2' y='5' width='20' height='14' rx='1'/%3E%3Cpath d='M2 9h20M5 15h5'/%3E%3C/svg%3E"); }
+
+/* 14. Footer */
+.member:has(.tpg-demo) footer { color: var(--tpg-white); background: #11161c !important; border-top: 1px solid rgba(255,255,255,.15); }
+.member:has(.tpg-demo) footer a { color: var(--tpg-white) !important; }
+
+/* 15. Hover, focus, active, and state styling */
+.member:has(.tpg-demo) a,
+.member:has(.tpg-demo) button,
+.member:has(.tpg-demo) input,
+.member:has(.tpg-demo) select { transition: color 300ms var(--tpg-ease), background-color 300ms var(--tpg-ease), border-color 300ms var(--tpg-ease), transform 300ms var(--tpg-ease); }
+.member:has(.tpg-demo) :is(a,button,input,select,textarea):focus-visible { outline: 2px solid var(--tpg-outline-blue) !important; outline-offset: 3px !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-container:hover,
+.member:has(.tpg-demo) .feed-widget-item:hover { border-color: rgba(4,56,103,.55) !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-container:hover .thumbnails { background-size: 102.5%; }
+.member:has(.tpg-demo) .nom-dashboard .post-container:hover .post-content::after { background-position: left top, right 0 bottom 7px; }
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .thumbnails img { transform: scale(1.025); filter: saturate(.88) contrast(1.04); }
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .btn:hover { background-position: left center, right 0 center !important; }
+.member:has(.tpg-demo) .btn:active { transform: translateY(1px); }
+.member:has(.tpg-demo) :is(button,.btn):disabled,
+.member:has(.tpg-demo) :is(button,.btn).disabled { opacity: .38 !important; cursor: not-allowed; }
+
+/* 16. Narrow responsive refinements */
+@media (max-width: 991px) {
+  .member:has(.tpg-demo) .hero-recognition-container.layout-2 { min-height: 540px; }
+  .member:has(.tpg-demo) .hero-recognition-container h1,
+  .member:has(.tpg-demo) .hero-recognition-container .hero-title { max-width: 600px; font-size: 46px !important; }
+  .member:has(.tpg-demo) .nom-dashboard .post-container .thumbnails { height: 150px; }
+}
+@media (max-width: 767px) {
+  .member:has(.tpg-demo) #header-wrap { position: fixed; background: transparent !important; }
+  .member:has(.tpg-demo) .hero-recognition-container.layout-2 { min-height: 460px; }
+  .member:has(.tpg-demo) .hero-recognition-container h1,
+  .member:has(.tpg-demo) .hero-recognition-container .hero-title { max-width: 430px; font-size: 38px !important; line-height: 44px !important; }
+  .member:has(.tpg-demo) .storefront-callout-bg { padding: 48px 0 40px; }
+  .member:has(.tpg-demo) .storefront-callout-bg .callout-title { font-size: 32px !important; line-height: 40px !important; }
+  .member:has(.tpg-demo) .storefront-callout-bg .callout-text { font-size: 16px !important; line-height: 24px !important; }
+}
+
+/* 17. Reduced motion and accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .member:has(.tpg-demo) *,
+  .member:has(.tpg-demo) *::before,
+  .member:has(.tpg-demo) *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 20. Final TPG photographic surfaces and rewards card states */
+
+/* TPG About Us photography with the brand's deep navy editorial wash. */
+.member:has(.tpg-demo) .storefront-callout-bg {
+  background:
+    linear-gradient(rgba(0, 9, 26, .88), rgba(0, 22, 47, .92)),
+    url("https://cms.tpg.com/wp-content/uploads/2021/12/6-0-About-Us-a-hero-01-scaled.jpg") center center / cover no-repeat !important;
+  background-blend-mode: normal !important;
+}
+
+/* TPG office photography beneath a slightly stronger navy data-bar wash. */
+.member:has(.tpg-demo) .main-member-profile-container {
+  background:
+    linear-gradient(rgba(0, 9, 26, .88), rgba(0, 30, 61, .93)),
+    url("https://cms.tpg.com/wp-content/uploads/2021/12/GettyImages-1154290373.jpg") center 48% / cover no-repeat !important;
+  background-blend-mode: normal !important;
+}
+
+/* Rewards cards: clean white at rest, pale muted blue on interaction. */
+.member:has(.tpg-demo) .storefront-callout-bg .post-container {
+  background: var(--tpg-white) !important;
+  border: 0 !important;
+  border-bottom: 4px solid var(--tpg-gold) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-content {
+  background: var(--tpg-white) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(1) .post-container,
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(1) .post-container {
+  border-bottom-color: var(--tpg-gold) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(2) .post-container,
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(2) .post-container {
+  border-bottom-color: var(--tpg-olive) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(3) .post-container,
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(3) .post-container {
+  border-bottom-color: var(--tpg-plum) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(4) .post-container,
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(4) .post-container {
+  border-bottom-color: var(--tpg-rust) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within {
+  background: #edf2f5 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  box-shadow: 0 10px 24px rgba(0, 9, 26, .16) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .post-content,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within .post-content {
+  background: #edf2f5 !important;
+}
+
+/* 23. Intro-card CTA elements replace the former generated Learn more links */
+.member:has(.tpg-demo) .post-container:has(.faux-button) .post-content::after {
+  content: none !important;
+  display: none !important;
+}
+
+.member:has(.tpg-demo) .post-container:has(.faux-button) .faux-button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  padding: 16px 38px 0 22px;
+  color: var(--tpg-navy);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: .1px;
+  text-align: right;
+  background-image:
+    radial-gradient(circle at 5px 25px, var(--tpg-outline-blue) 0 4px, transparent 5px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23043867' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 3 5 5-5 5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right 4px bottom 7px;
+  background-size: 12px 44px, 16px 16px;
+  transition:
+    color 300ms var(--tpg-ease),
+    background-position 300ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) .post-container:has(.faux-button):hover .faux-button,
+.member:has(.tpg-demo) .post-container:has(.faux-button):focus-within .faux-button {
+  background-position: left top, right 0 bottom 7px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .member:has(.tpg-demo) .post-container:has(.faux-button) .faux-button {
+    transition: none !important;
+  }
+}
+
+/* 22. Fixed hero spacing */
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy {
+  margin: 54px 0 72px !important;
+}
+
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .container {
+  padding: 72px 0 100px !important;
+}
+
+
+
+div[data-widget-type="serialcard"] .panel-body {
+
+  padding: 0 !important;
+
+}
+
+
+
+.member:has(.tpg-demo) .my-approvals-container {
+
+  margin-bottom: 0 !important;
+
+}
+
+
+
+#member-dashboard .panel-tertiary {
+
+  margin-bottom: 0 !important;
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* 01. TPG tokens and font import */
+.member:has(.tpg-demo) {
+  --tpg-ink: #1e1e1e;
+  --tpg-white: #ffffff;
+  --tpg-gray-surface: #f4f4f4;
+  --tpg-navy: #043867;
+  --tpg-hero-navy: #00091a;
+  --tpg-outline-blue: #0055ff;
+  --tpg-pale-blue: #dce5ee;
+  --tpg-teal: #005862;
+  --tpg-olive: #4d5e34;
+  --tpg-gold: #b5954f;
+  --tpg-plum: #452854;
+  --tpg-rust: #80420d;
+  --tpg-ease: cubic-bezier(.4, 0, .2, 1);
+  color: var(--tpg-ink);
+  background: var(--tpg-gray-surface);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/* 02. Page scope and global typography */
+.member:has(.tpg-demo) #main,
+.member:has(.tpg-demo) button,
+.member:has(.tpg-demo) input,
+.member:has(.tpg-demo) select,
+.member:has(.tpg-demo) textarea {
+  font-family: Inter, Arial, Helvetica, sans-serif !important;
+}
+.member:has(.tpg-demo) #main { background: var(--tpg-gray-surface) !important; }
+.member:has(.tpg-demo) h1,
+.member:has(.tpg-demo) h2,
+.member:has(.tpg-demo) h3,
+.member:has(.tpg-demo) h4,
+.member:has(.tpg-demo) h5,
+.member:has(.tpg-demo) h6,
+.member:has(.tpg-demo) .text-bold,
+.member:has(.tpg-demo) .text-semi-bold { font-weight: 400 !important; }
+.member:has(.tpg-demo) .balance,
+.member:has(.tpg-demo) [data-widget-type="budget"] .stat,
+.member:has(.tpg-demo) [data-widget-type="budget"] .percentage { font-variant-numeric: tabular-nums; }
+
+/* 03. Header and transparent navigation */
+.member:has(.tpg-demo) .background-wrapper {
+  background-color: transparent !important;
+  border: 0;
+}
+.member:has(.tpg-demo) div#app { padding-top: 0; }
+.member:has(.tpg-demo) #header-wrap,
+.member:has(.tpg-demo) .header-container,
+.member:has(.tpg-demo) .top-nav-row {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) #header-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,.24);
+  animation: tpg-sticky-header 1ms linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 120px;
+}
+.member:has(.tpg-demo) #header-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--tpg-white);
+  opacity: 0;
+  animation: tpg-sticky-surface 1ms linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 120px;
+}
+.member:has(.tpg-demo) #header-wrap a,
+.member:has(.tpg-demo) #header-wrap button,
+.member:has(.tpg-demo) #header-wrap i { color: var(--tpg-white) !important; }
+.member:has(.tpg-demo) div#header-wrap svg path { fill: var(--tpg-white) !important; }
+.member:has(.tpg-demo) #header-wrap .navbar-brand {
+  width: 126px;
+  height: 48px;
+  background: url("TPG_Capital_logo.svg") no-repeat left center / contain;
+  animation: tpg-sticky-logo 1ms linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 120px;
+}
+.member:has(.tpg-demo) #header-wrap .navbar-brand img { opacity: 0; }
+.member:has(.tpg-demo) #header-wrap .top-nav-icons-list a,
+.member:has(.tpg-demo) #header-wrap .top-nav-icons-list button,
+.member:has(.tpg-demo) #header-wrap .hamburger-menu {
+  display: flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+.member:has(.tpg-demo) .topNavIcons a.psr[data-badge]:not([data-badge="0"])::after,
+.member:has(.tpg-demo) .topNavIcons button.psr[data-badge]:not([data-badge="0"])::after {
+  color: var(--tpg-white) !important;
+  background-color: var(--tpg-navy) !important;
+}
+@keyframes tpg-sticky-header {
+  from {
+    color: var(--tpg-white);
+    background-color: transparent;
+    border-bottom-color: rgba(255,255,255,.24);
+    box-shadow: none;
+  }
+  to {
+    color: var(--tpg-navy);
+    background-color: var(--tpg-white);
+    border-bottom-color: rgba(4,56,103,.16);
+    box-shadow: 0 2px 10px rgba(0,9,26,.08);
+  }
+}
+@keyframes tpg-sticky-logo {
+  from { filter: none; }
+  to { filter: brightness(0) saturate(100%) invert(18%) sepia(31%) saturate(2259%) hue-rotate(174deg) brightness(88%) contrast(100%); }
+}
+@keyframes tpg-sticky-surface {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@supports (animation-timeline: scroll()) {
+  .member:has(.tpg-demo) #header-wrap a,
+  .member:has(.tpg-demo) #header-wrap button,
+  .member:has(.tpg-demo) #header-wrap i,
+  .member:has(.tpg-demo) #header-wrap svg {
+    animation: tpg-sticky-icon 1ms linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 120px;
+  }
+}
+@keyframes tpg-sticky-icon {
+  from { filter: none; }
+  to { filter: brightness(0) saturate(100%) invert(18%) sepia(31%) saturate(2259%) hue-rotate(174deg) brightness(88%) contrast(100%); }
+}
+
+/* 04. Hero */
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 {
+  position: relative;
+  min-height: 620px;
+  color: var(--tpg-white);
+  background: var(--tpg-hero-navy) url("https://halosalesandrecognition.venta.werecognize.com/asset/29752") no-repeat bottom center / cover !important;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,9,26,.92) 0%, rgba(0,9,26,.74) 42%, rgba(0,9,26,.28) 72%, rgba(0,9,26,.35) 100%);
+  pointer-events: none;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 > * { position: relative; z-index: 1; }
+.member:has(.tpg-demo) .hero-recognition-container h1,
+.member:has(.tpg-demo) .hero-recognition-container .hero-title {
+  max-width: 720px;
+  color: var(--tpg-white) !important;
+  font-size: 58px !important;
+  line-height: 1.05 !important;
+  font-weight: 300 !important;
+  letter-spacing: -.8px;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta,
+.member:has(.tpg-demo) .hero-recognition-container .dashboard-button a {
+  position: relative;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  min-width: 190px;
+  padding: 12px 48px 12px 18px !important;
+  color: var(--tpg-white) !important;
+  background: transparent !important;
+  border: 1px solid rgba(255,255,255,.8) !important;
+  border-radius: 6px !important;
+  font-size: 13px !important;
+  line-height: 18px;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  text-transform: none;
+  box-shadow: none;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta::after {
+  content: "→";
+  position: absolute;
+  right: 17px;
+  font-size: 20px;
+  font-weight: 300;
+  transition: transform 300ms var(--tpg-ease);
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta:hover {
+  color: var(--tpg-hero-navy) !important;
+  background: var(--tpg-white) !important;
+  border-color: var(--tpg-white) !important;
+}
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy a.hero-cta:hover::after {
+  transform: translateX(4px);
+}
+
+/* 05. Member stat/action bar */
+.member:has(.tpg-demo) .main-member-profile-container {
+  position: relative;
+  padding: 0 !important;
+  color: var(--tpg-white);
+  background: rgba(0,30,61,.95) url("https://halosalesandrecognition.venta.werecognize.com/asset/29752") no-repeat center 60% / cover !important;
+  background-blend-mode: multiply;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .profile-info {
+  width: 43% !important;
+  padding: 8px 22px !important;
+  color: var(--tpg-white);
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .avatar { padding: 12px 22px !important; }
+.member:has(.tpg-demo) .main-member-profile-container .avatar p {
+  margin-top: 7px;
+  color: var(--tpg-white) !important;
+  font-size: 13px !important;
+  line-height: 18px;
+  font-weight: 500 !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .profile-img-wrapper { width: 52px; height: 52px; }
+.member:has(.tpg-demo) .main-member-profile-container .hero-2-balance { padding: 13px 22px; border-radius: 0; }
+.member:has(.tpg-demo) .main-member-profile-container .hero-2-balance p {
+  margin-bottom: 4px;
+  color: var(--tpg-white) !important;
+  font-size: 12px !important;
+  line-height: 17px;
+  font-weight: 400 !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .hero-2-balance span {
+  color: var(--tpg-white) !important;
+  font-size: 42px !important;
+  line-height: 48px;
+  font-weight: 300 !important;
+  letter-spacing: -.6px;
+}
+.member:has(.tpg-demo) .main-member-profile-container .hero-2-profile-links { width: 57%; gap: 0; }
+.member:has(.tpg-demo) .main-member-profile-container .profile-link {
+  min-height: 104px;
+  padding: 19px 8px !important;
+  color: var(--tpg-white) !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  line-height: 17px;
+  font-weight: 500 !important;
+}
+.member:has(.tpg-demo) .main-member-profile-container .profile-link .icon { width: 30px !important; height: 30px !important; margin-bottom: 8px; }
+
+/* 06. Existing dashboard layout safeguards */
+.member:has(.tpg-demo) #member-dashboard > .row:nth-child(2) { align-items: flex-start; }
+.member:has(.tpg-demo) #member-dashboard .layout-cpnt {/* min-width: 0; */}
+.member:has(.tpg-demo) #main [data-widget-type*="feed"] {overflow-y: scroll;max-height: 1600.98px !important;scrollbar-color: var(--color-primary-parhealth) #ebf4f8;flex: 1 1 0 !important;}
+
+/* 07. Left-column feature cards */
+.member:has(.tpg-demo) .nom-dashboard .post-container {
+  margin-bottom: 24px;
+  overflow: hidden;
+  background: var(--tpg-white);
+  border: 1px solid rgba(30,30,30,.15);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  transition: border-color 300ms var(--tpg-ease);
+}
+.member:has(.tpg-demo) .nom-dashboard .post-container .thumbnails { height: 176px; overflow: hidden; background-position: center; background-size: cover; }
+.member:has(.tpg-demo) .nom-dashboard .post-container:nth-child(1) .thumbnails { background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29754"); }
+.member:has(.tpg-demo) .nom-dashboard .post-container:nth-child(2) .thumbnails { background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29755"); }
+.member:has(.tpg-demo) .nom-dashboard .post-container:nth-child(3) .thumbnails { background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29757"); }
+.member:has(.tpg-demo) .nom-dashboard .post-container .thumbnails img { width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+.member:has(.tpg-demo) .nom-dashboard .post-content { padding: 20px 18px 18px !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-content .title { color: var(--tpg-navy); font-size: 20px !important; line-height: 26px; font-weight: 400 !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-content .description { color: #4f5863; font-size: 13px !important; line-height: 19px; font-weight: 400 !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-content::after {
+  content: "Learn more";
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 16px 38px 0 22px;
+  color: var(--tpg-navy);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: .1px;
+  text-align: right;
+  background-image:
+    radial-gradient(circle at 5px 25px, var(--tpg-outline-blue) 0 4px, transparent 5px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23043867' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 3 5 5-5 5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right 4px bottom 7px;
+  background-size: 12px 44px, 16px 16px;
+  transition: background-position 300ms var(--tpg-ease), color 300ms var(--tpg-ease);
+}
+
+/* 08. Social feed */
+.member:has(.tpg-demo) .feed-widget .card-well,
+.member:has(.tpg-demo) .filter-posts-container,
+.member:has(.tpg-demo) .create-a-post-container,
+.member:has(.tpg-demo) .feed-widget-item {
+  background-color: var(--tpg-white) !important;
+  border: 1px solid rgba(30,30,30,.14) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) .feed-widget-item { transition: border-color 300ms var(--tpg-ease); }
+.member:has(.tpg-demo) .feed-widget .feed-widget-body { border-color: rgba(4,56,103,.16) !important; }
+.member:has(.tpg-demo) .feed-widget button,
+.member:has(.tpg-demo) .feed-widget a { color: var(--tpg-navy); }
+.member:has(.tpg-demo) .feed-widget .post-option-icon { color: var(--tpg-outline-blue) !important; }
+
+/* 09. Budget Tracker */
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel.panel-tertiary {
+  color: var(--tpg-white);
+  background: var(--tpg-hero-navy) url("https://halosalesandrecognition.venta.werecognize.com/asset/29752") no-repeat center / cover !important;
+  background-blend-mode: multiply;
+  border: 1px solid rgba(255,255,255,.35) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  padding: 24px 22px 28px;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel.panel-tertiary::before {
+  padding-top: 0 !important;
+  color: var(--tpg-white) !important;
+  font-size: 20px !important;
+  line-height: 28px;
+  font-weight: 500 !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body,
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body::before,
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body * { color: var(--tpg-white) !important; }
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body { padding: 6px 0 0 !important; }
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body::before {
+  margin: 22px 0 16px !important;
+  font-size: 13px !important;
+  line-height: 20px;
+  font-weight: 400;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body .h1 {
+  margin: 0 !important;
+  font-size: 48px !important;
+  line-height: 58px !important;
+  font-weight: 300 !important;
+  letter-spacing: -1px;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body .h4 {
+  font-size: 13px !important;
+  line-height: 19px !important;
+  font-weight: 400 !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .panel-body .h1 + .h4 {
+  margin-top: 2px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .progress {
+  position: relative;
+  height: 12px !important;
+  margin: 102px 0 34px !important;
+  overflow: visible !important;
+  background: rgba(220,229,238,.24) !important;
+  border: 1px solid rgba(220,229,238,.25) !important;
+  border-radius: 6px !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .progress::before {
+  content: "86%";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -82px;
+  color: var(--tpg-white);
+  font-size: 68px;
+  line-height: 72px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .progressbar-back-text,
+.member:has(.tpg-demo) [data-widget-type="budget"] .progressbar-front-text {
+  display: none !important;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] .progress-bar {
+  width: 86% !important;
+  background: var(--tpg-outline-blue) !important;
+  border-radius: 6px !important;
+  transform-origin: left center;
+  animation: tpg-budget-fill 900ms var(--tpg-ease) both;
+}
+.member:has(.tpg-demo) [data-widget-type="budget"] hr {
+  margin: 0 0 24px !important;
+  border-color: rgba(255,255,255,.22) !important;
+}
+@keyframes tpg-budget-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* 10. Pending Approvals */
+.member:has(.tpg-demo) .my-approvals-container {
+  margin-bottom: 0 !important;
+  padding: 24px !important;
+  background: #eef1f3 !important;
+  border: 1px solid rgba(30,30,30,.12);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) .approvals-header { padding: 0 !important; }
+.member:has(.tpg-demo) .empty-approval-background { background: none !important; }
+.member:has(.tpg-demo) .empty-approval-container { padding: 16px 0 !important; }
+.member:has(.tpg-demo) .my-approvals-container h2 { color: var(--tpg-navy) !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) .my-approvals-container .btn { min-height: 44px; color: var(--tpg-navy) !important; background: transparent !important; border: 1px solid var(--tpg-outline-blue) !important; border-radius: 6px !important; }
+.member:has(.tpg-demo) .my-approvals-container .text-link { display: inline-block; min-height: 44px; padding-top: 13px; color: var(--tpg-navy) !important; font-weight: 500; }
+
+/* 11. Service Anniversaries */
+.member:has(.tpg-demo) [data-widget-id="8144"] .admin-upcoming-anniv-container {
+  background: #eef1f3 !important;
+  border: 1px solid rgba(30,30,30,.12);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  height: 100% !important;
+}
+.member:has(.tpg-demo) [data-widget-id="8144"] h2 { color: var(--tpg-navy); font-size: 18px !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) [data-widget-id="8144"] .header-left::before { display: none !important; }
+.member:has(.tpg-demo) [data-widget-id="8144"] .select-range-btn { min-height: 44px; background: transparent; border: 1px solid rgba(4,56,103,.35) !important; border-radius: 6px !important; }
+
+/* 12. Submit Recognition Card */
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] {
+  position: relative;
+  padding: 24px 18px 20px !important;
+  background: #eef1f3 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"]::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 18px;
+  width: 25px;
+  height: 25px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 7h18v4a2 2 0 0 0 0 4v4H3v-4a2 2 0 0 0 0-4V7Z'/%3E%3Cpath d='M9 7v12M15 7v12' stroke-dasharray='2 2'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] label {
+  display: block;
+  padding-top: 45px;
+  color: #98a1aa;
+  font-size: 12px !important;
+  line-height: 17px;
+  font-weight: 400;
+  text-align: left;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] label::before {
+  position: absolute;
+  top: 24px;
+  left: 54px;
+  color: var(--tpg-navy);
+  font-size: 18px !important;
+  line-height: 25px;
+  font-weight: 400;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] label::after { content: none; }
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .form-control {
+  min-height: 44px;
+  margin: 8px 0 4px !important;
+  padding: 12px 13px;
+  color: #98a1aa !important;
+  background: var(--tpg-white) !important;
+  border: 1px solid rgba(4,56,103,.42) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .form-control::placeholder { color: #a0a8b0; opacity: 1; }
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .btn {
+  display: block;
+  width: 100% !important;
+  min-height: 44px;
+  padding: 12px 38px 12px 22px !important;
+  color: var(--tpg-navy) !important;
+  background: transparent !important;
+  background-image:
+    radial-gradient(circle at 5px 22px, var(--tpg-outline-blue) 0 4px, transparent 5px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23043867' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 3 5 5-5 5'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat, no-repeat !important;
+  background-position: left center, right 4px center !important;
+  background-size: 12px 44px, 16px 16px !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  font-size: 13px !important;
+  line-height: 20px;
+  font-weight: 500 !important;
+  letter-spacing: .1px;
+  text-align: right;
+}
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .btn::before,
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .btn::after { content: none; }
+
+/* 13. Rewards storefront */
+.member:has(.tpg-demo) .storefront-callout-bg {
+  position: relative;
+  padding: 64px 0 56px;
+  color: var(--tpg-white);
+  background: var(--tpg-hero-navy) url("https://halosalesandrecognition.venta.werecognize.com/asset/29752") no-repeat center / cover !important;
+  background-blend-mode: multiply;
+}
+.member:has(.tpg-demo) .storefront-callout-bg .callout-top { width: 100%; margin-bottom: 36px; text-align: center; }
+.member:has(.tpg-demo) .storefront-callout-bg .callout-title { color: var(--tpg-white) !important; font-size: 40px !important; line-height: 48px !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .callout-text { color: var(--tpg-white) !important; font-size: 18px !important; line-height: 28px !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .post-container {
+  overflow: hidden;
+  background: #eef1f3 !important;
+  border: 1px solid rgba(255,255,255,.52);
+  border-bottom: 4px solid var(--tpg-gold);
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  transition: border-color 300ms var(--tpg-ease), background-color 300ms var(--tpg-ease);
+}
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(2) .post-container { border-bottom-color: var(--tpg-olive); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(3) .post-container { border-bottom-color: var(--tpg-plum); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(4) .post-container { border-bottom-color: var(--tpg-rust); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(1) .post-container { border-bottom-color: var(--tpg-gold); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(2) .post-container { border-bottom-color: var(--tpg-olive); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(3) .post-container { border-bottom-color: var(--tpg-plum); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(4) .post-container { border-bottom-color: var(--tpg-rust); }
+.member:has(.tpg-demo) .storefront-callout-bg .post-container .thumbnails { overflow: hidden; }
+.member:has(.tpg-demo) .storefront-callout-bg .post-container .thumbnails img { width: 100%; transition: transform 300ms var(--tpg-ease), filter 300ms var(--tpg-ease); }
+.member:has(.tpg-demo) .storefront-callout-bg .post-content { min-height: 205px !important; padding: 20px !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .title { color: var(--tpg-navy) !important; font-size: 18px !important; font-weight: 400 !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .description { color: #354454 !important; font-size: 13px !important; line-height: 19px; font-weight: 400 !important; }
+.member:has(.tpg-demo) .storefront-callout-bg .icon-bottom { width: 58px; height: 58px; padding: 0; background: rgba(0,9,26,.84); border: 2px solid var(--tpg-outline-blue); border-radius: 50%; }
+.member:has(.tpg-demo) .storefront-callout-bg .icon-bottom span { display: none; }
+.member:has(.tpg-demo) .storefront-callout-bg .icon-bottom::before {
+  content: "";
+  position: absolute;
+  inset: 13px;
+  background: no-repeat center / contain;
+  filter: brightness(0) invert(1);
+}
+.member:has(.tpg-demo) .storefront-callout-bg .one-qtr:nth-child(1) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Cpath d='M6 8h12l-1 13H7L6 8Z M9 9V6a3 3 0 0 1 6 0v3'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .one-qtr:nth-child(2) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Crect x='4' y='3' width='16' height='18' rx='1'/%3E%3Cpath d='M9 6h6M10 18h4'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .one-qtr:nth-child(3) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Cpath d='M3 8h18v8H3V8Z M8 8v8M16 8v8M11 11h2'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .one-qtr:nth-child(4) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Cpath d='M4 19l6-14 4 7 6-2-3 9H4Z M12 14l2-2'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(1) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Crect x='3' y='6' width='18' height='14'/%3E%3Cpath d='M12 6v14M3 11h18M8 6c-3-3 1-5 4 0 3-5 7-3 4 0'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(2) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Crect x='6' y='2' width='12' height='20' rx='1'/%3E%3Cpath d='M9 6h6M9 10h2M13 10h2M9 14h6'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(3) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Cpath d='M3 14c4-1 5 0 7 3h4c3 0 5-2 7-5M7 12c-3-3 1-7 5-2 4-5 8-1 5 2l-5 5-5-5Z'/%3E%3C/svg%3E"); }
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(4) .icon-bottom::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23043867' stroke-width='1.5'%3E%3Crect x='2' y='5' width='20' height='14' rx='1'/%3E%3Cpath d='M2 9h20M5 15h5'/%3E%3C/svg%3E"); }
+
+/* 14. Footer */
+.member:has(.tpg-demo) footer { color: var(--tpg-white); background: #11161c !important; border-top: 1px solid rgba(255,255,255,.15); }
+.member:has(.tpg-demo) footer a { color: var(--tpg-white) !important; }
+
+/* 15. Hover, focus, active, and state styling */
+.member:has(.tpg-demo) a,
+.member:has(.tpg-demo) button,
+.member:has(.tpg-demo) input,
+.member:has(.tpg-demo) select { transition: color 300ms var(--tpg-ease), background-color 300ms var(--tpg-ease), border-color 300ms var(--tpg-ease), transform 300ms var(--tpg-ease); }
+.member:has(.tpg-demo) :is(a,button,input,select,textarea):focus-visible { outline: 2px solid var(--tpg-outline-blue) !important; outline-offset: 3px !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-container:hover,
+.member:has(.tpg-demo) .feed-widget-item:hover { border-color: rgba(4,56,103,.55) !important; }
+.member:has(.tpg-demo) .nom-dashboard .post-container:hover .thumbnails { background-size: 102.5%; }
+.member:has(.tpg-demo) .nom-dashboard .post-container:hover .post-content::after { background-position: left top, right 0 bottom 7px; }
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .thumbnails img { transform: scale(1.025); filter: saturate(.88) contrast(1.04); }
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] .btn:hover { background-position: left center, right 0 center !important; }
+.member:has(.tpg-demo) .btn:active { transform: translateY(1px); }
+.member:has(.tpg-demo) :is(button,.btn):disabled,
+.member:has(.tpg-demo) :is(button,.btn).disabled { opacity: .38 !important; cursor: not-allowed; }
+
+/* 16. Narrow responsive refinements */
+@media (max-width: 991px) {
+  .member:has(.tpg-demo) .hero-recognition-container.layout-2 { min-height: 540px; }
+  .member:has(.tpg-demo) .hero-recognition-container h1,
+  .member:has(.tpg-demo) .hero-recognition-container .hero-title { max-width: 600px; font-size: 46px !important; }
+  .member:has(.tpg-demo) .nom-dashboard .post-container .thumbnails { height: 150px; }
+}
+@media (max-width: 767px) {
+  .member:has(.tpg-demo) #header-wrap { position: fixed; background: transparent !important; }
+  .member:has(.tpg-demo) .hero-recognition-container.layout-2 { min-height: 460px; }
+  .member:has(.tpg-demo) .hero-recognition-container h1,
+  .member:has(.tpg-demo) .hero-recognition-container .hero-title { max-width: 430px; font-size: 38px !important; line-height: 44px !important; }
+  .member:has(.tpg-demo) .storefront-callout-bg { padding: 48px 0 40px; }
+  .member:has(.tpg-demo) .storefront-callout-bg .callout-title { font-size: 32px !important; line-height: 40px !important; }
+  .member:has(.tpg-demo) .storefront-callout-bg .callout-text { font-size: 16px !important; line-height: 24px !important; }
+}
+
+/* 17. Reduced motion and accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .member:has(.tpg-demo) *,
+  .member:has(.tpg-demo) *::before,
+  .member:has(.tpg-demo) *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+.member:has(.tpg-demo) #main div[data-widget-type="serialcard"] .panel-body {
+
+  padding: 0 !important;
+
+}
+
+
+
+.member:has(.tpg-demo) #main .member:has(.tpg-demo) .my-approvals-container {
+
+  margin-bottom: 0 !important;
+
+}
+
+
+
+#member-dashboard .panel-tertiary {
+
+  margin-bottom: 0 !important;
+
+}
+
+
+
+/* Equal-height three-column row */
+.member:has(.tpg-demo) #main
+.row:has(> .col-md-6 > [data-widget-type*="feed"]) {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Make each Bootstrap column a vertical flex container */
+.member:has(.tpg-demo) #main
+.row:has(> .col-md-6 > [data-widget-type*="feed"])
+> [class*="col-"] {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+/* Fill the center column */
+.member:has(.tpg-demo) #main
+[data-widget-type*="feed"] {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+/* Complete the height chain */
+.member:has(.tpg-demo) #main
+[data-widget-type*="feed"] > div {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+/* Fill remaining space and scroll internally */
+.member:has(.tpg-demo) #main
+[data-widget-type*="feed"] .feed-widget-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.member:has(.tpg-demo) #main .feed-widget > div {
+    position: relative;
+}
+
+.member:has(.tpg-demo) #main .feed-widget > div .feed-widget-body + div {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.member:has(.tpg-demo) #main .feed-widget > div .feed-widget-body + div button span {
+    font-size: 14px !important;
+  position: relative;
+}
+
+
+.member:has(.tpg-demo) .feed-widget .btn-round span.plus::after, .feed-widget-fs-modal .btn-round span.plus::after {
+  font-size: 20px;
+  top: 0;
+  transform: translateY(-50%);
+  height: 100%;
+  left: -24px;
+}
+
+/* 18. Final rewards storefront refinement
+ * Intentionally last in the cascade so this approved treatment supersedes
+ * the earlier rewards iterations while preserving all other user edits.
+ */
+.member:has(.tpg-demo) .storefront-callout-bg .post-container {
+  height: 100%;
+  margin-bottom: 24px !important;
+  overflow: hidden;
+  background: #eef1f3 !important;
+  border: 1px solid rgba(255, 255, 255, .48) !important;
+  border-bottom-width: 4px !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  transform: translateY(0);
+  transition:
+    transform 300ms var(--tpg-ease),
+    background-color 300ms var(--tpg-ease),
+    border-color 300ms var(--tpg-ease),
+    box-shadow 300ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container > a {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+  min-height: 430px;
+  color: inherit;
+  text-decoration: none !important;
+  outline: none;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-module {
+  position: relative;
+  min-height: 180px;
+  overflow: hidden;
+  background: #d9dde2;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-module::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 48%, rgba(0, 9, 26, .28));
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .thumbnails {
+  height: 180px !important;
+  min-height: 180px;
+  overflow: hidden;
+  background-position: center !important;
+  background-size: cover !important;
+  transform: scale(1);
+  transition: transform 500ms var(--tpg-ease), filter 300ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .thumbnails img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 500ms var(--tpg-ease), filter 300ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .icon-bottom,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container .fa,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container [class*="fa-"] {
+  display: none !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-content {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 250px !important;
+  padding: 24px 62px 30px 24px !important;
+  background: #eef1f3 !important;
+  text-align: left !important;
+  transition: background-color 300ms var(--tpg-ease);
+}
+
+/* Custom TPG line icons sit above each heading and align to its left edge. */
+.member:has(.tpg-demo) .storefront-callout-bg .post-content::before {
+  content: "";
+  display: block;
+  position: static;
+  width: 44px;
+  height: 44px;
+  margin: 0 0 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 44px 44px;
+  filter: none;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(1) .post-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='none'%3E%3Ccircle cx='22' cy='22' r='21' stroke='%230055FF' stroke-width='1.5'/%3E%3Cpath d='M14 18.5h16l-1 14H15l-1-14Z' stroke='%23043867' stroke-width='1.7' stroke-linejoin='round'/%3E%3Cpath d='M18 19v-2a4 4 0 0 1 8 0v2' stroke='%23043867' stroke-width='1.7' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(2) .post-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='none'%3E%3Ccircle cx='22' cy='22' r='21' stroke='%230055FF' stroke-width='1.5'/%3E%3Crect x='14.5' y='10.5' width='15' height='23' rx='1.5' stroke='%23043867' stroke-width='1.7'/%3E%3Cpath d='M19 30.5h6M20 14h4' stroke='%23043867' stroke-width='1.7' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(3) .post-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='none'%3E%3Ccircle cx='22' cy='22' r='21' stroke='%230055FF' stroke-width='1.5'/%3E%3Cpath d='M11.5 17.5h21v5a3 3 0 0 0 0 6v5h-21v-5a3 3 0 0 0 0-6v-5Z' stroke='%23043867' stroke-width='1.7' stroke-linejoin='round'/%3E%3Cpath d='M22 18v15' stroke='%23043867' stroke-width='1.5' stroke-dasharray='2.5 2.5'/%3E%3C/svg%3E");
+}
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(4) .post-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='none'%3E%3Ccircle cx='22' cy='22' r='21' stroke='%230055FF' stroke-width='1.5'/%3E%3Crect x='11.5' y='17' width='21' height='16' rx='1.5' stroke='%23043867' stroke-width='1.7'/%3E%3Cpath d='M18 17v-4h8v4M16 17v16M28 17v16' stroke='%23043867' stroke-width='1.7'/%3E%3C/svg%3E");
+}
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(1) .post-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='none'%3E%3Ccircle cx='22' cy='22' r='21' stroke='%230055FF' stroke-width='1.5'/%3E%3Cpath d='M12 20h20v13H12V20Zm-1-5h22v5H11v-5Z' stroke='%23043867' stroke-width='1.7' stroke-linejoin='round'/%3E%3Cpath d='M22 15v18M22 15c-5 0-7-1.5-7-3.5 0-1.5 1-2.5 2.5-2.5C20 9 22 15 22 15Zm0 0c5 0 7-1.5 7-3.5C29 10 28 9 26.5 9 24 9 22 15 22 15Z' stroke='%23043867' stroke-width='1.7' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(2) .post-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='none'%3E%3Ccircle cx='22' cy='22' r='21' stroke='%230055FF' stroke-width='1.5'/%3E%3Cpath d='m22 10 2.7 8.3L33 21l-8.3 2.7L22 32l-2.7-8.3L11 21l8.3-2.7L22 10Z' stroke='%23043867' stroke-width='1.7' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(3) .post-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='none'%3E%3Ccircle cx='22' cy='22' r='21' stroke='%230055FF' stroke-width='1.5'/%3E%3Cpath d='M22 33S11 27 11 18.5a6 6 0 0 1 11-3.3 6 6 0 0 1 11 3.3C33 27 22 33 22 33Z' stroke='%23043867' stroke-width='1.7' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(4) .post-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='none'%3E%3Ccircle cx='22' cy='22' r='21' stroke='%230055FF' stroke-width='1.5'/%3E%3Crect x='10.5' y='14' width='23' height='16' rx='1.5' stroke='%23043867' stroke-width='1.7'/%3E%3Cpath d='M11 19h22M15 26h6' stroke='%23043867' stroke-width='1.7' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-content .title {
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+  color: var(--tpg-ink) !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  font-weight: 400 !important;
+  letter-spacing: -.4px !important;
+  text-transform: none !important;
+  text-align: left !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-content .description {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: rgba(30, 30, 30, .72) !important;
+  font-size: 15px !important;
+  line-height: 23px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-align: left !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-content::after {
+  content: "→";
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--tpg-navy);
+  background: transparent;
+  border: 1.5px solid var(--tpg-outline-blue);
+  border-radius: 50%;
+  font-size: 19px;
+  line-height: 1;
+  font-weight: 400;
+  transition:
+    color 300ms var(--tpg-ease),
+    background-color 300ms var(--tpg-ease),
+    transform 300ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within {
+  transform: translateY(-4px);
+  background: var(--tpg-white) !important;
+  border-color: rgba(255, 255, 255, .72) !important;
+  border-bottom-color: var(--tpg-navy) !important;
+  box-shadow: 0 10px 24px rgba(0, 9, 26, .18) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .post-content,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within .post-content {
+  background: var(--tpg-white) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .thumbnails,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within .thumbnails,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .thumbnails img,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within .thumbnails img {
+  transform: scale(1.025);
+  filter: saturate(.84) contrast(1.04);
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .post-content::after,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within .post-content::after {
+  color: var(--tpg-white);
+  background: var(--tpg-outline-blue);
+  transform: translateX(3px);
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container > a:focus-visible {
+  outline: 2px solid var(--tpg-outline-blue);
+  outline-offset: -3px;
+}
+
+@media (max-width: 991px) {
+  .member:has(.tpg-demo) .storefront-callout-bg .post-container > a { min-height: 410px; }
+  .member:has(.tpg-demo) .storefront-callout-bg .post-content { min-height: 230px !important; }
+  .member:has(.tpg-demo) .storefront-callout-bg .post-content .title { font-size: 22px !important; line-height: 28px !important; }
+}
+
+@media (max-width: 767px) {
+  .member:has(.tpg-demo) .storefront-callout-bg .post-container > a { min-height: 390px; }
+  .member:has(.tpg-demo) .storefront-callout-bg .post-content { min-height: 210px !important; padding: 22px 58px 28px 22px !important; }
+  .member:has(.tpg-demo) .storefront-callout-bg .post-content::before { margin-bottom: 18px; }
+  .member:has(.tpg-demo) .storefront-callout-bg .post-content .title { font-size: 21px !important; line-height: 27px !important; }
+  .member:has(.tpg-demo) .storefront-callout-bg .post-content::after { right: 22px; bottom: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .member:has(.tpg-demo) .storefront-callout-bg .post-container,
+  .member:has(.tpg-demo) .storefront-callout-bg .thumbnails,
+  .member:has(.tpg-demo) .storefront-callout-bg .thumbnails img,
+  .member:has(.tpg-demo) .storefront-callout-bg .post-content::after {
+    transition: none !important;
+  }
+}
+
+/* 19. Final hero, navigation, stat-bar, and widget-icon refinements */
+
+/* Approved hero eyebrow above the unchanged dashboard heading. */
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy h1::before {
+  content: "WE RECOGNIZE EXCELLENCE";
+  display: block;
+  margin: 0 0 18px;
+  color: var(--tpg-white);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+/* Hosted TPG logo: white over the hero, full color on the white sticky nav. */
+.member:has(.tpg-demo) #header-wrap .navbar-brand {
+  width: 126px;
+  height: 48px;
+  background-color: transparent;
+  background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29758");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  filter: none !important;
+  animation: tpg-sticky-hosted-logo 1ms linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 120px;
+}
+
+@keyframes tpg-sticky-hosted-logo {
+  from {
+    background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29758");
+  }
+  to {
+    background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29759");
+  }
+}
+
+/* Fine separators frame Point Balance without changing the stat-bar layout. */
+.member:has(.tpg-demo) .main-member-profile-container .hero-2-balance {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+  padding: 1px 28px !important;
+  border-left: 1px solid rgba(255, 255, 255, .56);
+  border-right: 1px solid rgba(255, 255, 255, .56);
+  border-radius: 0 !important;
+}
+
+/* Match Pending Approvals and Service Anniversaries to the serial-card navy. */
+.member:has(.tpg-demo) .my-approvals-container .approvals-header svg path {
+  fill: none !important;
+  stroke: var(--tpg-navy) !important;
+}
+
+.member:has(.tpg-demo) [data-widget-id="8144"] .header-left .icon-img img {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(31%) saturate(2259%) hue-rotate(174deg) brightness(88%) contrast(100%) !important;
+}
+
+@media (max-width: 767px) {
+  .member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy h1::before {
+    margin-bottom: 14px;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 1.8px;
+  }
+
+  .member:has(.tpg-demo) .main-member-profile-container .hero-2-balance {
+    margin: 0;
+    padding: 18px 22px !important;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid rgba(255, 255, 255, .42);
+    border-bottom: 1px solid rgba(255, 255, 255, .42);
+  }
+}
+
+/* 21. Cascade anchor: photographic surfaces, card states, and hero spacing */
+
+/* Exact rewards-section scope and revised TPG navy overlay. */
+.member:has(.tpg-demo) #main .storefront-callout-bg:has(.callout-top) {
+  background:
+    linear-gradient(rgba(0, 9, 26, .88), rgba(0, 22, 47, .8)),
+    url("https://cms.tpg.com/wp-content/uploads/2021/12/6-0-About-Us-a-hero-01-scaled.jpg") center center / cover no-repeat !important;
+  background-blend-mode: normal !important;
+}
+
+/* Experiences & Events: ticket redrawn around the exact 22px vertical center. */
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(3) .post-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44' fill='none'%3E%3Ccircle cx='22' cy='22' r='21' stroke='%230055FF' stroke-width='1.5'/%3E%3Cpath d='M11.5 15h21v4a3 3 0 0 0 0 6v4h-21v-4a3 3 0 0 0 0-6v-4Z' stroke='%23043867' stroke-width='1.7' stroke-linejoin='round'/%3E%3Cpath d='M22 15.5v13' stroke='%23043867' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='2.5 2.5'/%3E%3C/svg%3E") !important;
+}
+
+/* Border parity with Pending Approvals and Service Anniversaries. */
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] {
+  border: 1px solid rgba(30, 30, 30, .12) !important;
+}
+
+/* Smooth hosted-logo crossfade across the existing sticky-nav scroll range. */
+.member:has(.tpg-demo) #header-wrap .navbar-brand {
+  position: relative;
+  background-image: none !important;
+  animation: none !important;
+}
+
+.member:has(.tpg-demo) #header-wrap .navbar-brand::before,
+.member:has(.tpg-demo) #header-wrap .navbar-brand::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  transition: opacity 300ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) #header-wrap .navbar-brand::before {
+  z-index: 1;
+  opacity: 1;
+  background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29758");
+}
+
+.member:has(.tpg-demo) #header-wrap .navbar-brand::after {
+  z-index: 2;
+  opacity: 0;
+  background-image: url("https://halosalesandrecognition.venta.werecognize.com/asset/29759");
+}
+
+@supports (animation-timeline: scroll()) {
+  .member:has(.tpg-demo) #header-wrap .navbar-brand::before {
+    animation: tpg-logo-white-fade 1ms linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 120px;
+  }
+
+  .member:has(.tpg-demo) #header-wrap .navbar-brand::after {
+    animation: tpg-logo-color-fade 1ms linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 120px;
+  }
+}
+
+@keyframes tpg-logo-white-fade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes tpg-logo-color-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Restrained page polish: opacity reveal and one-pixel interaction feedback. */
+.member:has(.tpg-demo) #member-dashboard .layout-cpnt {
+  animation: tpg-soft-reveal 600ms var(--tpg-ease) both;
+}
+
+.member:has(.tpg-demo) .my-approvals-container,
+.member:has(.tpg-demo) [data-widget-id="8144"] .admin-upcoming-anniv-container,
+.member:has(.tpg-demo) [data-widget-type*="serialcard"] {
+  transition:
+    background-color 300ms var(--tpg-ease),
+    border-color 300ms var(--tpg-ease),
+    transform 300ms var(--tpg-ease),
+    box-shadow 300ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) .my-approvals-container:hover,
+.member:has(.tpg-demo) [data-widget-id="8144"] .admin-upcoming-anniv-container:hover,
+.member:has(.tpg-demo) [data-widget-type*="serialcard"]:hover {
+  transform: translateY(-1px);
+  border-color: rgba(4, 56, 103, .24) !important;
+  box-shadow: 0 6px 18px rgba(0, 9, 26, .06) !important;
+}
+
+.member:has(.tpg-demo) #header-wrap .top-nav-icons-list a svg,
+.member:has(.tpg-demo) #header-wrap .top-nav-icons-list button svg,
+.member:has(.tpg-demo) .main-member-profile-container .profile-link .icon {
+  transition: transform 200ms var(--tpg-ease), opacity 200ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) #header-wrap .top-nav-icons-list a:hover svg,
+.member:has(.tpg-demo) #header-wrap .top-nav-icons-list button:hover svg,
+.member:has(.tpg-demo) .main-member-profile-container .profile-link:hover .icon {
+  opacity: .86;
+  transform: translateY(-1px);
+}
+
+@keyframes tpg-soft-reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .member:has(.tpg-demo) #member-dashboard .layout-cpnt {
+    animation: none !important;
+  }
+
+  .member:has(.tpg-demo) .my-approvals-container,
+  .member:has(.tpg-demo) [data-widget-id="8144"] .admin-upcoming-anniv-container,
+  .member:has(.tpg-demo) [data-widget-type*="serialcard"] {
+    transition: none !important;
+  }
+}
+
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .hero-copy {
+  margin: 54px 0 72px !important;
+}
+
+.member:has(.tpg-demo) .hero-recognition-container.layout-2 .container {
+  padding: 72px 0 100px !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg {
+  background:
+    linear-gradient(rgba(0, 9, 26, .88), rgba(0, 22, 47, .92)),
+    url("https://cms.tpg.com/wp-content/uploads/2021/12/6-0-About-Us-a-hero-01-scaled.jpg") center center / cover no-repeat !important;
+  background-blend-mode: normal !important;
+}
+
+.member:has(.tpg-demo) .main-member-profile-container {
+  background:
+    linear-gradient(rgba(0, 9, 26, .88), rgba(0, 30, 61, .93)),
+    url("https://cms.tpg.com/wp-content/uploads/2021/12/GettyImages-1154290373.jpg") center 48% / cover no-repeat !important;
+  background-blend-mode: normal !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container {
+  background: var(--tpg-white) !important;
+  border: 0 !important;
+  border-bottom: 4px solid var(--tpg-gold) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-content {
+  background: var(--tpg-white) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(1) .post-container,
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(1) .post-container {
+  border-bottom-color: var(--tpg-gold) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(2) .post-container,
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(2) .post-container {
+  border-bottom-color: var(--tpg-olive) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(3) .post-container,
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(3) .post-container {
+  border-bottom-color: var(--tpg-plum) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(2) .one-qtr:nth-child(4) .post-container,
+.member:has(.tpg-demo) .storefront-callout-bg .flex-row:nth-of-type(3) .one-qtr:nth-child(4) .post-container {
+  border-bottom-color: var(--tpg-rust) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within {
+  background: #edf2f5 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  box-shadow: 0 10px 24px rgba(0, 9, 26, .16) !important;
+}
+
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .post-content,
+.member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within .post-content {
+  background: #edf2f5 !important;
+}
