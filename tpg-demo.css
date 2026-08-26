@@ -664,6 +664,139 @@
   background: #edf2f5 !important;
 }
 
+/* 24. Final desktop header, hero motion, budget, and compact CTA refinements */
+@media (min-width: 992px) {
+  .member:has(#main .tpg-demo) #header-wrap .header-container {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .member:has(#main .tpg-demo) #header-wrap .header-container > nav {
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.member:has(.tpg-demo) #main .hero-recognition-container.layout-2 .hero-copy h1 {
+  animation: tpg-hero-heading-reveal 800ms cubic-bezier(.22, 1, .36, 1) 100ms both;
+}
+
+.member:has(.tpg-demo) #main .hero-recognition-container.layout-2 .hero-copy a.hero-cta {
+  animation: tpg-hero-cta-reveal 700ms cubic-bezier(.22, 1, .36, 1) 360ms both;
+}
+
+@keyframes tpg-hero-heading-reveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes tpg-hero-cta-reveal {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.member:has(.tpg-demo) #main [data-widget-type="budget"] .panel.panel-tertiary {
+  background:
+    linear-gradient(rgba(0, 9, 26, .88), rgba(0, 22, 47, .84)),
+    url("https://cms.tpg.com/wp-content/uploads/2022/01/2-0-1-TPG-Capital-b-CTA-01-scaled.jpg") center center / cover no-repeat !important;
+  background-blend-mode: normal !important;
+}
+
+.member:has(.tpg-demo) #main [data-widget-type="budget"] .progress::before {
+  top: -66px;
+  font-size: 48px !important;
+  line-height: 54px;
+  letter-spacing: -1.2px;
+}
+
+.member:has(.tpg-demo) #main [data-widget-type="budget"] .panel-body .h1 + .h4 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, .28);
+}
+
+.member:has(.tpg-demo):has(.nom-dashboard) #main .post-container:has(.faux-button) .post-content {
+  height: 100% !important;
+  max-height: 300px;
+}
+
+.member:has(.tpg-demo) #main .post-container:has(.faux-button) .faux-button,
+.member:has(.tpg-demo) #main [data-widget-type*="serialcard"] .btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: auto !important;
+  min-height: 44px;
+  margin: 0;
+  padding: 10px 0 !important;
+  color: var(--tpg-navy) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  letter-spacing: .1px;
+  text-align: left !important;
+  box-shadow: none !important;
+  transition: color 250ms var(--tpg-ease), transform 250ms var(--tpg-ease) !important;
+}
+
+.member:has(.tpg-demo) #main .post-container:has(.faux-button) .faux-button::before,
+.member:has(.tpg-demo) #main [data-widget-type*="serialcard"] .btn::before {
+  content: "" !important;
+  flex: 0 0 9px;
+  width: 9px;
+  height: 9px;
+  margin-right: 13px;
+  background: var(--tpg-outline-blue);
+  border-radius: 50%;
+}
+
+.member:has(.tpg-demo) #main .post-container:has(.faux-button) .faux-button::after,
+.member:has(.tpg-demo) #main [data-widget-type*="serialcard"] .btn::after {
+  content: "›" !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 20px;
+  margin-left: 24px;
+  color: var(--tpg-navy);
+  font-size: 21px;
+  line-height: 20px;
+  font-weight: 300;
+  transform: translateY(-1px);
+  transition: transform 250ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) #main .post-container:has(.faux-button):hover .faux-button::after,
+.member:has(.tpg-demo) #main .post-container:has(.faux-button):focus-within .faux-button::after,
+.member:has(.tpg-demo) #main [data-widget-type*="serialcard"] .btn:hover::after,
+.member:has(.tpg-demo) #main [data-widget-type*="serialcard"] .btn:focus-visible::after {
+  transform: translate(3px, -1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .member:has(.tpg-demo) #main .hero-recognition-container.layout-2 .hero-copy h1,
+  .member:has(.tpg-demo) #main .hero-recognition-container.layout-2 .hero-copy a.hero-cta {
+    animation: none !important;
+  }
+
+  .member:has(.tpg-demo) #main .post-container:has(.faux-button) .faux-button,
+  .member:has(.tpg-demo) #main .post-container:has(.faux-button) .faux-button::after,
+  .member:has(.tpg-demo) #main [data-widget-type*="serialcard"] .btn,
+  .member:has(.tpg-demo) #main [data-widget-type*="serialcard"] .btn::after {
+    transition: none !important;
+  }
+}
+
 /* 23. Intro-card CTA elements replace the former generated Learn more links */
 .member:has(.tpg-demo) .post-container:has(.faux-button) .post-content::after {
   content: none !important;
