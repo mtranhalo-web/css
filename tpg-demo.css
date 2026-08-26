@@ -2023,6 +2023,16 @@ div[data-widget-type="serialcard"] .panel-body {
 }
 
 /* 25. Header width, storefront spacing, and final CTA alignment */
+.member:has(.tpg-demo) #main .hero-recognition-container.layout-2 {
+  background: var(--tpg-hero-navy) url("https://halosalesandrecognition.venta.werecognize.com/asset/29753") no-repeat center center / cover !important;
+}
+
+@media (min-width: 1440px) {
+  .member:has(.tpg-demo) #main .hero-recognition-container.layout-2 {
+    background-position: top center !important;
+  }
+}
+
 @supports (animation-timeline: scroll()) {
   .member:has(.tpg-demo) #header-wrap .topNavIcons a.psr[data-badge]:not([data-badge="0"]),
   .member:has(.tpg-demo) #header-wrap .topNavIcons button.psr[data-badge]:not([data-badge="0"]),
