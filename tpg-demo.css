@@ -1877,6 +1877,180 @@ div[data-widget-type="serialcard"] .panel-body {
 
 /* 21. Cascade anchor: photographic surfaces, card states, and hero spacing */
 
+/* 26. Mobile hero and member-profile refinements */
+.member:has(.tpg-demo) .post-container:has(.faux-button) .faux-button {
+  margin-top: 16px !important;
+}
+
+@media (max-width: 1000px) {
+  .member:has(.tpg-demo) #header-wrap {
+    padding: 16px 16px 0 !important;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .profile-info.flex-row.justify-center {
+    width: 100% !important;
+    padding: 16px !important;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .42) !important;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .hero-2-balance {
+    width: auto;
+    padding: 20px 24px !important;
+    text-align: center;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .hero-2-profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100% !important;
+    padding: 0 8px 16px;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .profile-link {
+    flex: 0 1 48%;
+    width: 48%;
+    margin-top: 25px;
+  }
+
+  .member:has(.tpg-demo) #main [data-widget-type="budget"] {
+    margin-top: 24px !important;
+  }
+
+  .member:has(.tpg-demo) #main [data-widget-type*="feed"] {
+    flex: unset !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .member:has(.tpg-demo) #main .hero-recognition-container.layout-2 .hero-copy,
+  .member:has(.tpg-demo) #main .hero-recognition-container.layout-2 .hero-copy h1 {
+    text-align: left !important;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 16px !important;
+    text-align: center;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .avatar,
+  .member:has(.tpg-demo) #main .main-member-profile-container .hero-2-balance {
+    flex: 1 1 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .avatar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .hero-2-profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    width: 100% !important;
+    margin: 0;
+    padding: 0 8px 16px;
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .profile-link {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 50%;
+    min-height: 112px;
+    margin-top: 25px;
+    padding: 18px 12px !important;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, .22);
+  }
+
+  .member:has(.tpg-demo) #main .main-member-profile-container .profile-link:nth-of-type(odd) {
+    border-right: 1px solid rgba(255, 255, 255, .22);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .member:has(.nom-dashboard) .storefront-callout-bg .container .flex-row {
+    gap: 24px;
+  }
+
+  .member:has(.tpg-demo) #main .hero-recognition-container.layout-2 .container::before {
+    content: none !important;
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    background: none !important;
+    background-image: none !important;
+  }
+}
+
+/* 25. Header width, storefront spacing, and final CTA alignment */
+.member:has(.tpg-demo) #header-wrap {
+  max-width: unset !important;
+}
+
+.member:has(.tpg-demo) #header-wrap nav {
+  max-width: 1500px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.member:has(.tpg-demo) #main .storefront-callout-bg:has(.callout-top) {
+  padding-bottom: 120px;
+}
+
+.member:has(.tpg-demo) #main .post-module .faux-button {
+  margin-top: 16px !important;
+}
+
+.member:has(.tpg-demo) #main .serial-card-redemption {
+  text-align: left !important;
+}
+
+.member:has(.tpg-demo) #main .serial-card-redemption > button.btn.btn-secondary {
+  align-self: flex-start;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
 /* Exact rewards-section scope and revised TPG navy overlay. */
 .member:has(.tpg-demo) #main .storefront-callout-bg:has(.callout-top) {
   background:
@@ -2067,4 +2241,21 @@ div[data-widget-type="serialcard"] .panel-body {
 .member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .post-content,
 .member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within .post-content {
   background: #edf2f5 !important;
+}
+
+
+@media screen and (max-width: 991px) {
+  .member:has(.tpg-demo) .main-member-profile-container .hero-2-balance {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0;
+}
+
+.member:has(.tpg-demo) #main .main-member-profile-container .avatar {
+    margin: 0 !important;
+}
+
+#main .hero-recognition-container.layout-2 .hero-copy h1 {
+    padding-top: 24px;
+}
 }
