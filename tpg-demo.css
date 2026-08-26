@@ -2023,6 +2023,65 @@ div[data-widget-type="serialcard"] .panel-body {
 }
 
 /* 25. Header width, storefront spacing, and final CTA alignment */
+@supports (animation-timeline: scroll()) {
+  .member:has(.tpg-demo) #header-wrap .topNavIcons a.psr[data-badge]:not([data-badge="0"]),
+  .member:has(.tpg-demo) #header-wrap .topNavIcons button.psr[data-badge]:not([data-badge="0"]),
+  .member:has(.tpg-demo) #header-wrap .customSelect .options > li > a,
+  .member:has(.tpg-demo) #header-wrap .customSelect .options > li > button,
+  .member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li > a,
+  .member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li > button {
+    animation: none !important;
+    filter: none !important;
+  }
+}
+
+.member:has(.tpg-demo) #header-wrap .topNavIcons a.psr[data-badge]:not([data-badge="0"])::after,
+.member:has(.tpg-demo) #header-wrap .topNavIcons button.psr[data-badge]:not([data-badge="0"])::after {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  background-color: var(--tpg-navy) !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+.member:has(.tpg-demo) #header-wrap .customSelect .options,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu,
+.member:has(.tpg-demo) #header-wrap .customSelect .options > li,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li {
+  color: var(--tpg-ink) !important;
+  background: var(--tpg-white) !important;
+}
+
+.member:has(.tpg-demo) #header-wrap .customSelect .options > li > a,
+.member:has(.tpg-demo) #header-wrap .customSelect .options > li > button,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li > a,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li > button {
+  display: block;
+  width: 100%;
+  color: var(--tpg-ink) !important;
+  background: var(--tpg-white) !important;
+  border-color: transparent !important;
+  text-align: left;
+  text-decoration: none !important;
+  transition: color 200ms var(--tpg-ease), background-color 200ms var(--tpg-ease);
+}
+
+.member:has(.tpg-demo) #header-wrap .customSelect .options > li:hover,
+.member:has(.tpg-demo) #header-wrap .customSelect .options > li:focus-within,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li:hover,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li:focus-within,
+.member:has(.tpg-demo) #header-wrap .customSelect .options > li > a:hover,
+.member:has(.tpg-demo) #header-wrap .customSelect .options > li > a:focus,
+.member:has(.tpg-demo) #header-wrap .customSelect .options > li > button:hover,
+.member:has(.tpg-demo) #header-wrap .customSelect .options > li > button:focus,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li > a:hover,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li > a:focus,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li > button:hover,
+.member:has(.tpg-demo) #header-wrap .customSelect .dropdown-menu > li > button:focus {
+  color: var(--tpg-white) !important;
+  background: var(--tpg-ink) !important;
+}
+
 .member:has(.tpg-demo) #header-wrap {
   max-width: unset !important;
 }
@@ -2241,21 +2300,4 @@ div[data-widget-type="serialcard"] .panel-body {
 .member:has(.tpg-demo) .storefront-callout-bg .post-container:hover .post-content,
 .member:has(.tpg-demo) .storefront-callout-bg .post-container:focus-within .post-content {
   background: #edf2f5 !important;
-}
-
-
-@media screen and (max-width: 991px) {
-  .member:has(.tpg-demo) .main-member-profile-container .hero-2-balance {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0;
-}
-
-.member:has(.tpg-demo) #main .main-member-profile-container .avatar {
-    margin: 0 !important;
-}
-
-#main .hero-recognition-container.layout-2 .hero-copy h1 {
-    padding-top: 24px;
-}
 }
