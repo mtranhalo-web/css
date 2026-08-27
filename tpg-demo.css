@@ -1911,6 +1911,7 @@ div[data-widget-type="serialcard"] .panel-body {
     width: auto;
     padding: 20px 24px !important;
     text-align: center;
+    border: 0 !important;
   }
 
   .member:has(.tpg-demo) #main .main-member-profile-container .hero-2-profile-links {
