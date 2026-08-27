@@ -1924,7 +1924,7 @@ div[data-widget-type="serialcard"] .panel-body {
   .member:has(.tpg-demo) #main .main-member-profile-container .profile-link {
     flex: 0 1 48%;
     width: 48%;
-    margin-top: 25px;
+    margin-top: 0;
   }
 
   .member:has(.tpg-demo) #main [data-widget-type="budget"] {
@@ -1992,7 +1992,7 @@ div[data-widget-type="serialcard"] .panel-body {
     box-sizing: border-box;
     width: 50%;
     min-height: 112px;
-    margin-top: 25px;
+    margin-top: 0;
     padding: 18px 12px !important;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, .22);
